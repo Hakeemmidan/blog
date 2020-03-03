@@ -16,6 +16,7 @@ pygmentsStyle = "pygments"
 
 [taxonomies]
   tag = "tags"
+  category = "categories"
 
 [permalinks]
   post = "/:filename/"
