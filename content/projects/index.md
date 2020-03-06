@@ -6,5 +6,8 @@ draft: true
 
 | Name       | Documentation Link | Live Link          |
 |------------|--------------------|--------------------|
-| Javascript | `var foo = "bar";` | `var foo = "bar";` |
-| Ruby       | `foo = "bar"`      | `var foo = "bar";` |
+| OSUChat    | [docs](https://github.com/Hakeemmidan/OSUChat) | [live](http://osuchat.com/) |
+| Jewely     | [docs](https://github.com/Hakeemmidan/Jewely)  | [live](https://jewely-fsp.herokuapp.com/) |
+| WiRR       | [docs](https://github.com/michaeltorres1/WiRR) | [live](http://www.wikipediarr.com/) |
+| 2048 Clone | [docs](https://github.com/Hakeemmidan/2048)    | [live](https://hakeemmidan.github.io/2048/) |
+| Rails User Auth | [docs](https://github.com/Hakeemmidan/rails-user-auth)    | N/A |
