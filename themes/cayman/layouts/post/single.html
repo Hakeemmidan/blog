@@ -4,8 +4,21 @@
     {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
     <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
   </div>
-  {{ $tags := slice }}
-  {{ with .Params.tags }}
+    {{ $categories := slice }}
+    {{ with .Params.categories }}
+    <div>
+      <strong>categories: </strong>
+      {{ range . }}
+      {{ $href := print ("categories/" | absLangURL) (. | urlize) "/" }}
+      {{ $element := printf "<a href=\"%s\">%s</a>" $href . }}
+      {{ $categories = $categories | append $element }}
+      {{ end }}
+      {{ delimit $categories ", " }}
+    </div>
+    {{ end }}
+
+    {{ $tags := slice }}
+    {{ with .Params.tags }}
     <div>
       <strong>Tags: </strong>
       {{ range . }}
@@ -16,6 +29,7 @@
       {{ delimit $tags ", " }}
     </div>
   {{ end }}
+  
   {{ .Content }}
   {{ partial "disqus.html" . }}
 {{ end }}
