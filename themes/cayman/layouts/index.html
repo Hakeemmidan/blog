@@ -2,8 +2,8 @@
   <h1>{{ .Title }}</h1>
   <ul>
     {{ if (eq .Params.title "Blog") }}
-        <a href="/tags">tags</a>
-        <a href="/categories">categories</a>
+        <a class="btn blog-nav" href="/tags">tags</a>
+        <a class="btn blog-nav" href="/categories">categories</a>
     {{ end }}
     {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{ range $pages.ByPublishDate.Reverse }}

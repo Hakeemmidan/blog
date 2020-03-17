@@ -229,3 +229,11 @@ a {
 
 .site-footer-credits {
   color: #819198; }
+
+.blog-nav {
+  color: #606c71;
+  border-color: #606c71; }
+  .blog-nav:hover {
+    color: #606c71;
+    border-color: #606c71;
+    background-color: whitesmoke; }

@@ -356,3 +356,16 @@ a {
 .site-footer-credits {
   color: $blockquote-text-color;
 }
+
+
+////////////// CUSTOM //////////////
+.blog-nav {
+  color: $body-text-color;
+  border-color: $body-text-color;
+
+  &:hover {
+    color: $body-text-color;
+    border-color: $body-text-color;
+    background-color: whitesmoke;
+  }
+}
