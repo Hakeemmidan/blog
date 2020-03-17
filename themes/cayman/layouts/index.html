@@ -1,13 +1,17 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<ul>
-{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{ range $pages.ByPublishDate.Reverse }}
-  <li>
-    <a href="{{ .Permalink }}">
-      {{ .Title }}
-    </a>
-  </li>        
-{{ end }}
-</ul>
+  <h1>{{ .Title }}</h1>
+  <ul>
+    {{ if (eq .Params.title "Blog") }}
+        <a href="/tags">tags</a>
+        <a href="/categories">categories</a>
+    {{ end }}
+    {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ range $pages.ByPublishDate.Reverse }}
+    <li>
+      <a href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </li>        
+    {{ end }}
+  </ul>
 {{ end }}
