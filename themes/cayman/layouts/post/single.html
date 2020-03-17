@@ -1,6 +1,5 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  <script>console.log({{ . }});</script>
   <div>
     {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
     <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
