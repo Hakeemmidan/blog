@@ -333,7 +333,7 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
+  // border-top: solid 1px $hr-border-color;
 
   @include large {
     font-size: 1rem;
@@ -361,18 +361,20 @@ a {
 ////////////// CUSTOM //////////////
 .blog-nav {
   color: $body-text-color;
-  border-color: $body-text-color;
   display: block;
-  border-right: 0;
-  border-left: 0;
-  border-radius: 0;
+  border: 0px;
+  border-radius: 0px;
+  width: 220px;
+  margin-bottom: 0px;
 
   + .blog-nav {
     margin-left: 0;
+    border-top: 1px solid lightgray;
+    margin-bottom: 1rem;
   }
+
   &:hover {
     color: $body-text-color;
-    border-color: $body-text-color;
     background-color: whitesmoke;
   }
 }

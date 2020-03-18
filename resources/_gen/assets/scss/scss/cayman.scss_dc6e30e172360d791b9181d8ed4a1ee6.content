@@ -212,8 +212,7 @@ a {
 
 .site-footer {
   padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px #eff0f1; }
+  margin-top: 2rem; }
   @media screen and (min-width: 64em) {
     .site-footer {
       font-size: 1rem; } }
@@ -232,14 +231,15 @@ a {
 
 .blog-nav {
   color: #606c71;
-  border-color: #606c71;
   display: block;
-  border-right: 0;
-  border-left: 0;
-  border-radius: 0; }
+  border: 0px;
+  border-radius: 0px;
+  width: 220px;
+  margin-bottom: 0px; }
   .blog-nav + .blog-nav {
-    margin-left: 0; }
+    margin-left: 0;
+    border-top: 1px solid lightgray;
+    margin-bottom: 1rem; }
   .blog-nav:hover {
     color: #606c71;
-    border-color: #606c71;
     background-color: whitesmoke; }
