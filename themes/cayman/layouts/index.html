@@ -1,10 +1,10 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
+  {{ if (eq .Params.title "Blog") }}
+      <a class="btn blog-nav" href="/tags">Browse by tags</a>
+      <a class="btn blog-nav" href="/categories">Browse by categories</a>
+  {{ end }}
   <ul>
-    {{ if (eq .Params.title "Blog") }}
-        <a class="btn blog-nav" href="/tags">tags</a>
-        <a class="btn blog-nav" href="/categories">categories</a>
-    {{ end }}
     {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{ range $pages.ByPublishDate.Reverse }}
     <li>

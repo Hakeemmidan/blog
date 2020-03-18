@@ -362,7 +362,14 @@ a {
 .blog-nav {
   color: $body-text-color;
   border-color: $body-text-color;
+  display: block;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
 
+  + .blog-nav {
+    margin-left: 0;
+  }
   &:hover {
     color: $body-text-color;
     border-color: $body-text-color;
