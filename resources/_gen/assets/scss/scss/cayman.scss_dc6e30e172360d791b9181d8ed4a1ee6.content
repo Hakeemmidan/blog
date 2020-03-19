@@ -234,19 +234,26 @@ a {
   display: block;
   border: 0px;
   border-radius: 0px;
-  width: 220px;
+  width: 13rem;
   margin-bottom: 0px; }
   .blog-nav + .blog-nav {
     margin-left: 0;
     border-top: 1px solid lightgray;
     margin-bottom: 1rem; }
+  @media screen and (max-width: 42em) {
+    .blog-nav {
+      width: 11rem; } }
   .blog-nav:hover {
     color: #606c71;
     background-color: whitesmoke; }
 
 .online-presence-logo {
   width: 4rem;
-  padding-right: 1rem; }
+  padding-right: 1rem;
+  transition: opacity 0.2s; }
   @media screen and (max-width: 42em) {
     .online-presence-logo {
       width: 3.5rem; } }
+  .online-presence-logo:hover {
+    cursor: pointer;
+    opacity: 0.6; }

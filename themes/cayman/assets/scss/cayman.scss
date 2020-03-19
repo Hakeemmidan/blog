@@ -364,13 +364,17 @@ a {
   display: block;
   border: 0px;
   border-radius: 0px;
-  width: 220px;
+  width: 13rem;
   margin-bottom: 0px;
 
   + .blog-nav {
     margin-left: 0;
     border-top: 1px solid lightgray;
     margin-bottom: 1rem;
+  }
+
+  @include small {
+    width: 11rem;
   }
 
   &:hover {
@@ -382,8 +386,14 @@ a {
 .online-presence-logo {
   width: 4rem;
   padding-right: 1rem;
+  transition: opacity 0.2s;
 
   @include small {
     width: 3.5rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
   }
 }
