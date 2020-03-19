@@ -378,3 +378,12 @@ a {
     background-color: whitesmoke;
   }
 }
+
+.online-presence-logo {
+  width: 4rem;
+  padding-right: 1rem;
+
+  @include small {
+    width: 3.5rem;
+  }
+}
