@@ -245,6 +245,9 @@ a {
   opacity: 0.6; }
   .blog-nav + .blog-nav {
     margin-left: 0; }
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    .blog-nav {
+      font-size: 1.1rem; } }
   @media screen and (max-width: 42em) {
     .blog-nav {
       width: 11rem; } }
@@ -266,3 +269,6 @@ a {
   .online-presence-logo:hover {
     cursor: pointer;
     opacity: 0.6; }
+
+.taxanomy-list-title-indicator {
+  border-bottom: 3px solid whitesmoke; }

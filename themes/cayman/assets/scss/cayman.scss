@@ -379,6 +379,10 @@ a {
     margin-left: 0;
   }
 
+  @include medium {
+    font-size: 1.1rem;
+  }
+
   @include small {
     width: 11rem;
   }
@@ -407,4 +411,8 @@ a {
     cursor: pointer;
     opacity: 0.6;
   }
+}
+
+.taxanomy-list-title-indicator {
+  border-bottom: 3px solid whitesmoke;
 }

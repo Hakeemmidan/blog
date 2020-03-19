@@ -1,7 +1,4 @@
 <h1>{{ .Title }}</h1>
-<script>
-  debugger
- <script/>
 <ul>
 {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{ range $pages.ByPublishDate.Reverse }}
