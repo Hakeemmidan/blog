@@ -56,9 +56,11 @@ body {
 a {
   color: $body-link-color;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s;
 
   &:hover {
-    text-decoration: underline;
+    border-color: $body-link-color;
   }
 }
 
@@ -359,18 +361,22 @@ a {
 
 
 ////////////// CUSTOM //////////////
+.blog-nav__container {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .blog-nav {
   color: $body-text-color;
-  display: block;
   border: 0px;
   border-radius: 0px;
   width: 13rem;
-  margin-bottom: 0px;
+  text-decoration: underline;
+  transition: opacity 0.2s;
+  opacity: 0.6;
 
   + .blog-nav {
     margin-left: 0;
-    border-top: 1px solid lightgray;
-    margin-bottom: 1rem;
   }
 
   @include small {
@@ -379,8 +385,13 @@ a {
 
   &:hover {
     color: $body-text-color;
-    background-color: whitesmoke;
+    text-decoration: underline;
+    opacity: 1;
   }
+}
+
+.online-presence-link {
+  border: 0;
 }
 
 .online-presence-logo {

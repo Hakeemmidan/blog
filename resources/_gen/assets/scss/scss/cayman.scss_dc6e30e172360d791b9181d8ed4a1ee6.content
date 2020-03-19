@@ -11,9 +11,11 @@ body {
 
 a {
   color: #1e6bb8;
-  text-decoration: none; }
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s; }
   a:hover {
-    text-decoration: underline; }
+    border-color: #1e6bb8; }
 
 .btn {
   display: inline-block;
@@ -229,23 +231,30 @@ a {
 .site-footer-credits {
   color: #819198; }
 
+.blog-nav__container {
+  display: flex;
+  justify-content: flex-start; }
+
 .blog-nav {
   color: #606c71;
-  display: block;
   border: 0px;
   border-radius: 0px;
   width: 13rem;
-  margin-bottom: 0px; }
+  text-decoration: underline;
+  transition: opacity 0.2s;
+  opacity: 0.6; }
   .blog-nav + .blog-nav {
-    margin-left: 0;
-    border-top: 1px solid lightgray;
-    margin-bottom: 1rem; }
+    margin-left: 0; }
   @media screen and (max-width: 42em) {
     .blog-nav {
       width: 11rem; } }
   .blog-nav:hover {
     color: #606c71;
-    background-color: whitesmoke; }
+    text-decoration: underline;
+    opacity: 1; }
+
+.online-presence-link {
+  border: 0; }
 
 .online-presence-logo {
   width: 4rem;

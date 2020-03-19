@@ -1,8 +1,10 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ if (eq .Params.title "Blog") }}
+    <div class="blog-nav__container">
       <a class="btn blog-nav" href="/tags">Browse by tags</a>
       <a class="btn blog-nav" href="/categories">Browse by categories</a>
+    </div>
   {{ end }}
   <ul>
     {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
