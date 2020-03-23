@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Hakeem Almidan</title>
-    <link>https://hakeem-almidan.com/</link>
+    <link>hakeem-almidan.netlify.com/</link>
     <description>Recent content in Blog on Hakeem Almidan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://hakeem-almidan.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="hakeem-almidan.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://hakeem-almidan.com/about/</link>
+      <link>hakeem-almidan.netlify.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hakeem-almidan.com/about/</guid>
+      <guid>hakeem-almidan.netlify.com/about/</guid>
       <description>Hi, I’m Hakeem. I have experience building full-stack applications in many languages and frameworks. What I&amp;rsquo;ve learned over time is that the main mental challenge often lies in the logic behind what you are building, and not in the language/framework itself.
 Outside of work, I enjoy painting, playing volleyball, soccer, scuba diving, and hanging out with friends. I also enjoy reading about business and finance.
 I am currently looking for software engineering and finance positions and I would love to hear about your company!</description>
