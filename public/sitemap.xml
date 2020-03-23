@@ -3,19 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>hakeem-almidan.netlify.com/about/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>hakeem-almidan.netlify.com/</loc>
+    <loc>/</loc>
   </url>
   
   <url>
-    <loc>hakeem-almidan.netlify.com/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>hakeem-almidan.netlify.com/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
