@@ -27,7 +27,7 @@ params:
 
   # Date format for post list and single pages
   # For more date formats see https://gohugo.io/functions/format/
-  dateFormat: 2006-01-02
+  dateFormat: Jan 2006
 
   # Footer text, can be markdown
   footer: Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
