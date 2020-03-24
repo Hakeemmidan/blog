@@ -38,3 +38,6 @@ You can find me on:
 
 ### Contact
 Hakeemmidan@gmail.com
+
+### About website
+ This website is built using [Hugo](https://gohugo.io/), themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme) and deployed to [Netlify](https://www.netlify.com/)
