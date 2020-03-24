@@ -21,7 +21,7 @@
 {{ $captionId := printf "caption-%s" ($caption | md5) }}
 
 <figure role="group" aria-describedby="{{ $captionId }}">
-  <a href="{{ $original.Permalink }}" class="">
+  <a class="u-link-with-no-underline" href="{{ $original.Permalink }}" class="">
     <img src="{{ $new.Permalink }}">
   </a>
   <figcaption id="{{ $captionId }}">

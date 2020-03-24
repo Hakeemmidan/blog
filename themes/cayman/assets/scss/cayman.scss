@@ -361,6 +361,10 @@ a {
 
 
 ////////////// CUSTOM //////////////
+figure {
+  text-align: center;
+}
+
 .blog-nav__container {
   display: flex;
   justify-content: flex-start;
@@ -394,7 +398,7 @@ a {
   }
 }
 
-.online-presence-link {
+.u-link-with-no-underline {
   border: 0;
 }
 
