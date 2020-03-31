@@ -4,7 +4,7 @@ title = "Hakeem Almidan"
 theme = "cayman"
 
 # Google analytics
-googleAnalytics = ""
+googleAnalytics = "UA-162259002-1"
 
 # Disqus comments
 disqusShortname = "yourdiscussshortname"
