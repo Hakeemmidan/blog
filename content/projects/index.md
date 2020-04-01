@@ -6,7 +6,7 @@ draft: false
 
 | Name       | Documentation Link | Live Link          |
 |------------|--------------------|--------------------|
-| OSUChat    | [docs](https://github.com/Hakeemmidan/OSUChat) | [live](http://osuchat.com/) |
+| OSUChat    | N/A | [live](http://osuchat.com/) |
 | WiRR       | [docs](https://github.com/michaeltorres1/WiRR) | [live](http://www.wikipediarr.com/) |
 | Jewely     | [docs](https://github.com/Hakeemmidan/Jewely)  | [live](https://jewely-fsp.herokuapp.com/) |
 | Rails User Auth | [docs](https://github.com/Hakeemmidan/rails-user-auth)    | N/A |
