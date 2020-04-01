@@ -1,11 +1,39 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
+
+
+  <!-- Footer vvv -->
+  <h3>
+    That's it for now
+    <h4>
+      Good luck + Thanks for reading ( ^__^ )
+    </h4>
+  </h3>
+  
+  <hr>
+  
+  <p>
+    If you see something that you think needs fixing in this article, please don't hesitate to message me.
+  </p>
+  
+  <div>
+    References:
+    <br>
+    <ul>
+      {{ range .Params.references }}
+        <li>
+          {{ . }}
+        </li>
+      {{ end }}
+    </ul>
+  </div>
   
   <div>
     {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
     <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
   </div>
+
   {{ $categories := slice }}
   {{ with .Params.categories }}
   <div>

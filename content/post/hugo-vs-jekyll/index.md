@@ -83,11 +83,3 @@ So if you are currently looking for a job (like I am), it may be worth it to loo
 - **Hugo:** I would recommend Hugo for blogs, and for websites that you know are going to continue to grow in page count over time. Look at [Ben Congdon's website](https://benjamincongdon.me/), [Anna Dodson's website](https://annadodson.co.uk/), and [Pharmaseal's website](https://www.pharmaseal.co/) for Hugo generated examples. More can be found on [Hugo's showcase page](https://gohugo.io/showcase/).
 
 If you want to look at an even deeper comparison of the two technologies, I recommend [this article](https://forestry.io/blog/hugo-and-jekyll-compared/) by [Forestry.io](https://forestry.io/).
-
-### Thanks for reading ( ^__^ )
-
-***
-
-If you see something that you think needs fixing in this article, please don't hesitate to message me.
-
-References:
