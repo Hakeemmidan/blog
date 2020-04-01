@@ -4,61 +4,63 @@
 
 
   <!-- Footer vvv -->
-  <h3>
-    That's it for now
-    <h4>
-      Good luck + Thanks for reading ( ^__^ )
-    </h4>
-  </h3>
-  
   <hr>
-  
-  <p>
-    If you see something that you think needs fixing in this article, please don't hesitate to message me.
-  </p>
-  
-  <div>
-    References:
-    <br>
-    <ul>
-      {{ range .Params.references }}
-        <li>
-          {{ . }}
-        </li>
-      {{ end }}
-    </ul>
-  </div>
-  
-  <div>
-    {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
-    <strong>Publish date: </strong>{{ .PublishDate.Format $dateFormat }}
-  </div>
 
-  {{ $categories := slice }}
-  {{ with .Params.categories }}
-  <div>
-    <strong>categories: </strong>
-    {{ range . }}
-    {{ $href := print ("categories/" | absLangURL) (. | urlize) "/" }}
-    {{ $element := printf "<a href=\"%s\">%s</a>" $href . }}
-    {{ $categories = $categories | append $element }}
+  <div class="blog-post-footer">
+    <h3>
+      That's it for now
+      <h4>
+        Good luck + Thanks for reading ( ^__^ )
+      </h4>
+    </h3>
+    
+    <p>
+      If you see something that you think needs fixing in this article, please don't hesitate to email me at Hakeemmidan@gmail.com.
+    </p>
+    
+    <div>
+      References:
+      <br>
+      <ul>
+        {{ range .Params.references }}
+          <li>
+            {{ . }}
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+    
+    <div>
+      {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
+      Publish date: {{ .PublishDate.Format $dateFormat }}
+    </div>
+
+    {{ $categories := slice }}
+    {{ with .Params.categories }}
+    <div>
+      categories:
+      {{ range . }}
+      {{ $href := print ("categories/" | absLangURL) (. | urlize) "/" }}
+      {{ $element := printf "<a href=\"%s\">%s</a>" $href . }}
+      {{ $categories = $categories | append $element }}
+      {{ end }}
+      {{ delimit $categories ", " }}
+    </div>
     {{ end }}
-    {{ delimit $categories ", " }}
-  </div>
-  {{ end }}
-  
-  {{ $tags := slice }}
-  {{ with .Params.tags }}
-  <div>
-    <strong>Tags: </strong>
-    {{ range . }}
-    {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}
-    {{ $element := printf "<a href=\"%s\">%s</a>" $href . }}
-    {{ $tags = $tags | append $element }}
+    
+    {{ $tags := slice }}
+    {{ with .Params.tags }}
+    <div>
+      Tags:
+      {{ range . }}
+      {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}
+      {{ $element := printf "<a href=\"%s\">%s</a>" $href . }}
+      {{ $tags = $tags | append $element }}
+      {{ end }}
+      {{ delimit $tags ", " }}
+    </div>
     {{ end }}
-    {{ delimit $tags ", " }}
   </div>
-  {{ end }}
   
   {{ partial "disqus.html" . }}
 {{ end }}

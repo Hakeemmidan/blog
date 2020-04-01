@@ -275,3 +275,9 @@ figure {
 
 .taxanomy-list-title-indicator {
   border-bottom: 3px solid whitesmoke; }
+
+.blog-post-footer {
+  background-color: lightsteelblue;
+  opacity: 0.8;
+  padding: 10px;
+  border-radius: 2%; }
