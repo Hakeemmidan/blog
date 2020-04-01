@@ -4,6 +4,10 @@ date: 2020-03-23T23:37:28-07:00
 draft: false
 tags: ['hugo', 'jekyll']
 categories: ['programming']
+references: [
+  'Hired.com (2019). 2020 State of Software Engineers. Retrieved from https://hired.com/state-of-software-engineers',
+  'Macrae, C. (2018, January 26). Hugo vs Jekyll: Benchmarked. Retrieved from https://forestry.io/blog/hugo-vs-jekyll-benchmark/'
+]
 ---
 
 ## What are static websites?
@@ -87,5 +91,3 @@ If you want to look at an even deeper comparison of the two technologies, I reco
 If you see something that you think needs fixing in this article, please don't hesitate to message me.
 
 References:
-- Macrae, C. (2018, January 26). Hugo vs Jekyll: Benchmarked. Retrieved from https://forestry.io/blog/hugo-vs-jekyll-benchmark/
-- Hired.com (2019). 2020 State of Software Engineers. Retrieved from https://hired.com/state-of-software-engineers
