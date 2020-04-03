@@ -12,12 +12,22 @@
     
     
     <item>
+      <title>Choosing a Static Website Generator: Hugo vs. Jekyll</title>
+      <link>/hugo-vs-jekyll/</link>
+      <pubDate>Mon, 23 Mar 2020 23:37:28 -0700</pubDate>
+      
+      <guid>/hugo-vs-jekyll/</guid>
+      <description>What are static websites? In simple terms, static websites are a collection of webpages that have fixed content. They are the most basic type of website and are typically considered the easiest to create.
+These websites are considered the easiest to create because they have a low barrier of entry. They are usually not connected to a backend or a database, so the only thing that you will need to manage is the frontend.</description>
+    </item>
+    
+    <item>
       <title>Projects</title>
       <link>/projects/</link>
       <pubDate>Tue, 03 Mar 2020 17:12:28 -0800</pubDate>
       
       <guid>/projects/</guid>
-      <description>   Name Documentation Link Live Link     OSUChat docs live   Jewely docs live   WiRR docs live   2048 Clone docs live   Rails User Auth docs N/A    </description>
+      <description>   Name Documentation Link Live Link     OSUChat docs live   WiRR docs live   Jewely docs live   Rails User Auth docs N/A   2048 Clone docs live    </description>
     </item>
     
     <item>

@@ -231,6 +231,9 @@ a {
 .site-footer-credits {
   color: #819198; }
 
+figure {
+  text-align: center; }
+
 .blog-nav__container {
   display: flex;
   justify-content: flex-start; }
@@ -256,7 +259,7 @@ a {
     text-decoration: underline;
     opacity: 1; }
 
-.online-presence-link {
+.u-link-with-no-underline {
   border: 0; }
 
 .online-presence-logo {
@@ -272,3 +275,9 @@ a {
 
 .taxanomy-list-title-indicator {
   border-bottom: 3px solid whitesmoke; }
+
+.blog-post-footer {
+  background-color: lightsteelblue;
+  opacity: 0.8;
+  padding: 10px;
+  border-radius: 2%; }

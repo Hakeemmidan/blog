@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Hakeem Almidan</title>
+    <link>/tags/hugo/</link>
+    <description>Recent content in hugo on Hakeem Almidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Mar 2020 23:37:28 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Choosing a Static Website Generator: Hugo vs. Jekyll</title>
+      <link>/hugo-vs-jekyll/</link>
+      <pubDate>Mon, 23 Mar 2020 23:37:28 -0700</pubDate>
+      
+      <guid>/hugo-vs-jekyll/</guid>
+      <description>What are static websites? In simple terms, static websites are a collection of webpages that have fixed content. They are the most basic type of website and are typically considered the easiest to create.
+These websites are considered the easiest to create because they have a low barrier of entry. They are usually not connected to a backend or a database, so the only thing that you will need to manage is the frontend.</description>
+    </item>
+    
+  </channel>
+</rss>
