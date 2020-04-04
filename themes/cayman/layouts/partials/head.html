@@ -9,6 +9,7 @@
   {{ $options := (dict "targetPath" "css/cayman.css") }}
   {{ $caymanCss := resources.Get $caymanScss | resources.ExecuteAsTemplate $caymanScss . | toCSS $options | fingerprint }}
   <link rel="stylesheet" href="{{ $caymanCss.Permalink }}">
+  {{ partial "meta" . }}
   {{ partial "katex.html" . }}
   <title>{{ .Title }} | {{ $.Site.Title }}</title>
 </head>
