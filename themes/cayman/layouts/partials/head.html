@@ -10,6 +10,13 @@
   {{ $caymanCss := resources.Get $caymanScss | resources.ExecuteAsTemplate $caymanScss . | toCSS $options | fingerprint }}
   <link rel="stylesheet" href="{{ $caymanCss.Permalink }}">
   <title itemprop="name">{{ .Title }} | {{ $.Site.Title }}</title>
+  
+  <!-- RSS start -->
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+  <!-- RSS end   -->
+
   {{ partial "meta" . }}
   {{ partial "katex.html" . }}
 </head>
