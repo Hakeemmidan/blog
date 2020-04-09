@@ -1,10 +1,9 @@
 <!-- Title Tags -->
-<title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
 
 <!-- Description Tags -->
 <meta name="description" content="{{ .Params.description }}" />
@@ -21,7 +20,6 @@
 
 <!-- Date Tags -->
 <meta property="og:updated_time" content={{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
-Sitemap & RSS Feed Tags
 <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
 {{ with .OutputFormats.Get "RSS" }}
 <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
