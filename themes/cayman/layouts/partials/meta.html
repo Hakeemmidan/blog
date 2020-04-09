@@ -6,10 +6,12 @@
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
 <!-- Description Tags -->
-<meta name="description" content="{{ .Params.description}}" />
-<meta itemprop="description" content="{{ .Params.description }}" />
-<meta property="og:description" content="{{ .Params.description }}" />
-<meta name="twitter:description" content="{{ .Params.description }}" />
+{{ if .Params.description }}
+  <meta name="description" content="{{ .Params.description}}" />
+  <meta itemprop="description" content="{{ .Params.description }}" />
+  <meta property="og:description" content="{{ .Params.description }}" />
+  <meta name="twitter:description" content="{{ .Params.description }}" />
+{{ end }}
 
 <!-- Link Tags -->
 <base href="{{ .Permalink }}">
