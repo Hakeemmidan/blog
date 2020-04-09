@@ -6,7 +6,7 @@
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
 <!-- Description Tags -->
-<meta name="description" content="{{ .Params.description }}" />
+<meta name="description" content="{{ .Params.description}}" />
 <meta itemprop="description" content="{{ .Params.description }}" />
 <meta property="og:description" content="{{ .Params.description }}" />
 <meta name="twitter:description" content="{{ .Params.description }}" />
@@ -19,7 +19,6 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 
 <!-- Date Tags -->
-<meta property="og:updated_time" content={{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
 <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
 {{ with .OutputFormats.Get "RSS" }}
 <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
