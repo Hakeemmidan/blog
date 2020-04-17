@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</title>
+      <link>/css-hover-on-mobile/</link>
+      <pubDate>Thu, 16 Apr 2020 21:58:27 -0700</pubDate>
+      
+      <guid>/css-hover-on-mobile/</guid>
+      <description>Problem The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:
+ Click image to play GIF   How to Fix It Using the &amp;lsquo;hover&amp;rsquo; CSS media query, which could be applied either through SCSS or CSS. In the case of SCSS (or Sass), we&amp;rsquo;re going to use a mixin.
+Here is each solution respectively:
+Solution 1: Sass Mixin The mixin:</description>
+    </item>
+    
+    <item>
       <title>Choosing a Static Website Generator: Hugo vs. Jekyll</title>
       <link>/hugo-vs-jekyll/</link>
       <pubDate>Mon, 23 Mar 2020 23:37:28 -0700</pubDate>
