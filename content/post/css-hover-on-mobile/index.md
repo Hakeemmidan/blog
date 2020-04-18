@@ -1,6 +1,6 @@
 ---
 title: "How to Prevent CSS Hover State From Getting stuck on Mobile Browsers"
-description: "How to make the CSS hover state from getting stuck on mobile browsers using CSS or Sass mixins"
+description: "How to make the CSS hover state from getting stuck on mobile browsers using CSS or SCSS mixins"
 date: 2020-04-16T21:58:27-07:00
 draft: false
 tags: ['css']
@@ -21,11 +21,11 @@ options="400x" >}}
 
 ## How to Fix It
 
-Using the ['hover' CSS media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover), which could be applied either through SCSS or CSS. In the case of SCSS (or Sass), we're going to use a [mixin](https://sass-lang.com/documentation/at-rules/mixin).
+Using the ['hover' CSS media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover), which could be applied either through SCSS or CSS. In the case of SCSS, we're going to use a [mixin](https://sass-lang.com/documentation/at-rules/mixin).
 
 Here is each solution respectively:
 
-### Solution 1: Sass Mixin
+### Solution 1: SCSS Mixin
 
 The mixin:
 ```SCSS

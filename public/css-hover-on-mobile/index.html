@@ -25,10 +25,10 @@
 
 
 
-  <meta name="description" content="How to make the CSS hover state from getting stuck on mobile browsers using CSS or Sass mixins" />
-  <meta itemprop="description" content="How to make the CSS hover state from getting stuck on mobile browsers using CSS or Sass mixins" />
-  <meta property="og:description" content="How to make the CSS hover state from getting stuck on mobile browsers using CSS or Sass mixins" />
-  <meta name="twitter:description" content="How to make the CSS hover state from getting stuck on mobile browsers using CSS or Sass mixins" />
+  <meta name="description" content="How to make the CSS hover state from getting stuck on mobile browsers using CSS or SCSS mixins" />
+  <meta itemprop="description" content="How to make the CSS hover state from getting stuck on mobile browsers using CSS or SCSS mixins" />
+  <meta property="og:description" content="How to make the CSS hover state from getting stuck on mobile browsers using CSS or SCSS mixins" />
+  <meta name="twitter:description" content="How to make the CSS hover state from getting stuck on mobile browsers using CSS or SCSS mixins" />
 
 
 
@@ -93,6 +93,7 @@
 
   <section class="main-content">
     
+  
   <h1>How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</h1>
   <h2 id="problem">Problem</h2>
 <p>The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:</p>
@@ -120,9 +121,9 @@
 </figure>
 
 <h2 id="how-to-fix-it">How to Fix It</h2>
-<p>Using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover">&lsquo;hover&rsquo; CSS media query</a>, which could be applied either through SCSS or CSS. In the case of SCSS (or Sass), we&rsquo;re going to use a <a href="https://sass-lang.com/documentation/at-rules/mixin">mixin</a>.</p>
+<p>Using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover">&lsquo;hover&rsquo; CSS media query</a>, which could be applied either through SCSS or CSS. In the case of SCSS, we&rsquo;re going to use a <a href="https://sass-lang.com/documentation/at-rules/mixin">mixin</a>.</p>
 <p>Here is each solution respectively:</p>
-<h3 id="solution-1-sass-mixin">Solution 1: Sass Mixin</h3>
+<h3 id="solution-1-scss-mixin">Solution 1: SCSS Mixin</h3>
 <p>The mixin:</p>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SCSS" data-lang="SCSS"><span style="color:#008000;font-weight:bold">@mixin</span><span style="color:#00f"> hover-supported</span> {    
     <span style="color:#008000;font-weight:bold">@media</span> (hover<span style="color:#666">:</span> hover) { 
@@ -220,38 +221,38 @@
   <meta property="article:published_time" content=2020-04-16T21:58:27-0700 />
 
   
-    <script defer type="application/ld+json">
-        {
-          "@context": "http://schema.org",
-          "@type": "Article",
-          "mainEntityOfPage": {
-             "@type": "WebPage",
-             "@id": ""
-          },
-          "name" : "How to Prevent CSS Hover State From Getting stuck on Mobile Browsers",
-          "headline" : "How to Prevent CSS Hover State From Getting stuck on Mobile Browsers",
-          "description": "How to make the CSS hover state from getting stuck on mobile browsers using CSS or Sass mixins",
-          "author": {
-            "@type": "Person",
-            "name": "Hakeem Almidan"
-          },
-          "datePublished": "2020-04-16",
-          "wordCount":  152 ,
-          "mainEntityOfPage": "True",
-          "datePublished": "2020-04-16",
-          "dateModified": "2020-04-16",
-          "url" : "\/css-hover-on-mobile\/",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Hakeem Almidan"
-          },
-          "articleBody": "Problem The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:\n Click image to play GIF   How to Fix It Using the \x26lsquo;hover\x26rsquo; CSS media query, which could be applied either through SCSS or CSS. In the case of SCSS (or Sass), we\x26rsquo;re going to use a mixin.\nHere is each solution respectively:\nSolution 1: Sass Mixin The mixin:\n@mixinhover-supported { @media (hover: hover) { @content; } } Example use:\n.example { @includehover-supported() { \x26amp;:hover { background-color: black; } } } Solution 2: CSS Example use:\n@media (hover: hover) { .example:hover { background-color: black; } } Explanation Both examples change the background-color of HTML elements with class example only when they\x26rsquo;re hovered-over on non-touch screen devices (or any hover supported device). In other words, this applies hover styling on only non-touch screen devices.\nPS: I\x26rsquo;m not sure how this would act on touch-screen laptops.\n",
-          "articleSection": "Problem The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:\n Click image to play GIF   How to Fix It Using the \x26lsquo;hover\x26rsquo; CSS media query, which could be applied either through SCSS or CSS. In the case of SCSS (or Sass), we\x26rsquo;re going to use a mixin.\nHere is each solution respectively:\nSolution 1: Sass Mixin The mixin:",
-          "keywords" : [ "css",
-                        "programming",
-                         "Blog" ]
-        }
-    </script>
+  <script defer type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": ""
+        },
+        "name" : "How to Prevent CSS Hover State From Getting stuck on Mobile Browsers",
+        "headline" : "How to Prevent CSS Hover State From Getting stuck on Mobile Browsers",
+        "description": "How to make the CSS hover state from getting stuck on mobile browsers using CSS or SCSS mixins",
+        "author": {
+          "@type": "Person",
+          "name": "Hakeem Almidan"
+        },
+        "datePublished": "2020-04-16",
+        "wordCount":  150 ,
+        "mainEntityOfPage": "True",
+        "datePublished": "2020-04-16",
+        "dateModified": "2020-04-16",
+        "url" : "\/css-hover-on-mobile\/",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Hakeem Almidan"
+        },
+        "articleBody": "Problem The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:\n Click image to play GIF   How to Fix It Using the \x26lsquo;hover\x26rsquo; CSS media query, which could be applied either through SCSS or CSS. In the case of SCSS, we\x26rsquo;re going to use a mixin.\nHere is each solution respectively:\nSolution 1: SCSS Mixin The mixin:\n@mixinhover-supported { @media (hover: hover) { @content; } } Example use:\n.example { @includehover-supported() { \x26amp;:hover { background-color: black; } } } Solution 2: CSS Example use:\n@media (hover: hover) { .example:hover { background-color: black; } } Explanation Both examples change the background-color of HTML elements with class example only when they\x26rsquo;re hovered-over on non-touch screen devices (or any hover supported device). In other words, this applies hover styling on only non-touch screen devices.\nPS: I\x26rsquo;m not sure how this would act on touch-screen laptops.\n",
+        "articleSection": "Problem The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:\n Click image to play GIF   How to Fix It Using the \x26lsquo;hover\x26rsquo; CSS media query, which could be applied either through SCSS or CSS. In the case of SCSS, we\x26rsquo;re going to use a mixin.\nHere is each solution respectively:\nSolution 1: SCSS Mixin The mixin:\n@mixinhover-supported { @media (hover: hover) { @content; } } Example use:",
+        "keywords" : [ "css",
+                      "programming",
+                        "Blog" ]
+      }
+  </script>
 
     <footer class="site-footer">
   <span class="site-footer-credits">
