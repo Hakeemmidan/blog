@@ -1,5 +1,6 @@
 ---
 title: "Projects"
+description: "Projects of Abdulhakeem (Hakeem) Almidan. Made with technologies ranging from Ruby on Rails, Express, React, Redux, CSS, Sass, and many others"
 date: 2020-03-03T17:12:28-08:00
 draft: false
 ---

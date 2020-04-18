@@ -1,5 +1,6 @@
 ---
 title: "About"
+description: "The about page of Abdulhakeem (Hakeem) Almidan's website. This page inludes online presence links, contact information, and a general of introduction of Abdulhakeem (Hakeem) Almidan"
 draft: false
 ---
 
