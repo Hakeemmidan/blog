@@ -4,5 +4,5 @@
     - Read more about lookup order [here](https://gohugobrasil.netlify.com/templates/taxonomy-templates/)
 
 - You can print the currnet context that you're in using
-  - ``<script>console.log({{ . }})</script>``
+  - `<script>console.log({{ . }})</script>`
     - This will be avilable in console of browser
