@@ -17,4 +17,15 @@
     </li>        
     {{ end }}
   </ul>
+
+  <!-- Structured Data Markup (used for SEO) -->
+  <script defer type="application/ld+json">
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "{{ .Permalink }}",
+      "name": "{{ .Title }}",
+      "description": {{ or .Description .Summary }}
+    }
+  </script>
 {{ end }}
