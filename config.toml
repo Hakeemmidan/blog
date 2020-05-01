@@ -65,10 +65,6 @@ pygmentsStyle = "pygments"
     url = "/"
     weight = 1
   [[menu.nav]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 2
-  [[menu.nav]]
     name = "About"
     url = "/about/"
     weight = 3
