@@ -37,6 +37,9 @@ You can find me on:
   </span>
 {{</ rawhtml >}}
 
+### Resume
+[link](https://hakeemmidan.github.io/resume/)
+
 ### Contact
 Hakeemmidan@gmail.com
 
