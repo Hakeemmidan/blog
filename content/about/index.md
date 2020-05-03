@@ -5,11 +5,11 @@ draft: false
 ---
 
 Hi,
-I’m Hakeem. I have experience building full-stack applications in many languages and frameworks. What I've learned over time is that the main mental challenge often lies in the logic behind what you are building, and not in the language/framework itself.
+I’m Abdulhakeem. You can call me Hakeem. I have experience building full-stack applications in many languages and frameworks. What I’ve learned over time is that the main mental challenge often lies in the logic behind what you're building, and not in the language/framework itself.
 
 Outside of work, I enjoy painting, playing volleyball, soccer, scuba diving, and hanging out with friends. I also enjoy reading about business and finance.
 
-I am currently looking for software engineering and finance positions and I would love to hear about your company!
+I'm currently looking for software engineering and finance positions and I'd love to hear about your company!
 
 You can find me on:
 
