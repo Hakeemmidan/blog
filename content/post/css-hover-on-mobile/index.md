@@ -14,7 +14,7 @@ The CSS hover state often gets stuck on mobile (touch screen) browsers. It would
 
 {{< figure
 img="example-sticky-hover.gif"
-caption="Click image to play GIF"
+caption="(click image to play GIF)"
 command="Resize"
 options="400x" >}}
 
