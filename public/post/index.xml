@@ -18,7 +18,7 @@
       
       <guid>/css-hover-on-mobile/</guid>
       <description>Problem The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:
- Click image to play GIF   How to Fix It Using the &amp;lsquo;hover&amp;rsquo; CSS media query, which could be applied either through SCSS or CSS. In the case of SCSS, we&amp;rsquo;re going to use a mixin.
+ (click image to play GIF)   How to Fix It Using the &amp;lsquo;hover&amp;rsquo; CSS media query, which could be applied either through SCSS or CSS. In the case of SCSS, we&amp;rsquo;re going to use a mixin.
 Here is each solution respectively:
 Solution 1: SCSS Mixin The mixin:
 @mixinhover-supported { @media (hover: hover) { @content; } } Example use:</description>

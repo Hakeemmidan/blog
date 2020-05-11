@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/</loc>
+    <lastmod>2020-04-16T21:58:27-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2020-04-16T21:58:27-07:00</lastmod>
   </url>
@@ -45,16 +50,6 @@
   <url>
     <loc>/tags/jekyll/</loc>
     <lastmod>2020-03-23T23:37:28-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-03-03T17:12:28-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/projects/</loc>
-    <lastmod>2020-03-03T17:12:28-08:00</lastmod>
   </url>
   
   <url>
