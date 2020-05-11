@@ -6,8 +6,8 @@
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
 <!-- Description Tags -->
-{{ if or .Params.description .Summary }}
-  <meta name="description" content="{{ or ( .Params.description + " " + .Summary) .Summary}}" />
+{{ if or (and .Params.description .Summary) .Summary }}
+  <meta name="description" content="{{ or ( .Params.description + " => " + .Summary) .Summary}}" />
   <meta itemprop="description" content="{{ or ( .Params.description + " " + .Summary) .Summary }}" />
   <meta property="og:description" content="{{ or ( .Params.description + " " + .Summary) .Summary }}" />
   <meta name="twitter:description" content="{{ or ( .Params.description + " " + .Summary) .Summary }}" />
