@@ -6,10 +6,20 @@
     <description>Recent content in programming on Hakeem Almidan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2020 21:58:27 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 17:15:02 -0700</lastBuildDate>
     
 	<atom:link href="/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SCSS Animation Mixin</title>
+      <link>/scss-animation-mixin/</link>
+      <pubDate>Tue, 05 May 2020 17:15:02 -0700</pubDate>
+      
+      <guid>/scss-animation-mixin/</guid>
+      <description>Problem The slightest change in CSS animations (@keyframes) requires a creation of a new animation.
+Problem Example @keyframes to-yellow { 50% { background-color: yellow; } } @keyframes to-skyblue { 50% { background-color: skyblue; } } Both of the animations pretty much do the same thing, but we had to create two of them. We had to create two of them because their property (background-color) had different values (i.e. yellow and skyblue).</description>
+    </item>
     
     <item>
       <title>How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</title>

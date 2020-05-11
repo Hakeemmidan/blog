@@ -2,7 +2,7 @@
 title: "SCSS Animation Mixin"
 description: "How to create an Scss/Sass animation mixin. We do this to follow DRY software development principle, and make our code more easily readable."
 date: 2020-05-05T17:15:02-07:00
-draft: true
+draft: false
 tags: ['css', 'scss']
 categories: ['programming']
 references: ['https://stackoverflow.com/a/40186624/7974948']

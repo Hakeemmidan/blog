@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Hakeem Almidan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2020 21:58:27 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 17:15:02 -0700</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>css</title>
       <link>/tags/css/</link>
-      <pubDate>Thu, 16 Apr 2020 21:58:27 -0700</pubDate>
+      <pubDate>Tue, 05 May 2020 17:15:02 -0700</pubDate>
       
       <guid>/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scss</title>
+      <link>/tags/scss/</link>
+      <pubDate>Tue, 05 May 2020 17:15:02 -0700</pubDate>
+      
+      <guid>/tags/scss/</guid>
       <description></description>
     </item>
     
