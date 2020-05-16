@@ -1,9 +1,9 @@
 ---
 title: "How to Prevent CSS Hover State From Getting stuck on Mobile Browsers"
-description: "How to make the CSS hover state from getting stuck on mobile browsers using CSS or SCSS mixins"
+description: "How to make the CSS hover state from getting stuck on mobile browsers using CSS or SCSS mixins."
 date: 2020-04-16T21:58:27-07:00
 draft: false
-tags: ['css']
+tags: ['css', 'scss']
 categories: ['programming']
 references: ['https://stackoverflow.com/a/28058919/7974948']
 ---
