@@ -6,10 +6,21 @@
     <description>Recent content in Blog on Hakeem Almidan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2020 21:58:27 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2020 21:07:40 +0300</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why do puffins often have mutliple fish in their beaks at once?</title>
+      <link>/puffin-multiple-fish-in-beak-wonder/</link>
+      <pubDate>Fri, 24 Jul 2020 21:07:40 +0300</pubDate>
+      
+      <guid>/puffin-multiple-fish-in-beak-wonder/</guid>
+      <description>Have you ever noticed that puffins often simultaneously carry multiple fish in their beaks at once?
+It&amp;rsquo;d be something like this:  Source   I thought this was interesting, and I had so many questions, including:
+ Do they catch them all in one scoop? How come the fish are so organized? Do they hide their food while catching other fish? Why do other birds not steal them? Is this a &amp;lsquo;flex&amp;rsquo;?</description>
+    </item>
     
     <item>
       <title>How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</title>
