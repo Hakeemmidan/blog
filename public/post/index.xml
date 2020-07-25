@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Hakeem Almidan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 May 2020 17:15:02 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2020 21:07:40 +0300</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,14 @@
       <guid>/scss-animation-mixin/</guid>
       <description>Problem The slightest change in CSS animations (@keyframes) requires a creation of a new animation.
 Problem Example @keyframes to-yellow { 50% { background-color: yellow; } } @keyframes to-skyblue { 50% { background-color: skyblue; } } Both of the animations pretty much do the same thing, but we had to create two of them. We had to create two of them because their property (background-color) had different values (i.e. yellow and skyblue).</description>
+      <title>Why do puffins often have mutliple fish in their beaks at once?</title>
+      <link>/puffin-multiple-fish-in-beak-wonder/</link>
+      <pubDate>Fri, 24 Jul 2020 21:07:40 +0300</pubDate>
+      
+      <guid>/puffin-multiple-fish-in-beak-wonder/</guid>
+      <description>Have you ever noticed that puffins often simultaneously carry multiple fish in their beaks at once?
+It&amp;rsquo;d be something like this:  Source   I thought this was interesting, and I had so many questions, including:
+ Do they catch them all in one scoop? How come the fish are so organized? Do they hide their food while catching other fish? Why do other birds not steal them? Is this a &amp;lsquo;flex&amp;rsquo;?</description>
     </item>
     
     <item>
