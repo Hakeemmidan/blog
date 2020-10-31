@@ -1,60 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hakeem Almidan</title>
-    <link>/tags/</link>
+    <link>http://hakeem-almidan.com/tags/</link>
     <description>Recent content in Tags on Hakeem Almidan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-GB</language>
     <lastBuildDate>Fri, 24 Jul 2020 21:07:40 +0300</lastBuildDate>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>birds</title>
-      <link>/tags/birds/</link>
-      <pubDate>Fri, 24 Jul 2020 21:07:40 +0300</pubDate>
-      
-      <guid>/tags/birds/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>css</title>
-      <link>/tags/css/</link>
-      <pubDate>Tue, 05 May 2020 17:15:02 -0700</pubDate>
-      
-      <guid>/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>scss</title>
-      <link>/tags/scss/</link>
-      <pubDate>Tue, 05 May 2020 17:15:02 -0700</pubDate>
-      
-      <guid>/tags/scss/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>/tags/hugo/</link>
-      <pubDate>Mon, 23 Mar 2020 23:37:28 -0700</pubDate>
-      
-      <guid>/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jekyll</title>
-      <link>/tags/jekyll/</link>
-      <pubDate>Mon, 23 Mar 2020 23:37:28 -0700</pubDate>
-      
-      <guid>/tags/jekyll/</guid>
-      <description></description>
-    </item>
+    <atom:link href="http://hakeem-almidan.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

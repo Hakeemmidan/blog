@@ -52,13 +52,13 @@ Popular themes are sometimes available under both technologies. So if you see a 
 ## Hugo vs. Jekyll: Speed
 One of the main differences between Hugo and Jekyll is their speed. Looking at [this](https://forestry.io/blog/hugo-vs-jekyll-benchmark/) benchmarking test, it is said that Hugo is "... between 23 and 63 times faster than Jekyll" (Macrae, 2018) in terms of build time. This becomes more apparent as the number of pages grows. Here's a graph demonstrating the difference:
 
-
 {{< figure
-img="hugo-vs-jekyll-speed-graph.png" 
-caption="[Source](https://forestry.io/blog/hugo-vs-jekyll-benchmark/)" 
-command="Resize" 
-options="700x" >}}
-
+src="hugo-vs-jekyll-speed-graph.png" 
+link="hugo-vs-jekyll-speed-graph.png"
+alt="Column graph of build times by Hugo and Jekyll as page number increases"
+attr="Build time difference on page number increase ([Source](https://forestry.io/blog/hugo-vs-jekyll-benchmark/))"
+class="center"
+>}}
 
 ## Hugo vs. Jekyll: The learning curve
 - **Hugo's docs are harder to follow:** As pointed out by Ben Congdon in [his blog](https://benjamincongdon.me/blog/2018/06/06/Switching-from-Jekyll-to-Hugo/), Hugo follows a [top-down engineering](https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design) approach, where it tries to provide everything a user may need. While Jekyll, on the other hand, follows a [bottom-up](https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design) approach where it provides minimal tools and lets you build the rest. This makes Hugo a little harder to learn. I personally found its documentation to be a little overwhelming. Jekyll's documentation was much easier to read, navigate, and follow.
@@ -70,10 +70,12 @@ options="700x" >}}
 It may be important to note that according to [this](https://hired.com/state-of-software-engineers) report by [Hired.com](https://hired.com/home), programmers experienced with Go had the most interview requests on their platform (in 2019). Here's a graph demonstrating this further:
 
 {{< figure
-img="hired-most-demand-langs.png" 
-caption="[Source](https://hired.com/state-of-software-engineers)" 
-command="Resize" 
-options="700x" >}}
+src="hired-most-demand-langs.png" 
+link="hired-most-demand-langs.png" 
+alt="Graph of most in demand programming languages provided by Hired"
+attr="Most in demand programming languages of 2019 ([Source](https://hired.com/state-of-software-engineers))"
+class="center"
+>}}
 
 So if you are currently looking for a job (like I am), it may be worth it to look into Go, and how it may help you grow as a programmer. In case you do want to check it out, I think going through [this interactive tutorial](https://tour.golang.org/welcome/1) provided by the language's official website may be a good way to start.
 

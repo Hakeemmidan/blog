@@ -13,11 +13,12 @@ references: ['https://stackoverflow.com/a/28058919/7974948']
 The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:
 
 {{< figure
-img="example-sticky-hover.gif"
-caption="(click image to play GIF)"
-command="Resize"
-options="400x" >}}
-
+src="example-sticky-hover.gif"
+link="example-sticky-hover.gif"
+alt="GIF of clicking on link and css hover state getting stuck"
+attr="Hover state getting stuck on-click on mobile"
+class="center"
+>}}
 
 ## How to Fix It
 

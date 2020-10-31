@@ -22,10 +22,11 @@ Have you ever noticed that puffins often simultaneously carry multiple fish in t
 
 It'd be something like this:
 {{< figure
-img="puffin-w-fish-in-mouth.jpg" 
-caption="[Source](https://ocean.si.edu/ocean-life/seabirds/watching-fish-puffins-beak)" 
-command="Resize" 
-options="600x" >}}
+src="puffin-w-fish-in-mouth.jpg" 
+link="puffin-w-fish-in-mouth.jpg" 
+alt="Puffin with multiple fish in beak"
+attr="Puffin with multiple fish in beak ([Source](https://ocean.si.edu/ocean-life/seabirds/watching-fish-puffins-beak))"
+>}}
 
 I thought this was interesting, and I had so many questions, including:
 - [Do they catch them all in one scoop?](#do-they-catch-them-all-in-one-scoop)
@@ -69,9 +70,11 @@ ___
 While looking into this, I found out that there's another type of bird that stacks fish in their beak! The bird's name is the Razorbill (a.k.a. Alca torda). Here is a picture of it carrying fish like a puffin:
 
 {{< figure
-img="razorbill-w-fish-in-mouth.jpg" 
-caption="[Source](http://www.oiseaux-birds.com/page-family-alcidae.html)" 
-command="Resize" 
-options="400x" >}}
+src="razorbill-w-fish-in-mouth.jpg" 
+link="razorbill-w-fish-in-mouth.jpg"
+alt="Razorbill with multiple fish in beak" 
+attr="Razorbill with multiple fish in beak ([Source](http://www.oiseaux-birds.com/page-family-alcidae.html))"
+class="center"
+>}}
 
 But according to [this study](https://www.int-res.com/abstracts/meps/v520/p257-267/) (the same Oxford study mentioned above) puffins do tend to carry more fish overall. Razorbills can carry 2 to 10 fish, whereas puffins can carry up to 50!
