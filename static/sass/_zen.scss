@@ -1,0 +1,13 @@
+figure {
+  &.image {
+    figcaption {
+      p {
+        text-align: center;
+        color: gray;
+        a {
+          color: gray;
+        }
+      }
+    }
+  }
+}
