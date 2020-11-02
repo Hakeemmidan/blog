@@ -853,4 +853,10 @@ figure.podcast audio {
 .js-submitted textarea:invalid {
   background-color: #fff0f0; }
 
+figure.image figcaption p {
+  text-align: center;
+  color: gray; }
+  figure.image figcaption p a {
+    color: gray; }
+
 /*# sourceMappingURL=styles.css.map */
