@@ -11,9 +11,9 @@
     
     <item>
       <title>SCSS Animation Mixin</title>
-      <link>http://hakeem-almidan.com/post/scss-animation-mixin/</link>
+      <link>http://hakeem-almidan.com/posts/scss-animation-mixin/</link>
       <pubDate>Tue, 05 May 2020 17:15:02 -0700</pubDate>
-      <guid>http://hakeem-almidan.com/post/scss-animation-mixin/</guid>
+      <guid>http://hakeem-almidan.com/posts/scss-animation-mixin/</guid>
       <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;The slightest change in CSS animations (&lt;code&gt;@keyframes&lt;/code&gt;) requires a creation of a new animation.&lt;/p&gt;
 &lt;h4 id=&#34;problem-example&#34;&gt;Problem Example&lt;/h4&gt;
@@ -62,9 +62,9 @@ We had to create two of them because their property (&lt;code&gt;background-colo
     
     <item>
       <title>How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</title>
-      <link>http://hakeem-almidan.com/post/css-hover-on-mobile/</link>
+      <link>http://hakeem-almidan.com/posts/css-hover-on-mobile/</link>
       <pubDate>Thu, 16 Apr 2020 21:58:27 -0700</pubDate>
-      <guid>http://hakeem-almidan.com/post/css-hover-on-mobile/</guid>
+      <guid>http://hakeem-almidan.com/posts/css-hover-on-mobile/</guid>
       <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:&lt;/p&gt;
 &lt;figure class=&#34;image center&#34;&gt;

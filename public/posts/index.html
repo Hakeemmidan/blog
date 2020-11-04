@@ -4,16 +4,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Categories – Hakeem Almidan</title>
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://hakeem-almidan.com/categories/index.xml">
+<title>Posts – Hakeem Almidan</title>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://hakeem-almidan.com/posts/index.xml">
+<link rel="alternate" type="application/json" title="JSON" href="http://hakeem-almidan.com/posts/index.json">
 <meta name="description" content="">
 <meta name="created" content="2020-07-24T21:07:40+0300">
 <meta name="modified" content="2020-07-24T21:07:40+0300">
 
 <meta name="contact" content="info@example.org">
 <meta property="og:site_name" content="Hakeem Almidan">
-<meta property="og:title" content="Categories">
-<meta property="og:url" content="http://hakeem-almidan.com/categories/">
+<meta property="og:title" content="Posts">
+<meta property="og:url" content="http://hakeem-almidan.com/posts/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://hakeem-almidan.com/apple-touch-icon.png">
 <meta name="generator" content="Hugo 0.77.0" />
@@ -21,7 +22,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-<link rel="canonical" href="http://hakeem-almidan.com/categories/">
+<link rel="canonical" href="http://hakeem-almidan.com/posts/">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <link rel="stylesheet" href="/css/mobile.2ab74aa64785dcab8114959e76ca140cf76207cd85989bc6d4fc3b12f734a09e.css" media="screen">
@@ -32,8 +33,8 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "url" : "http://hakeem-almidan.com/categories/",
-    "name": "Categories",
+    "url" : "http://hakeem-almidan.com/posts/",
+    "name": "Posts",
     "description": "The zen theme for Hugo example site.",
     "image" : "http://hakeem-almidan.com/apple-touch-icon.png",
     "mainEntityOfPage": {
@@ -76,36 +77,71 @@
 <ul class="navbar">
 <li><a href="/">Home</a></li>
 <li><a href="/about/">About</a></li>
-<li><a href="/posts/">Posts</a></li>
+<li><a href="/posts/" class="active" aria-current="page">Posts</a></li>
 </ul>
 </nav>
 
 
 <main class="main layout__main">
-<h1 class="title">Categories</h1>
-<article class="section-categories list-view">
+<h1 class="title">Posts</h1>
+<article class="section-posts list-view">
 <header>
-<h2 class="title title-submitted"><a href="/categories/random/">random</a></h2>
+<h2 class="title title-submitted"><a href="/posts/puffin-multiple-fish-in-beak-wonder/">Why do puffins often have mutliple fish in their beaks at once?</a></h2>
 <div class="submitted">
 <time class="created-date" datetime="2020-07-24T21:07:40&#43;03:00">24 July, 2020</time>
 </div>
 
 </header>
 <div class="content">
-
+Have you ever noticed that puffins often simultaneously carry multiple fish in their beaks at once?
+It&rsquo;d be something like this:   Puffin with multiple fish in beak (Source)
+  I thought this was interesting, and I had so many questions, including:
+ Do they catch them all in one scoop? How come the fish are so organized? Do they hide their food while catching other fish? Why do other birds not steal them?
 </div>
 </article>
 
-<article class="section-categories list-view">
+<article class="section-posts list-view">
 <header>
-<h2 class="title title-submitted"><a href="/categories/programming/">programming</a></h2>
+<h2 class="title title-submitted"><a href="/posts/scss-animation-mixin/">SCSS Animation Mixin</a></h2>
 <div class="submitted">
 <time class="created-date" datetime="2020-05-05T17:15:02-07:00">5 May, 2020</time>
 </div>
 
 </header>
 <div class="content">
+Problem The slightest change in CSS animations (@keyframes) requires a creation of a new animation.
+Problem Example @keyframes to-yellow { 50% { background-color: yellow; } } @keyframes to-skyblue { 50% { background-color: skyblue; } } Both of the animations pretty much do the same thing, but we had to create two of them. We had to create two of them because their property (background-color) had different values (i.e. yellow and skyblue).
+</div>
+</article>
 
+<article class="section-posts list-view">
+<header>
+<h2 class="title title-submitted"><a href="/posts/css-hover-on-mobile/">How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</a></h2>
+<div class="submitted">
+<time class="created-date" datetime="2020-04-16T21:58:27-07:00">16 April, 2020</time>
+</div>
+
+</header>
+<div class="content">
+Problem The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:
+  Hover state getting stuck on-click on mobile
+  How to Fix It Using the &lsquo;hover&rsquo; CSS media query, which could be applied either through SCSS or CSS. In the case of SCSS, we&rsquo;re going to use a mixin.
+Here is each solution respectively:
+Solution 1: SCSS Mixin The mixin:
+</div>
+</article>
+
+<article class="section-posts list-view">
+<header>
+<h2 class="title title-submitted"><a href="/posts/hugo-vs-jekyll/">Choosing a Static Website Generator: Hugo vs. Jekyll</a></h2>
+<div class="submitted">
+<time class="created-date" datetime="2020-03-23T23:37:28-07:00">23 March, 2020</time>
+</div>
+
+</header>
+<div class="content">
+What are static websites? In simple terms, static websites are a collection of webpages that have fixed content. They are the most basic type of website and are typically considered the easiest to create.
+These websites are considered the easiest to create because they have a low barrier of entry. They are usually not connected to a backend or a database, so the only thing that you will need to manage is the frontend.
 </div>
 </article>
 
@@ -115,7 +151,7 @@
 
 <aside class="sidebar layout__second-sidebar">
 <section>
-<h4 class="menu"><a href="/posts/">Posts</a></h4>
+<h4 class="menu"><a href="/posts/" class="active" aria-current="page">Posts</a></h4>
 <ul class="menu">
 <li><a href="/posts/puffin-multiple-fish-in-beak-wonder/">Why do puffins often have mutliple fish in their beaks at once?</a></li>
 <li><a href="/posts/scss-animation-mixin/">SCSS Animation Mixin</a></li>
@@ -125,7 +161,7 @@
 </section>
 </aside>
 <footer class="footer layout__footer">
-<p>Subscribe to section categories: <a rel="alternate" type="application/rss&#43;xml" href="http://hakeem-almidan.com/categories/index.xml">RSS</a></p>
+<p>Subscribe to section posts: <a rel="alternate" type="application/rss&#43;xml" href="http://hakeem-almidan.com/posts/index.xml">RSS</a> | <a rel="alternate" type="application/json" href="http://hakeem-almidan.com/posts/index.json">JSON</a></p>
 <p><!-- raw HTML omitted --></p>
 <p>Powered by <a href="https://gohugo.io/">Hugo</a> and the <a href="https://github.com/frjo/hugo-theme-zen">Zen theme</a>.</p>
 
@@ -144,7 +180,7 @@
     <ul class="mobile-nav__navbar">
     <li><a href="/">Home</a></li>
     <li><a href="/about/">About</a></li>
-    <li><a href="/posts/">Posts</a></li>
+    <li><a href="/posts/" class="active" aria-current="page">Posts</a></li>
     </ul>
     </nav>
   </div>

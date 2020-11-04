@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<script>console.log({"Lang":"en","LanguageName":"","LanguageDirection":"","Title":"","Weight":0,"Disabled":false,"ContentDir":"","Cfg":{}})</script>
+<html class="nojs" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Choosing a Static Website Generator: Hugo vs. Jekyll – Hakeem Almidan</title>
+<meta name="description" content="What are static websites? In simple terms, static websites are a collection of webpages that have fixed content. They are the most basic type of website and are typically …">
+<meta name="created" content="2020-03-23T23:37:28-0700">
+<meta name="modified" content="2020-03-23T23:37:28-0700">
+
+<meta name="contact" content="info@example.org">
+<meta property="og:site_name" content="Hakeem Almidan">
+<meta property="og:title" content="Choosing a Static Website Generator: Hugo vs. Jekyll">
+<meta property="og:url" content="http://hakeem-almidan.com/posts/hugo-vs-jekyll/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="http://hakeem-almidan.com/apple-touch-icon.png">
+<meta name="generator" content="Hugo 0.77.0" />
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+
+<link rel="canonical" href="http://hakeem-almidan.com/posts/hugo-vs-jekyll/">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link rel="stylesheet" href="/css/mobile.2ab74aa64785dcab8114959e76ca140cf76207cd85989bc6d4fc3b12f734a09e.css" media="screen">
+<link rel="stylesheet" href="/css/styles.ce5715105f223f001881b8fa7926a9d00c05bd0afd8820b88d2ba81abd8ad7fb.css">
+<link rel="stylesheet" href="/css/print.27fc184f8670f41a2690985390779e7b20335a8fadff8fa015cf9417ffe50c36.css" media="print">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "headline": "Choosing a Static Website Generator: Hugo vs. Jekyll",
+    "datePublished": "2020-03-23T23:37:28-07:00",
+    "dateModified": "2020-03-23T23:37:28-07:00",
+    "url" : "http://hakeem-almidan.com/posts/hugo-vs-jekyll/",
+    "description": "What are static websites? In simple terms, static websites are a collection of webpages that have fixed content. They are the most basic type of website and are typically …",
+    "keywords": ["hugo","jekyll"],
+    "image" : "http://hakeem-almidan.com/apple-touch-icon.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://hakeem-almidan.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hakeem Almidan",
+      "logo" : {
+        "@type": "ImageObject",
+        "url": "http://hakeem-almidan.com/apple-touch-icon.png"
+      },
+      "url": "http://hakeem-almidan.com/"
+    }
+  }
+</script>
+
+<script src="/js/script-early.min.a8d899ac88f2a778985767b86ce681945e3fa2069c3c9efd17e5e5b594d3ba1f.js"></script>
+<script defer src="/js/lib/umbrella.min.b426107371d121c9a56a27aac9e9058ff592a021e2f4c3c94827fe70920d3cbb.js"></script>
+<script defer src="/js/mobile.min.3a3510028bab9810834389725137cfa50f5d3231799ef9ac70769331fa59859a.js"></script>
+<script defer src="/js/script.min.f7f56769569fdf7a80d073b6775c6cd9ed8ae528864cd3f2aa1c8c3fe73f87ea.js"></script>
+
+
+</head>
+
+<body class="single-page">
+<div class="page layout__page layout__sidebar-second">
+<header class="header layout__header">
+<a href="/" title="Home" rel="home" class="header__logo"><img src="/images/logo.png" alt="Home" class="header__logo-image"></a>
+<h1 class="header__site-name">
+<a href="/" title="Home" class="header__site-link" rel="home"><span>Hakeem Almidan</span></a>
+</h1>
+<div class="region header__region">
+</div>
+</header>
+
+<nav class="main-menu layout__navigation">
+<h2 class="visually-hidden">Main menu</h2>
+<ul class="navbar">
+<li><a href="/">Home</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/posts/" class="active" aria-current="page">Posts</a></li>
+</ul>
+</nav>
+
+
+<main class="main layout__main">
+<article class="section-posts single-view">
+<header>
+<h1 class="title title-submitted">Choosing a Static Website Generator: Hugo vs. Jekyll</h1>
+<div class="submitted">
+<time class="created-date" datetime="2020-03-23T23:37:28-07:00">23 March, 2020</time>
+</div>
+<div class="tags">
+Tags:
+<ul>
+<li><a href="/tags/hugo">hugo</a></li>
+<li><a href="/tags/jekyll">jekyll</a></li>
+</ul>
+</div>
+</header>
+<div class="content">
+<h2 id="what-are-static-websites">What are static websites?</h2>
+<p>In simple terms, static websites are a collection of webpages that have fixed content. They are the most basic type of website and are typically considered the easiest to create.</p>
+<p>These websites are considered the easiest to create because they have a low barrier of entry. They are usually not connected to a <a href="https://en.wikipedia.org/wiki/Data_access_layer">backend</a> or a <a href="https://en.wikipedia.org/wiki/Database">database</a>, so the only thing that you will need to manage is the <a href="https://en.wikipedia.org/wiki/Presentation_layer">frontend</a>.</p>
+<p>Given that information, static websites look essentially the same for all users (because you wouldn&rsquo;t have user data to customize their experience). User data, like emails and <a href="https://en.wikipedia.org/wiki/Digest_access_authentication">password digests</a>, need a database for storage and are considered unsafe to store in the frontend.</p>
+<h2 id="why-pick-a-static-website-over-a-regular-dynamic-website">Why pick a static website over a &lsquo;regular&rsquo;, dynamic website?</h2>
+<p>Although static websites are cool and all, why should one choose them over dynamic (a.k.a. full-stack) websites? Here are the advantages that a static website holds over a dynamic one (generally speaking):</p>
+<ul>
+<li>
+<p><strong>Faster:</strong> Since static websites don&rsquo;t have a backend or a database, all the <a href="https://en.wikipedia.org/wiki/Web_hosting_service">web hosting server</a> has to do is serve the needed file. There will be no API calls to retrieve data from the database, so you&rsquo;re less likely to see any loading signs.</p>
+</li>
+<li>
+<p><strong>Cheaper:</strong> Hosting static websites is mostly free. They can be hosted on free web hosting services such as <a href="https://pages.github.com/">GitHub Pages</a>, <a href="https://www.netlify.com/">Netlify</a>, and others. The only cost that you&rsquo;re likely to face is for a custom domain name, and that&rsquo;s optional.</p>
+</li>
+<li>
+<p><strong>Safer:</strong> Since there&rsquo;s no backend or database, your site is less likely to be breached for private data. There&rsquo;s no opportunity to perform <a href="https://en.wikipedia.org/wiki/SQL_injection">SQL injection</a> and similar database attacks. I think it&rsquo;s good practice to assume that anything stored in your static website will be available to the public.</p>
+</li>
+</ul>
+<h2 id="when-should-i-choose-a-static-website-over-a-dynamic-one">When should I choose a static website over a dynamic one?</h2>
+<p>You should pick to choose a static website if your website doesn&rsquo;t allow users to make POST, PUT, PATCH, CONNECT or DELETE <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> requests. In other words, you should probably choose to use a static website if your users are not going to modify any of your website&rsquo;s data.</p>
+<h2 id="what-are-static-website-generators">What are static website <em>generators</em>?</h2>
+<p>Static website <em>generators</em> are exactly what they sound like. They&rsquo;re automated processes that help you produce static websites. These technologies differentiate themselves in different ways. But the main two differentiating themes are typically speed and customization.</p>
+<h2 id="picking-a-static-website-generator">Picking a static website generator</h2>
+<p>Here&rsquo;s a list of <a href="https://www.staticgen.com/">the most popular static site generators</a>. Currently, the top three are <a href="https://nextjs.org/">Next.js</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://nuxtjs.org/">Nuxt.js</a>. <a href="https://www.gatsbyjs.org/">Gatsby.js</a> is a pretty popular one too.</p>
+<p>Today, we&rsquo;re going to be talking about <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://gohugo.io/">Hugo</a>, how they differ, and why you may choose one over the other. But before we go on, you may be wondering: why are we not looking at something like Next or Nuxt since they&rsquo;re so popular? Well, although these technologies are great, I&rsquo;ve decided to avoid writing about them due to a few reasons, including the following:</p>
+<ul>
+<li>
+<p><strong>They&rsquo;re built on top of frameworks:</strong> Next is built on <a href="https://reactjs.org/">React.js</a>, and Nuxt is built on <a href="https://vuejs.org/">Vue.js</a>. So learning them would also mean that you&rsquo;re going to eventually learn the framework behind them. Hugo and Jekyll, on the other hand, are built on <a href="https://golang.org/">Go</a> and <a href="https://www.ruby-lang.org/en/">Ruby</a> (programming languages) respectively. So their barrier to entry is a bit lower.</p>
+</li>
+<li>
+<p><strong>They&rsquo;re often used as a part of full-stack applications:</strong> Next and Nuxt are typically used to optimize the frontend of full-stack applications (and are kind of built for that purpose). So browsing questions about them and reading their documentation may confuse you if you plan to use them to build pure static websites [that aren&rsquo;t connected to a backend or database in any way]. Hugo and Jekyll, in contrast, are mostly designed to create and maintain stand-alone static websites. So getting help for them may be easier.</p>
+</li>
+</ul>
+<h2 id="hugo-vs-jekyll-style-themes">Hugo vs. Jekyll: Style (themes)</h2>
+<p>You can pick a theme to build your website (rather than building it from scratch). Most themes are free and open-sourced. There are plenty of themes to choose from in both technologies.</p>
+<p>Popular themes are sometimes available under both technologies. So if you see a theme that you like with one technology, I would suggest searching for it in the other. Here are links to theme pages for each:</p>
+<ul>
+<li><a href="https://jekyllrb.com/docs/themes/">Jekyll themes</a> (under &ldquo;Pick up a theme&rdquo;)</li>
+<li><a href="https://themes.gohugo.io/">Hugo themes</a></li>
+</ul>
+<h2 id="hugo-vs-jekyll-speed">Hugo vs. Jekyll: Speed</h2>
+<p>One of the main differences between Hugo and Jekyll is their speed. Looking at <a href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/">this</a> benchmarking test, it is said that Hugo is &ldquo;&hellip; between 23 and 63 times faster than Jekyll&rdquo; (Macrae, 2018) in terms of build time. This becomes more apparent as the number of pages grows. Here&rsquo;s a graph demonstrating the difference:</p>
+<figure class="image center">
+<a href="hugo-vs-jekyll-speed-graph.png"><img src="hugo-vs-jekyll-speed-graph.png" alt="Column graph of build times by Hugo and Jekyll as page number increases"></a>
+<figcaption>
+<p>Build time difference on page number increase (<a href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/">Source</a>)</p>
+</figcaption>
+</figure>
+
+<h2 id="hugo-vs-jekyll-the-learning-curve">Hugo vs. Jekyll: The learning curve</h2>
+<ul>
+<li>
+<p><strong>Hugo&rsquo;s docs are harder to follow:</strong> As pointed out by Ben Congdon in <a href="https://benjamincongdon.me/blog/2018/06/06/Switching-from-Jekyll-to-Hugo/">his blog</a>, Hugo follows a <a href="https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design">top-down engineering</a> approach, where it tries to provide everything a user may need. While Jekyll, on the other hand, follows a <a href="https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design">bottom-up</a> approach where it provides minimal tools and lets you build the rest. This makes Hugo a little harder to learn. I personally found its documentation to be a little overwhelming. Jekyll&rsquo;s documentation was much easier to read, navigate, and follow.</p>
+</li>
+<li>
+<p><strong>Great communities with both:</strong> Although Jekyll (<a href="https://en.wikipedia.org/wiki/Jekyll_(software)">est. 2008</a>) has been around longer than Hugo (<a href="https://en.wikipedia.org/wiki/Hugo_(software)">est. 2013</a>), I found both to have great communities. I didn&rsquo;t have trouble finding answers for either of them.</p>
+</li>
+<li>
+<p><strong>Programming language familiarity:</strong> Depending on the programming languages you currently know, you may choose one technology over the other. As discussed, Jekyll is built on Ruby and Hugo is built on Go. If you&rsquo;re a beginner programmer, choosing Jekyll may be the easier route since Ruby is considered easier to learn than Go. If you&rsquo;re familiar with <a href="https://stackoverflow.com/a/1517670/7974948">statically typed programming</a> languages, then Hugo may be the better option for you, as Go is statically typed.</p>
+</li>
+</ul>
+<p>It may be important to note that according to <a href="https://hired.com/state-of-software-engineers">this</a> report by <a href="https://hired.com/home">Hired.com</a>, programmers experienced with Go had the most interview requests on their platform (in 2019). Here&rsquo;s a graph demonstrating this further:</p>
+<figure class="image center">
+<a href="hired-most-demand-langs.png"><img src="hired-most-demand-langs.png" alt="Graph of most in demand programming languages provided by Hired"></a>
+<figcaption>
+<p>Most in demand programming languages of 2019 (<a href="https://hired.com/state-of-software-engineers">Source</a>)</p>
+</figcaption>
+</figure>
+
+<p>So if you are currently looking for a job (like I am), it may be worth it to look into Go, and how it may help you grow as a programmer. In case you do want to check it out, I think going through <a href="https://tour.golang.org/welcome/1">this interactive tutorial</a> provided by the language&rsquo;s official website may be a good way to start.</p>
+<h2 id="hugo-vs-jekyll-when-to-use-what">Hugo vs. Jekyll: When to use what</h2>
+<ul>
+<li>
+<p><strong>Jekyll:</strong> I would recommend using Jekyll for building websites that don&rsquo;t exceed 500 pages in size (to avoid long build time). Look at <a href="https://developer.spotify.com/">Spotify for Developers</a>, <a href="https://www.twitchcon.com/">TwitchCon&rsquo;s website</a>, and <a href="https://www.sketch.com/">Sketch App&rsquo;s website</a> for Jekyll generated examples. More can be found on <a href="https://jekyllrb.com/showcase/">Jekyll&rsquo;s showcase page</a>.</p>
+</li>
+<li>
+<p><strong>Hugo:</strong> I would recommend Hugo for blogs, and for websites that you know are going to continue to grow in page count over time. Look at <a href="https://benjamincongdon.me/">Ben Congdon&rsquo;s website</a>, <a href="https://annadodson.co.uk/">Anna Dodson&rsquo;s website</a>, and <a href="https://www.pharmaseal.co/">Pharmaseal&rsquo;s website</a> for Hugo generated examples. More can be found on <a href="https://gohugo.io/showcase/">Hugo&rsquo;s showcase page</a>.</p>
+</li>
+</ul>
+<p>If you want to look at an even deeper comparison of the two technologies, I recommend <a href="https://forestry.io/blog/hugo-and-jekyll-compared/">this article</a> by <a href="https://forestry.io/">Forestry.io</a>.</p>
+
+
+</div>
+</article>
+</main>
+
+
+<aside class="sidebar layout__second-sidebar">
+<section>
+<h4 class="menu"><a href="/posts/" class="active" aria-current="page">Posts</a></h4>
+<ul class="menu">
+<li><a href="/posts/puffin-multiple-fish-in-beak-wonder/">Why do puffins often have mutliple fish in their beaks at once?</a></li>
+<li><a href="/posts/scss-animation-mixin/">SCSS Animation Mixin</a></li>
+<li><a href="/posts/css-hover-on-mobile/">How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</a></li>
+<li><a href="/posts/hugo-vs-jekyll/" class="active" aria-current="page">Choosing a Static Website Generator: Hugo vs. Jekyll</a></li>
+</ul>
+</section>
+</aside>
+<footer class="footer layout__footer">
+<p><!-- raw HTML omitted --></p>
+<p>Powered by <a href="https://gohugo.io/">Hugo</a> and the <a href="https://github.com/frjo/hugo-theme-zen">Zen theme</a>.</p>
+
+</footer>
+
+</div>
+<div class="mobile-nav" dir="ltr">
+  <div class="mobile-nav__cover"></div>
+  <a href="#navigation" class="mobile-nav__toggle" aria-haspopup="true" role="button">Menu</a>
+  <div class="mobile-nav__sheet">
+    <div class="mobile-nav__region">
+    
+    </div>
+    <nav class="mobile-nav__main-menu">
+    <h2 class="visually-hidden">Main menu</h2>
+    <ul class="mobile-nav__navbar">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/posts/" class="active" aria-current="page">Posts</a></li>
+    </ul>
+    </nav>
+  </div>
+</div>
+</body>
+</html>
