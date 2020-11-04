@@ -1,6 +1,6 @@
 title = "Hakeem Almidan"
 baseURL = "http://hakeem-almidan.com/"
-# theme = "zen"
+theme = "zen"
 languageCode = "en-GB"
 defaultContentLanguage = "en"
 pluralizelisttitles = false
@@ -39,7 +39,3 @@ mobileMenu = true
 poweredby = false
 sidebar = true
 submitted = true
-
-[module]
- [[module.imports]]
-   path = "github.com/Hakeemmidan/hugo-theme-zen"
