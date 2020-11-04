@@ -6,11 +6,6 @@
     "feed_url" : "http://hakeem-almidan.com/index.json",
     "icon" : "http://hakeem-almidan.com/apple-touch-icon.png",
     "favicon" : "http://hakeem-almidan.com/apple-touch-icon.png",
-    "author" : {
-        "name" : "Hakeem Almidan",
-        "url": "http://hakeem-almidan.com/",
-        "avatar": "http://hakeem-almidan.com/path/to/some-image.jpg"
-    },
     "items" : [
     {
         "title" : "Why do puffins often have mutliple fish in their beaks at once?",
