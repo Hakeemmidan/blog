@@ -853,10 +853,25 @@ figure.podcast audio {
 .js-submitted textarea:invalid {
   background-color: #fff0f0; }
 
+html {
+  font-family: sans-serif; }
+
 figure.image figcaption p {
   text-align: center;
   color: gray; }
   figure.image figcaption p a {
     color: gray; }
+
+.online-presence-logo {
+  width: 4rem;
+  padding-right: 1rem;
+  transition: opacity 0.2s; }
+  .online-presence-logo:hover {
+    cursor: pointer;
+    opacity: 0.6; }
+
+.u-link-with-no-underline {
+  border: 0;
+  text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */

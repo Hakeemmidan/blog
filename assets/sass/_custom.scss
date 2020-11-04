@@ -1,3 +1,7 @@
+html {
+  font-family: sans-serif;
+}
+
 figure {
   &.image {
     figcaption {
@@ -10,4 +14,21 @@ figure {
       }
     }
   }
+}
+
+.online-presence-logo {
+  width: 4rem;
+  padding-right: 1rem;
+  transition: opacity 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+
+// utilities
+.u-link-with-no-underline {
+  border: 0;
+  text-decoration: none;
 }

@@ -254,7 +254,10 @@ We had to create two of them because their property (&lt;code&gt;background-colo
 I’m Abdulhakeem. You can call me Hakeem. I have experience building full-stack applications in many languages and frameworks. What I’ve learned over time is that the main mental challenge often lies in the logic behind what you&amp;rsquo;re building, and not in the language/framework itself.&lt;/p&gt;
 &lt;p&gt;Outside of work, I enjoy painting, playing volleyball, soccer, scuba diving, and hanging out with friends. I also enjoy reading about business and finance.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m currently looking for software engineering and finance positions and I&amp;rsquo;d love to hear about your company!&lt;/p&gt;
-&lt;p&gt;You can find me on:&lt;/p&gt;
+&lt;h3 id=&#34;resume&#34;&gt;Resume&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://hakeemmidan.github.io/resume/&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;contact&#34;&gt;Contact&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:Hakeemmidan@gmail.com&#34;&gt;Hakeemmidan@gmail.com&lt;/a&gt;&lt;/p&gt;
 
 
   &lt;span&gt;
@@ -279,12 +282,8 @@ I’m Abdulhakeem. You can call me Hakeem. I have experience building full-stack
     &lt;/a&gt;
   &lt;/span&gt;
 
-&lt;h3 id=&#34;resume&#34;&gt;Resume&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://hakeemmidan.github.io/resume/&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;contact&#34;&gt;Contact&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;mailto:Hakeemmidan@gmail.com&#34;&gt;Hakeemmidan@gmail.com&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;about-website&#34;&gt;About website&lt;/h3&gt;
-&lt;p&gt;This website is built using &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, themed by &lt;a href=&#34;https://github.com/zwbetz-gh/cayman-hugo-theme&#34;&gt;Cayman&lt;/a&gt; and deployed to &lt;a href=&#34;https://www.netlify.com/&#34;&gt;Netlify&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This website is powered by &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; using the &lt;a href=&#34;https://github.com/frjo/hugo-theme-zen&#34;&gt;Zen theme&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

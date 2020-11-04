@@ -11,7 +11,11 @@ Outside of work, I enjoy painting, playing volleyball, soccer, scuba diving, and
 
 I'm currently looking for software engineering and finance positions and I'd love to hear about your company!
 
-You can find me on:
+### Resume
+[link](https://hakeemmidan.github.io/resume/)
+
+### Contact
+Hakeemmidan@gmail.com
 
 {{< rawhtml >}}
   <span>
@@ -37,11 +41,5 @@ You can find me on:
   </span>
 {{</ rawhtml >}}
 
-### Resume
-[link](https://hakeemmidan.github.io/resume/)
-
-### Contact
-Hakeemmidan@gmail.com
-
 ### About website
- This website is built using [Hugo](https://gohugo.io/), themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme) and deployed to [Netlify](https://www.netlify.com/)
+ This website is powered by [Hugo](https://gohugo.io/) using the [Zen theme](https://github.com/frjo/hugo-theme-zen)
