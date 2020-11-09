@@ -859,6 +859,9 @@ html {
 body {
   background-color: deepskyblue; }
 
+.content p {
+  line-height: 1.5rem; }
+
 figure.image figcaption p {
   text-align: center;
   color: gray; }

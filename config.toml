@@ -21,6 +21,7 @@ section = [ "HTML", "RSS", "JSON" ]
 
 [params]
 contact = "hakeemmidan@gmail.com"
+googleAnalytics = "UA-162259002-1"
 copyright = "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
 description = "The zen theme for Hugo example site."
 dateformat = "2 January, 2006"
