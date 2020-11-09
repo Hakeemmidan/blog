@@ -856,6 +856,9 @@ figure.podcast audio {
 html {
   font-family: sans-serif; }
 
+body {
+  background-color: deepskyblue; }
+
 figure.image figcaption p {
   text-align: center;
   color: gray; }
