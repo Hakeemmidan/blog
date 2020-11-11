@@ -884,4 +884,7 @@ figure.image figcaption p {
   border: 0;
   text-decoration: none; }
 
+.u-filter-almost-black-and-white {
+  filter: grayscale(0.9); }
+
 /*# sourceMappingURL=styles.css.map */

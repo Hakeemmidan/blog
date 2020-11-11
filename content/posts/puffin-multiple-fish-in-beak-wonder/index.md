@@ -26,6 +26,7 @@ src="puffin-w-fish-in-mouth.jpg"
 link="puffin-w-fish-in-mouth.jpg" 
 alt="Puffin with multiple fish in beak"
 attr="Puffin with multiple fish in beak ([Source](https://ocean.si.edu/ocean-life/seabirds/watching-fish-puffins-beak))"
+class="center u-filter-almost-black-and-white"
 >}}
 
 I thought this was interesting, and I had so many questions, including:
@@ -74,7 +75,7 @@ src="razorbill-w-fish-in-mouth.jpg"
 link="razorbill-w-fish-in-mouth.jpg"
 alt="Razorbill with multiple fish in beak" 
 attr="Razorbill with multiple fish in beak ([Source](http://www.oiseaux-birds.com/page-family-alcidae.html))"
-class="center"
+class="center u-filter-almost-black-and-white"
 >}}
 
 But according to [this study](https://www.int-res.com/abstracts/meps/v520/p257-267/) (the same Oxford study mentioned above) puffins do tend to carry more fish overall. Razorbills can carry 2 to 10 fish, whereas puffins can carry up to 50!
