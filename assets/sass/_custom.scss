@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: deepskyblue;
+  background-color: lightskyblue;
 }
 
 .content {
@@ -34,6 +34,13 @@ figure {
   &:hover {
     cursor: pointer;
     opacity: 0.6;
+  }
+}
+
+.menu {
+  li {
+    display: inline-flex;
+    margin-bottom: 0.5rem;
   }
 }
 

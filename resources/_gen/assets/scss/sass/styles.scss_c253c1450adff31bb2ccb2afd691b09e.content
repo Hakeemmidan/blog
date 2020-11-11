@@ -857,7 +857,7 @@ html {
   font-family: sans-serif; }
 
 body {
-  background-color: deepskyblue; }
+  background-color: lightskyblue; }
 
 .content p {
   line-height: 1.5rem; }
@@ -875,6 +875,10 @@ figure.image figcaption p {
   .online-presence-logo:hover {
     cursor: pointer;
     opacity: 0.6; }
+
+.menu li {
+  display: inline-flex;
+  margin-bottom: 0.5rem; }
 
 .u-link-with-no-underline {
   border: 0;
