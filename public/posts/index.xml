@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Hakeem Almidan</title>
-    <link>http://hakeem-almidan.com/posts/</link>
+    <link>https://hakeem-almidan.com/posts/</link>
     <description>Recent content in Posts on Hakeem Almidan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     <lastBuildDate>Fri, 24 Jul 2020 21:07:40 +0300</lastBuildDate>
-    <atom:link href="http://hakeem-almidan.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hakeem-almidan.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Why do puffins often have mutliple fish in their beaks at once?</title>
-      <link>http://hakeem-almidan.com/posts/puffin-multiple-fish-in-beak-wonder/</link>
+      <link>https://hakeem-almidan.com/posts/puffin-multiple-fish-in-beak-wonder/</link>
       <pubDate>Fri, 24 Jul 2020 21:07:40 +0300</pubDate>
-      <guid>http://hakeem-almidan.com/posts/puffin-multiple-fish-in-beak-wonder/</guid>
+      <guid>https://hakeem-almidan.com/posts/puffin-multiple-fish-in-beak-wonder/</guid>
       <description>&lt;p&gt;Have you ever noticed that puffins often simultaneously carry multiple fish in their beaks at once?&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;d be something like this:
 &lt;figure class=&#34;image center u-filter-almost-black-and-white&#34;&gt;
@@ -64,9 +64,9 @@
     
     <item>
       <title>SCSS Animation Mixin</title>
-      <link>http://hakeem-almidan.com/posts/scss-animation-mixin/</link>
+      <link>https://hakeem-almidan.com/posts/scss-animation-mixin/</link>
       <pubDate>Tue, 05 May 2020 17:15:02 -0700</pubDate>
-      <guid>http://hakeem-almidan.com/posts/scss-animation-mixin/</guid>
+      <guid>https://hakeem-almidan.com/posts/scss-animation-mixin/</guid>
       <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;The slightest change in CSS animations (&lt;code&gt;@keyframes&lt;/code&gt;) requires a creation of a new animation.&lt;/p&gt;
 &lt;h4 id=&#34;problem-example&#34;&gt;Problem Example&lt;/h4&gt;
@@ -115,9 +115,9 @@ We had to create two of them because their property (&lt;code&gt;background-colo
     
     <item>
       <title>How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</title>
-      <link>http://hakeem-almidan.com/posts/css-hover-on-mobile/</link>
+      <link>https://hakeem-almidan.com/posts/css-hover-on-mobile/</link>
       <pubDate>Thu, 16 Apr 2020 21:58:27 -0700</pubDate>
-      <guid>http://hakeem-almidan.com/posts/css-hover-on-mobile/</guid>
+      <guid>https://hakeem-almidan.com/posts/css-hover-on-mobile/</guid>
       <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:&lt;/p&gt;
 &lt;figure class=&#34;image center&#34;&gt;
@@ -160,9 +160,9 @@ We had to create two of them because their property (&lt;code&gt;background-colo
     
     <item>
       <title>Choosing a Static Website Generator: Hugo vs. Jekyll</title>
-      <link>http://hakeem-almidan.com/posts/hugo-vs-jekyll/</link>
+      <link>https://hakeem-almidan.com/posts/hugo-vs-jekyll/</link>
       <pubDate>Mon, 23 Mar 2020 23:37:28 -0700</pubDate>
-      <guid>http://hakeem-almidan.com/posts/hugo-vs-jekyll/</guid>
+      <guid>https://hakeem-almidan.com/posts/hugo-vs-jekyll/</guid>
       <description>&lt;h2 id=&#34;what-are-static-websites&#34;&gt;What are static websites?&lt;/h2&gt;
 &lt;p&gt;In simple terms, static websites are a collection of webpages that have fixed content. They are the most basic type of website and are typically considered the easiest to create.&lt;/p&gt;
 &lt;p&gt;These websites are considered the easiest to create because they have a low barrier of entry. They are usually not connected to a &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_access_layer&#34;&gt;backend&lt;/a&gt; or a &lt;a href=&#34;https://en.wikipedia.org/wiki/Database&#34;&gt;database&lt;/a&gt;, so the only thing that you will need to manage is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Presentation_layer&#34;&gt;frontend&lt;/a&gt;.&lt;/p&gt;

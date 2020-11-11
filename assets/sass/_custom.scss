@@ -44,7 +44,21 @@ figure {
   }
 }
 
-// utilities
+// MailChimp Signup Form
+  // have to put !importnat b/c they come w/ default styling
+  // that I think is internally inline. Feel free to fix if you
+  // find otherwise
+#mc-embedded-subscribe-form {
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+#mc-embedded-subscribe {
+  background-image: none;
+  width: 100%;
+}
+
+// Utilities
 .u-link-with-no-underline {
   border: 0;
   text-decoration: none;

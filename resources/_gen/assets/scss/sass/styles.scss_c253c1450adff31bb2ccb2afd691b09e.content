@@ -880,6 +880,14 @@ figure.image figcaption p {
   display: inline-flex;
   margin-bottom: 0.5rem; }
 
+#mc-embedded-subscribe-form {
+  padding: 0 !important;
+  text-align: left !important; }
+
+#mc-embedded-subscribe {
+  background-image: none;
+  width: 100%; }
+
 .u-link-with-no-underline {
   border: 0;
   text-decoration: none; }

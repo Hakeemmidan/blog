@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jekyll on Hakeem Almidan</title>
-    <link>http://hakeem-almidan.com/tags/jekyll/</link>
+    <link>https://hakeem-almidan.com/tags/jekyll/</link>
     <description>Recent content in jekyll on Hakeem Almidan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     <lastBuildDate>Mon, 23 Mar 2020 23:37:28 -0700</lastBuildDate>
-    <atom:link href="http://hakeem-almidan.com/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hakeem-almidan.com/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Choosing a Static Website Generator: Hugo vs. Jekyll</title>
-      <link>http://hakeem-almidan.com/posts/hugo-vs-jekyll/</link>
+      <link>https://hakeem-almidan.com/posts/hugo-vs-jekyll/</link>
       <pubDate>Mon, 23 Mar 2020 23:37:28 -0700</pubDate>
-      <guid>http://hakeem-almidan.com/posts/hugo-vs-jekyll/</guid>
+      <guid>https://hakeem-almidan.com/posts/hugo-vs-jekyll/</guid>
       <description>&lt;h2 id=&#34;what-are-static-websites&#34;&gt;What are static websites?&lt;/h2&gt;
 &lt;p&gt;In simple terms, static websites are a collection of webpages that have fixed content. They are the most basic type of website and are typically considered the easiest to create.&lt;/p&gt;
 &lt;p&gt;These websites are considered the easiest to create because they have a low barrier of entry. They are usually not connected to a &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_access_layer&#34;&gt;backend&lt;/a&gt; or a &lt;a href=&#34;https://en.wikipedia.org/wiki/Database&#34;&gt;database&lt;/a&gt;, so the only thing that you will need to manage is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Presentation_layer&#34;&gt;frontend&lt;/a&gt;.&lt;/p&gt;

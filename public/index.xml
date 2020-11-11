@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Hakeem Almidan</title>
-    <link>http://hakeem-almidan.com/</link>
+    <link>https://hakeem-almidan.com/</link>
     <description>Recent content in Blog on Hakeem Almidan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     <lastBuildDate>Fri, 24 Jul 2020 21:07:40 +0300</lastBuildDate>
-    <atom:link href="http://hakeem-almidan.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hakeem-almidan.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Why do puffins often have mutliple fish in their beaks at once?</title>
-      <link>http://hakeem-almidan.com/posts/puffin-multiple-fish-in-beak-wonder/</link>
+      <link>https://hakeem-almidan.com/posts/puffin-multiple-fish-in-beak-wonder/</link>
       <pubDate>Fri, 24 Jul 2020 21:07:40 +0300</pubDate>
-      <guid>http://hakeem-almidan.com/posts/puffin-multiple-fish-in-beak-wonder/</guid>
+      <guid>https://hakeem-almidan.com/posts/puffin-multiple-fish-in-beak-wonder/</guid>
       <description>&lt;p&gt;Have you ever noticed that puffins often simultaneously carry multiple fish in their beaks at once?&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;d be something like this:
 &lt;figure class=&#34;image center u-filter-almost-black-and-white&#34;&gt;
@@ -64,9 +64,9 @@
     
     <item>
       <title>SCSS Animation Mixin</title>
-      <link>http://hakeem-almidan.com/posts/scss-animation-mixin/</link>
+      <link>https://hakeem-almidan.com/posts/scss-animation-mixin/</link>
       <pubDate>Tue, 05 May 2020 17:15:02 -0700</pubDate>
-      <guid>http://hakeem-almidan.com/posts/scss-animation-mixin/</guid>
+      <guid>https://hakeem-almidan.com/posts/scss-animation-mixin/</guid>
       <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;The slightest change in CSS animations (&lt;code&gt;@keyframes&lt;/code&gt;) requires a creation of a new animation.&lt;/p&gt;
 &lt;h4 id=&#34;problem-example&#34;&gt;Problem Example&lt;/h4&gt;
@@ -115,9 +115,9 @@ We had to create two of them because their property (&lt;code&gt;background-colo
     
     <item>
       <title>How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</title>
-      <link>http://hakeem-almidan.com/posts/css-hover-on-mobile/</link>
+      <link>https://hakeem-almidan.com/posts/css-hover-on-mobile/</link>
       <pubDate>Thu, 16 Apr 2020 21:58:27 -0700</pubDate>
-      <guid>http://hakeem-almidan.com/posts/css-hover-on-mobile/</guid>
+      <guid>https://hakeem-almidan.com/posts/css-hover-on-mobile/</guid>
       <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:&lt;/p&gt;
 &lt;figure class=&#34;image center&#34;&gt;
@@ -160,9 +160,9 @@ We had to create two of them because their property (&lt;code&gt;background-colo
     
     <item>
       <title>Choosing a Static Website Generator: Hugo vs. Jekyll</title>
-      <link>http://hakeem-almidan.com/posts/hugo-vs-jekyll/</link>
+      <link>https://hakeem-almidan.com/posts/hugo-vs-jekyll/</link>
       <pubDate>Mon, 23 Mar 2020 23:37:28 -0700</pubDate>
-      <guid>http://hakeem-almidan.com/posts/hugo-vs-jekyll/</guid>
+      <guid>https://hakeem-almidan.com/posts/hugo-vs-jekyll/</guid>
       <description>&lt;h2 id=&#34;what-are-static-websites&#34;&gt;What are static websites?&lt;/h2&gt;
 &lt;p&gt;In simple terms, static websites are a collection of webpages that have fixed content. They are the most basic type of website and are typically considered the easiest to create.&lt;/p&gt;
 &lt;p&gt;These websites are considered the easiest to create because they have a low barrier of entry. They are usually not connected to a &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_access_layer&#34;&gt;backend&lt;/a&gt; or a &lt;a href=&#34;https://en.wikipedia.org/wiki/Database&#34;&gt;database&lt;/a&gt;, so the only thing that you will need to manage is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Presentation_layer&#34;&gt;frontend&lt;/a&gt;.&lt;/p&gt;
@@ -247,9 +247,9 @@ We had to create two of them because their property (&lt;code&gt;background-colo
     
     <item>
       <title>About</title>
-      <link>http://hakeem-almidan.com/about/</link>
+      <link>https://hakeem-almidan.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://hakeem-almidan.com/about/</guid>
+      <guid>https://hakeem-almidan.com/about/</guid>
       <description>&lt;p&gt;Hi,
 I’m Abdulhakeem. You can call me Hakeem. I have experience building full-stack applications in many languages and frameworks. What I’ve learned over time is that the main mental challenge often lies in the logic behind what you&amp;rsquo;re building, and not in the language/framework itself.&lt;/p&gt;
 &lt;p&gt;Outside of work, I enjoy painting, playing volleyball, soccer, scuba diving, and hanging out with friends. I also enjoy reading about business and finance.&lt;/p&gt;
@@ -283,6 +283,24 @@ I’m Abdulhakeem. You can call me Hakeem. I have experience building full-stack
   &lt;/span&gt;
 
 &lt;h3 id=&#34;about-website&#34;&gt;About website&lt;/h3&gt;
+&lt;p&gt;Like what you&amp;rsquo;re seeing? Subscribe below to recieve notifications of new posts ⬇️&lt;/p&gt;
+&lt;p&gt;Promise not to send more than 1 email per month (not counting subscription confirmation email 🙄) 🤞
+
+
+&lt;!-- Begin Mailchimp Signup Form --&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://hakeem-almidan.us2.list-manage.com/subscribe/post?u=2a214450dbf0906444fa3503a&amp;amp;id=637c7a92ad&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+  &lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+	&lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;email&#34; id=&#34;mce-EMAIL&#34; placeholder=&#34;email address&#34; required&gt;
+    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_2a214450dbf0906444fa3503a_637c7a92ad&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;!--End mc_embed_signup--&gt;
+&lt;/p&gt;
 &lt;p&gt;This website is powered by &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; using the &lt;a href=&#34;https://github.com/frjo/hugo-theme-zen&#34;&gt;Zen theme&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>

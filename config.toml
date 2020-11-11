@@ -1,5 +1,5 @@
 title = "Hakeem Almidan"
-baseURL = "http://hakeem-almidan.com/"
+baseURL = "https://hakeem-almidan.com/"
 theme = "zen"
 languageCode = "en-GB"
 defaultContentLanguage = "en"

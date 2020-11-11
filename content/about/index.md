@@ -42,4 +42,24 @@ Hakeemmidan@gmail.com
 {{</ rawhtml >}}
 
 ### About website
+
+Like what you're seeing? Subscribe below to recieve notifications of new posts ⬇️
+
+Promise not to send more than 1 email per month (not counting subscription confirmation email 🙄) 🤞
+{{< rawhtml >}}
+<!-- Begin Mailchimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="https://hakeem-almidan.us2.list-manage.com/subscribe/post?u=2a214450dbf0906444fa3503a&amp;id=637c7a92ad" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <div id="mc_embed_signup_scroll">
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2a214450dbf0906444fa3503a_637c7a92ad" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<!--End mc_embed_signup-->
+{{</ rawhtml >}}
+
  This website is powered by [Hugo](https://gohugo.io/) using the [Zen theme](https://github.com/frjo/hugo-theme-zen)
