@@ -49,7 +49,7 @@ Promise not to send more than 1 email per month (not counting subscription confi
 {{< rawhtml >}}
 <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">
-<form action="https://hakeem-almidan.us2.list-manage.com/subscribe/post?u=2a214450dbf0906444fa3503a&amp;id=637c7a92ad" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="https://hakeem-almidan.us2.list-manage.com/subscribe/post?u=2a214450dbf0906444fa3503a&amp;id=637c7a92ad" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
   <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
     <div id="mc_embed_signup_scroll">
 	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
