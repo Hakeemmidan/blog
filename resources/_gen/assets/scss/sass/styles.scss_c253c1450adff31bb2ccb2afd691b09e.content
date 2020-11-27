@@ -895,4 +895,8 @@ figure.image figcaption p {
 .u-filter-almost-black-and-white {
   filter: grayscale(0.9); }
 
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.8rem; } }
+
 /*# sourceMappingURL=styles.css.map */

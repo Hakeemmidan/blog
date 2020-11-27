@@ -2,7 +2,7 @@
 title: "Useful Tools that Helped in Building a Custom Promotion-Code CLI (built in Ruby)"
 description: "Learn about tools that helped in creating a customized promotion code generator that maps a name to a promotion code. Built completely with native Ruby code (no external gems)"
 date: 2020-11-24T21:13:02+03:00
-draft: true
+draft: false
 tags: []
 categories: ['programming']
 references: []

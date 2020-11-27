@@ -9,7 +9,11 @@
 <div class="content">
 {{ .Content }}
 
-{{ if ne .Lastmod .Date }}{{ partial "dates.html" . }}{{ end -}}
+{{if eq .Section "posts"}}
+  {{ if ne .Lastmod .Date }}{{ partial "dates.html" . }}{{ end -}}
+  {{ template "_internal/disqus.html" . }}
+{{end -}}
+
 </div>
 </article>
 </main>

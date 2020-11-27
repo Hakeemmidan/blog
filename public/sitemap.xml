@@ -3,22 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hakeem-almidan.com/tags/birds/</loc>
-    <lastmod>2020-07-24T21:07:40+03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hakeem-almidan.com/</loc>
-    <lastmod>2020-07-24T21:07:40+03:00</lastmod>
+    <lastmod>2020-11-24T21:13:02+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://hakeem-almidan.com/categories/</loc>
-    <lastmod>2020-07-24T21:07:40+03:00</lastmod>
+    <lastmod>2020-11-24T21:13:02+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://hakeem-almidan.com/posts/</loc>
+    <lastmod>2020-11-24T21:13:02+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hakeem-almidan.com/categories/programming/</loc>
+    <lastmod>2020-11-24T21:13:02+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hakeem-almidan.com/posts/custom-promotion-code-cli/</loc>
+    <lastmod>2020-11-24T21:13:02+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hakeem-almidan.com/tags/birds/</loc>
     <lastmod>2020-07-24T21:07:40+03:00</lastmod>
   </url>
   
@@ -39,11 +49,6 @@
   
   <url>
     <loc>https://hakeem-almidan.com/tags/css/</loc>
-    <lastmod>2020-05-05T17:15:02-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hakeem-almidan.com/categories/programming/</loc>
     <lastmod>2020-05-05T17:15:02-07:00</lastmod>
   </url>
   

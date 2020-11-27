@@ -1,5 +1,6 @@
 title = "Hakeem Almidan"
 baseURL = "https://hakeem-almidan.com/"
+disqusShortname = "hakeem-almidan.disqus.com"
 theme = "zen"
 languageCode = "en-GB"
 defaultContentLanguage = "en"
