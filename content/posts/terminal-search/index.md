@@ -1,5 +1,5 @@
 ---
-title: "Stop Arrowing Up So Much In Terminal; Search Instead! (in Unix/Mac)"
+title: "Stop Arrowing Up So Much In Terminal; Search Instead! (in Linux/Unix (Mac))"
 description: "Stop arrowing up in terminal so much. Search instead."
 date: 2020-12-31T19:01:40+03:00
 draft: false
