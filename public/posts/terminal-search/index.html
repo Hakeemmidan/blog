@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
-<title>SCSS Animation Mixin – Hakeem Almidan</title>
-<meta name="description" content="How to create an Scss/Sass animation mixin. We do this to follow DRY software development principle, and make our code more easily readable.">
-<meta name="created" content="2020-05-05T17:15:02-0700">
-<meta name="modified" content="2020-05-05T17:15:02-0700">
+<title>Stop Arrowing Up So Much In Terminal; Search Instead! (in Unix/Mac) – Hakeem Almidan</title>
+<meta name="description" content="Stop arrowing up in terminal so much. Search instead.">
+<meta name="created" content="2020-12-31T19:01:40+0300">
+<meta name="modified" content="2020-12-31T19:01:40+0300">
 
 <meta name="contact" content="hakeemmidan@gmail.com">
 <meta property="og:site_name" content="Hakeem Almidan">
-<meta property="og:title" content="SCSS Animation Mixin">
-<meta property="og:url" content="https://hakeem-almidan.com/posts/scss-animation-mixin/">
+<meta property="og:title" content="Stop Arrowing Up So Much In Terminal; Search Instead! (in Unix/Mac)">
+<meta property="og:url" content="https://hakeem-almidan.com/posts/terminal-search/">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://hakeem-almidan.com/static/apple-touch-icon.png">
 <meta name="generator" content="Hugo 0.77.0" />
@@ -20,7 +20,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-<link rel="canonical" href="https://hakeem-almidan.com/posts/scss-animation-mixin/">
+<link rel="canonical" href="https://hakeem-almidan.com/posts/terminal-search/">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -34,12 +34,12 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "SCSS Animation Mixin",
-    "datePublished": "2020-05-05T17:15:02-07:00",
-    "dateModified": "2020-05-05T17:15:02-07:00",
-    "url" : "https://hakeem-almidan.com/posts/scss-animation-mixin/",
-    "description": "How to create an Scss/Sass animation mixin. We do this to follow DRY software development principle, and make our code more easily readable.",
-    "keywords": ["css","scss"],
+    "headline": "Stop Arrowing Up So Much In Terminal; Search Instead! (in Unix/Mac)",
+    "datePublished": "2020-12-31T19:01:40+03:00",
+    "dateModified": "2020-12-31T19:01:40+03:00",
+    "url" : "https://hakeem-almidan.com/posts/terminal-search/",
+    "description": "Stop arrowing up in terminal so much. Search instead.",
+    "keywords": ["terminal"],
     "image" : "https://hakeem-almidan.com/static/apple-touch-icon.png",
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -89,52 +89,49 @@
 <main class="main layout__main">
 <article class="section-posts single-view">
 <header>
-<h1 class="title ">SCSS Animation Mixin</h1>
+<h1 class="title ">Stop Arrowing Up So Much In Terminal; Search Instead! (in Unix/Mac)</h1>
 
 </header>
 <div class="content">
 <h2 id="problem">Problem</h2>
-<p>The slightest change in CSS animations (<code>@keyframes</code>) requires a creation of a new animation.</p>
-<h4 id="problem-example">Problem Example</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SCSS" data-lang="SCSS"><span style="color:#66d9ef">@keyframes</span> <span style="color:#f92672">to-yellow</span> {
-  <span style="color:#f92672">50</span><span style="color:#960050;background-color:#1e0010">%</span> { <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">yellow</span>; }
-}
-
-<span style="color:#66d9ef">@keyframes</span> <span style="color:#f92672">to-skyblue</span> {
-  <span style="color:#f92672">50</span><span style="color:#960050;background-color:#1e0010">%</span> { <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">skyblue</span>; }
-}
-</code></pre></div><p>Both of the animations pretty much do the same thing, but we had to create two of them.
-We had to create two of them because their property (<code>background-color</code>) had different values (i.e. <code>yellow</code> and <code>skyblue</code>).</p>
-<p>This doesn&rsquo;t follow the <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> software development principle.</p>
-<p>To fix this, we&rsquo;re going to use an SCSS <a href="https://sass-lang.com/documentation/at-rules/mixin">mixin</a>.</p>
+<p>Do you ever <em>NOT</em> feel like re-writing a command that you wrote some N commands ago?
+I do!</p>
+<p>Arrowing up and focusing until you reach what you want can be annoying for a lazy programmer. Although it usually only takes a couple of seconds, it still adds up. Plus, you don&rsquo;t want
+to waste your brainpower on such a task (unless you like doing it).</p>
+<p>One of the best pieces of advice I heard when I first started programming is:</p>
+<blockquote>
+<blockquote>
+<p>Always improve/automate tasks that you know you&rsquo;re going to continuously repeat in the future</p>
+</blockquote>
+</blockquote>
+<p>So let&rsquo;s do that. Let&rsquo;s improve this situation.</p>
 <h2 id="solution">Solution</h2>
-<p>Looking at the problem example above, we&rsquo;d replace it with something like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SCSS" data-lang="SCSS"><span style="color:#66d9ef">@mixin</span><span style="color:#a6e22e"> animation-mixin</span>($name<span style="color:#f92672">,</span> $color-var) {
-  <span style="color:#66d9ef">@keyframes</span> #{<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">name</span>} {
-    <span style="color:#f92672">50</span><span style="color:#960050;background-color:#1e0010">%</span> { <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">color-var</span>; }
-  }
-}
+<h4 id="ctrlr">Ctrl+r</h4>
+<p>This does a &lsquo;reverse-i-search&rsquo; or &lsquo;bck-i-search&rsquo;, which finds the most recent closest match.</p>
+<p>Do <code>Ctrl+r</code> again to go to the next closest match further back in history.</p>
+<p>It searches through an environment variable called <code>$HISTFILE</code>. The size of this file depends on your
+<code>$HISTSIZE</code> (I believe the default in Unix/Linux is around 500).</p>
+<figure class="image center">
+<a href="ctrl-r.png"><img src="ctrl-r.png" alt="Ctrl&#43;r keyboard shortcut example use" width="400"></a>
+<figcaption>
+<p>Ctrl+r keyboard shortcut example use</p>
+</figcaption>
+</figure>
 
-<span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> animation-mixin</span>(to-yellow<span style="color:#f92672">,</span> yellow);
-
-<span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> animation-mixin</span>(to-skyblue<span style="color:#f92672">,</span> skyblue);
-</code></pre></div><p>Then you could call the <code>to-yellow</code> and <code>to-skyblue</code> animations in your selectors as needed:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SCSS" data-lang="SCSS"><span style="color:#f92672">div</span> {
-  <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">100px</span>;
-  <span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">100px</span>;
-  <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">whitesmoke</span>;
-  <span style="color:#f92672">animation</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">to-yellow</span> <span style="color:#f92672">4s</span> <span style="color:#f92672">ease</span> <span style="color:#f92672">infinite</span>;
-}
-</code></pre></div><p>Live example:</p>
-<!-- raw HTML omitted -->
-
-
-  <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="Hakeemmidan" data-slug-hash="OJPaezR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="SCSS Animation Mixin">
-    <span>See the Pen <a href="https://codepen.io/Hakeemmidan/pen/OJPaezR">
-    SCSS Animation Mixin</a> by Abdulhakeem Almidan (<a href="https://codepen.io/Hakeemmidan">@Hakeemmidan</a>)
-    on <a href="https://codepen.io">CodePen</a>.</span>
-  </p>
-  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<hr>
+<h4 id="alternative-approach">Alternative approach</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">history <span style="color:#ae81ff">0</span>
+</code></pre></div><p>This displays your history from 0 to <code>$HISTSIZE</code>.</p>
+<p>You can either scroll or <code>Cmd+f</code> to find your command.
+To execute the command, do:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">!&lt;command-number&gt;
+</code></pre></div><p>&hellip; where <code>command-number</code> is the number displayed next to your command.</p>
+<figure class="image center">
+<a href="history.png"><img src="history.png" alt="&#39;history 0&#39; command example use" width="500"></a>
+<figcaption>
+<p>&lsquo;history 0&rsquo; command example use</p>
+</figcaption>
+</figure>
 
 
 
@@ -193,10 +190,10 @@ We had to create two of them because their property (<code>background-color</cod
 <section>
 <h4 class="menu">Posts by title</h4>
 <ul class="menu">
-<li><a href="/posts/terminal-search/">Stop Arrowing Up So Much In Terminal; Search Instead! (in Unix/Mac)</a></li>
+<li><a href="/posts/terminal-search/" class="active" aria-current="page">Stop Arrowing Up So Much In Terminal; Search Instead! (in Unix/Mac)</a></li>
 <li><a href="/posts/custom-promotion-code-cli/">Useful Tools that Helped in Building a Custom Promotion-Code CLI (built in Ruby)</a></li>
 <li><a href="/posts/puffin-multiple-fish-in-beak-wonder/">Why do puffins often have mutliple fish in their beaks at once?</a></li>
-<li><a href="/posts/scss-animation-mixin/" class="active" aria-current="page">SCSS Animation Mixin</a></li>
+<li><a href="/posts/scss-animation-mixin/">SCSS Animation Mixin</a></li>
 <li><a href="/posts/css-hover-on-mobile/">How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</a></li>
 <li><a href="/posts/hugo-vs-jekyll/">Choosing a Static Website Generator: Hugo vs. Jekyll</a></li>
 </ul>

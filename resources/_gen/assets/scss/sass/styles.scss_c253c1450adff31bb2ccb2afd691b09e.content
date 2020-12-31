@@ -895,6 +895,9 @@ figure.image figcaption p {
 .u-filter-almost-black-and-white {
   filter: grayscale(0.9); }
 
+figure.image.center {
+  text-align: center; }
+
 @media only screen and (max-width: 600px) {
   body {
     font-size: 0.8rem; } }

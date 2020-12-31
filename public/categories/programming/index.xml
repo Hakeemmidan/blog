@@ -6,8 +6,56 @@
     <description>Recent content in programming on Hakeem Almidan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 24 Nov 2020 21:13:02 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 31 Dec 2020 19:01:40 +0300</lastBuildDate>
     <atom:link href="https://hakeem-almidan.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Stop Arrowing Up So Much In Terminal; Search Instead! (in Unix/Mac)</title>
+      <link>https://hakeem-almidan.com/posts/terminal-search/</link>
+      <pubDate>Thu, 31 Dec 2020 19:01:40 +0300</pubDate>
+      <guid>https://hakeem-almidan.com/posts/terminal-search/</guid>
+      <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Do you ever &lt;em&gt;NOT&lt;/em&gt; feel like re-writing a command that you wrote some N commands ago?
+I do!&lt;/p&gt;
+&lt;p&gt;Arrowing up and focusing until you reach what you want can be annoying for a lazy programmer. Although it usually only takes a couple of seconds, it still adds up. Plus, you don&amp;rsquo;t want
+to waste your brainpower on such a task (unless you like doing it).&lt;/p&gt;
+&lt;p&gt;One of the best pieces of advice I heard when I first started programming is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Always improve/automate tasks that you know you&amp;rsquo;re going to continuously repeat in the future&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So let&amp;rsquo;s do that. Let&amp;rsquo;s improve this situation.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;h4 id=&#34;ctrlr&#34;&gt;Ctrl+r&lt;/h4&gt;
+&lt;p&gt;This does a &amp;lsquo;reverse-i-search&amp;rsquo; or &amp;lsquo;bck-i-search&amp;rsquo;, which finds the most recent closest match.&lt;/p&gt;
+&lt;p&gt;Do &lt;code&gt;Ctrl+r&lt;/code&gt; again to go to the next closest match further back in history.&lt;/p&gt;
+&lt;p&gt;It searches through an environment variable called &lt;code&gt;$HISTFILE&lt;/code&gt;. The size of this file depends on your
+&lt;code&gt;$HISTSIZE&lt;/code&gt; (I believe the default in Unix/Linux is around 500).&lt;/p&gt;
+&lt;figure class=&#34;image center&#34;&gt;
+&lt;a href=&#34;ctrl-r.png&#34;&gt;&lt;img src=&#34;ctrl-r.png&#34; alt=&#34;Ctrl&amp;#43;r keyboard shortcut example use&#34; width=&#34;400&#34;&gt;&lt;/a&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Ctrl+r keyboard shortcut example use&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h4 id=&#34;alternative-approach&#34;&gt;Alternative approach&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;history &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This displays your history from 0 to &lt;code&gt;$HISTSIZE&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can either scroll or &lt;code&gt;Cmd+f&lt;/code&gt; to find your command.
+To execute the command, do:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;!&amp;lt;command-number&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&amp;hellip; where &lt;code&gt;command-number&lt;/code&gt; is the number displayed next to your command.&lt;/p&gt;
+&lt;figure class=&#34;image center&#34;&gt;
+&lt;a href=&#34;history.png&#34;&gt;&lt;img src=&#34;history.png&#34; alt=&#34;&amp;#39;history 0&amp;#39; command example use&#34; width=&#34;500&#34;&gt;&lt;/a&gt;
+&lt;figcaption&gt;
+&lt;p&gt;&amp;lsquo;history 0&amp;rsquo; command example use&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Useful Tools that Helped in Building a Custom Promotion-Code CLI (built in Ruby)</title>

@@ -8,7 +8,6 @@ pluralizelisttitles = false
 removePathAccents = true
 paginate = 10
 paginatePath = "page"
-rssLimit = 20
 
 [outputFormats.SearchIndex]
 mediaType = "application/json"
