@@ -51,7 +51,7 @@ this file remembers depends on your &lt;code&gt;$HISTSIZE&lt;/code&gt;.&lt;/p&gt
   ...
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This displays your history from 0 to &lt;code&gt;$HISTSIZE&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You can either scroll or &lt;code&gt;Cmd+f&lt;/code&gt; to find your command.
-To execute the command, do:&lt;/p&gt;
+To execute the command, run:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;$ !&amp;lt;command-number&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&amp;hellip; where &lt;code&gt;command-number&lt;/code&gt; is the number displayed leftmost to your selected command.&lt;/p&gt;
 &lt;figure class=&#34;image center&#34;&gt;
