@@ -60,7 +60,7 @@ $ history 0
 This displays your history from 0 to `$HISTSIZE`.
 
 You can either scroll or `Cmd+f` to find your command.
-To execute the command, do:
+To execute the command, run:
 
 ```Bash
 $ !<command-number>
