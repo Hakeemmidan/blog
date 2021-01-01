@@ -45,7 +45,7 @@ Hakeemmidan@gmail.com
 
 Like what you're seeing? Subscribe below to recieve notifications of new posts ⬇️
 
-Promise not to send more than 1 email per month (not counting subscription confirmation email 🙄) 🤞
+Promise not to send more than 1 email per month (not counting subscription confirmation email 🙄) 👨‍💻
 {{< rawhtml >}}
 <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">

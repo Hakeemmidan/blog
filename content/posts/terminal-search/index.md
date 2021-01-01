@@ -1,6 +1,6 @@
 ---
-title: "Stop Arrowing Up So Much In Terminal; Search Instead! (in Linux/Unix (Mac))"
-description: "Stop arrowing up in terminal so much. Search instead."
+title: "Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix)"
+description: "Stop arrowing up in terminal so much. Search instead! (Linux/Unix)"
 date: 2020-12-31T19:01:40+03:00
 draft: false
 tags: ['terminal']
@@ -26,10 +26,7 @@ So let's do that. Let's improve this situation.
 
 This does a 'reverse-i-search' or 'bck-i-search', which finds the most recent closest match.
 
-Do `Ctrl+r` again to go to the next closest match further back in history.
-
-It searches through an environment variable called `$HISTFILE`. The size of this file depends on your
-`$HISTSIZE` (I believe the default in Unix/Linux is around 500).
+`Ctrl+r` again to go to next match (further back in history).
 
 {{< figure
 src="ctrl-r.png"
@@ -40,11 +37,24 @@ width="400"
 class="center"
 >}}
 
+It searches through an environment variable called `$HISTFILE`. The number of commands that 
+this file remembers depends on your `$HISTSIZE`.
+
+I believe the default `$HISTSIZE` in Unix/Linux is around 500. You can check yours by running:
+```Bash
+$ echo $HISTSIZE
+```
+
 ____
 
 #### Alternative approach
 ```Bash
-history 0
+$ history 0
+  0 echo 'example command 0'
+  1 echo 'example command 1'
+  2 echo 'example command 2'
+  3 echo 'example command 3'
+  ...
 ```
 
 This displays your history from 0 to `$HISTSIZE`.
@@ -53,9 +63,9 @@ You can either scroll or `Cmd+f` to find your command.
 To execute the command, do:
 
 ```Bash
-!<command-number>
+$ !<command-number>
 ```
-... where `command-number` is the number displayed next to your command.
+... where `command-number` is the number displayed leftmost to your selected command.
 
 {{< figure
 src="history.png"
@@ -65,3 +75,5 @@ attr="'history 0' command example use"
 width="500"
 class="center"
 >}}
+
+Happy coding!
