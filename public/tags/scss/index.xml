@@ -74,10 +74,10 @@ We had to create two of them because their property (&lt;code&gt;background-colo
 &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;h2 id=&#34;how-to-fix-it&#34;&gt;How to Fix It&lt;/h2&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
 &lt;p&gt;Using the &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover&#34;&gt;&amp;lsquo;hover&amp;rsquo; CSS media query&lt;/a&gt;, which could be applied either through SCSS or CSS. In the case of SCSS, we&amp;rsquo;re going to use a &lt;a href=&#34;https://sass-lang.com/documentation/at-rules/mixin&#34;&gt;mixin&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Here is each solution respectively:&lt;/p&gt;
-&lt;h3 id=&#34;solution-1-scss-mixin&#34;&gt;Solution 1: SCSS Mixin&lt;/h3&gt;
+&lt;h3 id=&#34;option-1-scss-mixin&#34;&gt;Option 1: SCSS Mixin&lt;/h3&gt;
 &lt;p&gt;The mixin:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-SCSS&#34; data-lang=&#34;SCSS&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;@mixin&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt; hover-supported&lt;/span&gt; {    
     &lt;span style=&#34;color:#66d9ef&#34;&gt;@media&lt;/span&gt; (hover&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; hover) { 
@@ -92,7 +92,7 @@ We had to create two of them because their property (&lt;code&gt;background-colo
       }
     }
   }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;solution-2-css&#34;&gt;Solution 2: CSS&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;option-2-css&#34;&gt;Option 2: CSS&lt;/h3&gt;
 &lt;p&gt;Example use:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-CSS&#34; data-lang=&#34;CSS&#34;&gt;  @&lt;span style=&#34;color:#66d9ef&#34;&gt;media&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;hover&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;hover&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; {
     .&lt;span style=&#34;color:#a6e22e&#34;&gt;example&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;hover&lt;/span&gt; {
@@ -100,7 +100,9 @@ We had to create two of them because their property (&lt;code&gt;background-colo
     }
   }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;explanation&#34;&gt;Explanation&lt;/h3&gt;
-&lt;p&gt;Both examples change the &lt;code&gt;background-color&lt;/code&gt; of HTML elements with class &lt;code&gt;example&lt;/code&gt; only when they&amp;rsquo;re hovered-over on non-touch screen devices (or any &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover&#34;&gt;hover&lt;/a&gt; supported device). In other words, &lt;em&gt;this applies hover styling on only non-touch screen devices&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Both examples change the &lt;code&gt;background-color&lt;/code&gt; of HTML elements with class &lt;code&gt;example&lt;/code&gt;
+only when they&amp;rsquo;re hovered-over on non-touch screen devices (or any &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover&#34;&gt;hover&lt;/a&gt;
+supported device). In short, &lt;em&gt;this applies hover styling on only non-touch screen devices&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;PS: I&amp;rsquo;m not sure how this would act on touch-screen laptops.&lt;/p&gt;
 </description>
     </item>

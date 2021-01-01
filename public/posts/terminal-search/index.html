@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
-<title>Stop Arrowing Up So Much In Terminal; Search Instead! (in Linux/Unix (Mac)) – Hakeem Almidan</title>
-<meta name="description" content="Stop arrowing up in terminal so much. Search instead.">
+<title>Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix) – Hakeem Almidan</title>
+<meta name="description" content="Stop arrowing up in terminal so much. Search instead! (Linux/Unix)">
 <meta name="created" content="2020-12-31T19:01:40+0300">
 <meta name="modified" content="2020-12-31T19:01:40+0300">
 
 <meta name="contact" content="hakeemmidan@gmail.com">
 <meta property="og:site_name" content="Hakeem Almidan">
-<meta property="og:title" content="Stop Arrowing Up So Much In Terminal; Search Instead! (in Linux/Unix (Mac))">
+<meta property="og:title" content="Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix)">
 <meta property="og:url" content="https://hakeem-almidan.com/posts/terminal-search/">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://hakeem-almidan.com/static/apple-touch-icon.png">
@@ -34,11 +34,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Stop Arrowing Up So Much In Terminal; Search Instead! (in Linux/Unix (Mac))",
+    "headline": "Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix)",
     "datePublished": "2020-12-31T19:01:40+03:00",
     "dateModified": "2020-12-31T19:01:40+03:00",
     "url" : "https://hakeem-almidan.com/posts/terminal-search/",
-    "description": "Stop arrowing up in terminal so much. Search instead.",
+    "description": "Stop arrowing up in terminal so much. Search instead! (Linux/Unix)",
     "keywords": ["terminal"],
     "image" : "https://hakeem-almidan.com/static/apple-touch-icon.png",
     "mainEntityOfPage": {
@@ -89,7 +89,7 @@
 <main class="main layout__main">
 <article class="section-posts single-view">
 <header>
-<h1 class="title ">Stop Arrowing Up So Much In Terminal; Search Instead! (in Linux/Unix (Mac))</h1>
+<h1 class="title ">Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix)</h1>
 
 </header>
 <div class="content">
@@ -108,9 +108,7 @@ to waste your brainpower on such a task (unless you like doing it).</p>
 <h2 id="solution">Solution</h2>
 <h4 id="ctrlr">Ctrl+r</h4>
 <p>This does a &lsquo;reverse-i-search&rsquo; or &lsquo;bck-i-search&rsquo;, which finds the most recent closest match.</p>
-<p>Do <code>Ctrl+r</code> again to go to the next closest match further back in history.</p>
-<p>It searches through an environment variable called <code>$HISTFILE</code>. The size of this file depends on your
-<code>$HISTSIZE</code> (I believe the default in Unix/Linux is around 500).</p>
+<p><code>Ctrl+r</code> again to go to next match (further back in history).</p>
 <figure class="image center">
 <a href="ctrl-r.png"><img src="ctrl-r.png" alt="Ctrl&#43;r keyboard shortcut example use" width="400"></a>
 <figcaption>
@@ -118,14 +116,23 @@ to waste your brainpower on such a task (unless you like doing it).</p>
 </figcaption>
 </figure>
 
-<hr>
+<p>It searches through an environment variable called <code>$HISTFILE</code>. The number of commands that
+this file remembers depends on your <code>$HISTSIZE</code>.</p>
+<p>I believe the default <code>$HISTSIZE</code> in Unix/Linux is around 500. You can check yours by running:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ echo $HISTSIZE
+</code></pre></div><hr>
 <h4 id="alternative-approach">Alternative approach</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">history <span style="color:#ae81ff">0</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ history <span style="color:#ae81ff">0</span>
+  <span style="color:#ae81ff">0</span> echo <span style="color:#e6db74">&#39;example command 0&#39;</span>
+  <span style="color:#ae81ff">1</span> echo <span style="color:#e6db74">&#39;example command 1&#39;</span>
+  <span style="color:#ae81ff">2</span> echo <span style="color:#e6db74">&#39;example command 2&#39;</span>
+  <span style="color:#ae81ff">3</span> echo <span style="color:#e6db74">&#39;example command 3&#39;</span>
+  ...
 </code></pre></div><p>This displays your history from 0 to <code>$HISTSIZE</code>.</p>
 <p>You can either scroll or <code>Cmd+f</code> to find your command.
 To execute the command, do:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">!&lt;command-number&gt;
-</code></pre></div><p>&hellip; where <code>command-number</code> is the number displayed next to your command.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ !&lt;command-number&gt;
+</code></pre></div><p>&hellip; where <code>command-number</code> is the number displayed leftmost to your selected command.</p>
 <figure class="image center">
 <a href="history.png"><img src="history.png" alt="&#39;history 0&#39; command example use" width="500"></a>
 <figcaption>
@@ -133,6 +140,7 @@ To execute the command, do:</p>
 </figcaption>
 </figure>
 
+<p>Happy coding!</p>
 
 
 
@@ -142,7 +150,7 @@ To execute the command, do:</p>
   </p>
 
   <p>
-    Promise not to send more than 1 email per month (not counting subscription confirmation email 🙄) 🤞
+    Promise not to send more than 1 email per month (not counting subscription confirmation email) 👨‍💻
   </p>
   
   <div id="mc_embed_signup">
@@ -190,7 +198,7 @@ To execute the command, do:</p>
 <section>
 <h4 class="menu">Posts by title</h4>
 <ul class="menu">
-<li><a href="/posts/terminal-search/" class="active" aria-current="page">Stop Arrowing Up So Much In Terminal; Search Instead! (in Linux/Unix (Mac))</a></li>
+<li><a href="/posts/terminal-search/" class="active" aria-current="page">Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix)</a></li>
 <li><a href="/posts/custom-promotion-code-cli/">Useful Tools that Helped in Building a Custom Promotion-Code CLI (built in Ruby)</a></li>
 <li><a href="/posts/puffin-multiple-fish-in-beak-wonder/">Why do puffins often have mutliple fish in their beaks at once?</a></li>
 <li><a href="/posts/scss-animation-mixin/">SCSS Animation Mixin</a></li>
