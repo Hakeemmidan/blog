@@ -20,13 +20,13 @@ attr="Hover state getting stuck on-click on mobile"
 class="center"
 >}}
 
-## How to Fix It
+## Solution
 
 Using the ['hover' CSS media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover), which could be applied either through SCSS or CSS. In the case of SCSS, we're going to use a [mixin](https://sass-lang.com/documentation/at-rules/mixin).
 
 Here is each solution respectively:
 
-### Solution 1: SCSS Mixin
+### Option 1: SCSS Mixin
 
 The mixin:
 ```SCSS
@@ -49,7 +49,7 @@ Example use:
   }
 ```
 
-### Solution 2: CSS
+### Option 2: CSS
 
 Example use:
 ```CSS
@@ -62,6 +62,8 @@ Example use:
 
 ### Explanation
 
-Both examples change the `background-color` of HTML elements with class `example` only when they're hovered-over on non-touch screen devices (or any [hover](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover) supported device). In other words, *this applies hover styling on only non-touch screen devices*.
+Both examples change the `background-color` of HTML elements with class `example` 
+only when they're hovered-over on non-touch screen devices (or any [hover](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover) 
+supported device). In short, *this applies hover styling on only non-touch screen devices*.
 
 PS: I'm not sure how this would act on touch-screen laptops.
