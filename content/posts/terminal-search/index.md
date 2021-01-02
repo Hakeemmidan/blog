@@ -12,8 +12,9 @@ references: ["'Red Hat System Administration I' Student Workbook (ROLE)"]
 Do you ever *NOT* feel like re-writing a command that you wrote some N commands ago?
 I do!
 
-Arrowing up and focusing until you reach what you want can be annoying for a lazy programmer. Although it usually only takes a couple of seconds, it still adds up. Plus, you don't want
-to waste your brainpower on such a task (unless you like doing it).
+Arrowing up and focusing until you reach what you want can be annoying for an efficient 
+programmer. Although it usually only takes a couple of seconds, it still adds up. Plus, 
+you don't want to waste your brainpower on such a task (unless you like doing it).
 
 One of the best pieces of advice I heard when I first started programming is:
 >> Always improve/automate tasks that you know you're going to continuously repeat in the future
