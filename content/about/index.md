@@ -9,8 +9,6 @@ I’m Abdulhakeem. You can call me Hakeem. I have experience building full-stack
 
 Outside of work, I enjoy painting, playing volleyball, soccer, scuba diving, and hanging out with friends. I also enjoy reading about business and finance.
 
-I'm currently looking for software engineering and finance positions and I'd love to hear about your company!
-
 ### Resume
 [link](https://hakeemmidan.github.io/resume/)
 
