@@ -859,6 +859,10 @@ html {
 body {
   background-color: white; }
 
+.header__logo-image {
+  width: 9rem;
+  height: 9rem; }
+
 .content p {
   line-height: 1.5rem; }
 
