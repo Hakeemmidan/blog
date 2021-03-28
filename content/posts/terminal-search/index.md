@@ -17,7 +17,7 @@ programmer. Although it usually only takes a couple of seconds, it still adds up
 you don't want to waste your brainpower on such a task (unless you like doing it).
 
 One of the best pieces of advice I heard when I first started programming is:
->> Always improve/automate tasks that you know you're going to continuously repeat in the future
+> "Always improve/automate tasks that you know you're going to continuously repeat in the future"
 
 So let's do that. Let's improve this situation.
 

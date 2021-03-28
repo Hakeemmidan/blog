@@ -857,7 +857,7 @@ html {
   font-family: sans-serif; }
 
 body {
-  background-color: white; }
+  background-color: aliceblue; }
 
 .header__logo-image {
   width: 9rem;
