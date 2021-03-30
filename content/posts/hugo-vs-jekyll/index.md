@@ -13,7 +13,7 @@ references: [
 ## What are static websites?
 In simple terms, static websites are a collection of webpages that have fixed content. They are the most basic type of website and are typically considered the easiest to create.
 
-These websites are considered the easiest to create because they have a low barrier of entry. They are usually not connected to a [backend](https://en.wikipedia.org/wiki/Data_access_layer) or a [database](https://en.wikipedia.org/wiki/Database), so the only thing that you will need to manage is the [frontend](https://en.wikipedia.org/wiki/Presentation_layer).
+These websites are considered the easiest to create because they have a low barrier of entry. They usually are not connected to a [backend](https://en.wikipedia.org/wiki/Data_access_layer) or a [database](https://en.wikipedia.org/wiki/Database), so the only thing that you need to manage is the [frontend](https://en.wikipedia.org/wiki/Presentation_layer).
 
 Given that information, static websites look essentially the same for all users (because you wouldn't have user data to customize their experience). User data, like emails and [password digests](https://en.wikipedia.org/wiki/Digest_access_authentication), need a database for storage and are considered unsafe to store in the frontend.
 
