@@ -7,6 +7,10 @@
 </a></p>
 </header>
 <div class="content">
-{{ .Content }}
+{{ if .Params.description }}
+  {{ .Params.description }}
+{{ else }}
+  {{ .Summary }}
+{{ end }}
 </div>
 </article>
