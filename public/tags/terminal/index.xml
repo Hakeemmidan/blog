@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>terminal on Hakeem Almidan</title>
-    <link>https://hakeem-almidan.com/tags/terminal/</link>
-    <description>Recent content in terminal on Hakeem Almidan</description>
+    <title>Terminal on Hakeem Almidan</title>
+    <link>http://localhost:1313/tags/terminal/</link>
+    <description>Recent content in Terminal on Hakeem Almidan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     <lastBuildDate>Thu, 31 Dec 2020 19:01:40 +0300</lastBuildDate>
-    <atom:link href="https://hakeem-almidan.com/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix)</title>
-      <link>https://hakeem-almidan.com/posts/terminal-search/</link>
+      <link>http://localhost:1313/posts/terminal-search/</link>
       <pubDate>Thu, 31 Dec 2020 19:01:40 +0300</pubDate>
-      <guid>https://hakeem-almidan.com/posts/terminal-search/</guid>
+      <guid>http://localhost:1313/posts/terminal-search/</guid>
       <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Do you ever &lt;em&gt;NOT&lt;/em&gt; feel like re-writing a command that you wrote some N commands ago?
 I do!&lt;/p&gt;
@@ -39,20 +39,20 @@ you don&amp;rsquo;t want to waste your brainpower on such a task (unless you lik
 &lt;p&gt;It searches through an environment variable called &lt;code&gt;$HISTFILE&lt;/code&gt;. The number of commands that
 this file remembers depends on your &lt;code&gt;$HISTSIZE&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;I believe the default &lt;code&gt;$HISTSIZE&lt;/code&gt; in Unix/Linux is around 500. You can check yours by running:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;$ echo $HISTSIZE
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ echo $HISTSIZE
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h4 id=&#34;alternative-approach&#34;&gt;Alternative approach&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;$ history &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
-  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 0&amp;#39;&lt;/span&gt;
-  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 1&amp;#39;&lt;/span&gt;
-  &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 2&amp;#39;&lt;/span&gt;
-  &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 3&amp;#39;&lt;/span&gt;
-  ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This displays your history from 0 to &lt;code&gt;$HISTSIZE&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ history &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 0&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 1&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 2&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 3&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This displays your history from 0 to &lt;code&gt;$HISTSIZE&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You can either scroll or &lt;code&gt;Cmd+f&lt;/code&gt; to find your command.
 To execute the command, run:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;$ !&amp;lt;command-number&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&amp;hellip; where &lt;code&gt;command-number&lt;/code&gt; is the number displayed leftmost to your selected command.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ !&amp;lt;command-number&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&amp;hellip; where &lt;code&gt;command-number&lt;/code&gt; is the number displayed leftmost to your selected command.&lt;/p&gt;
 &lt;figure class=&#34;image center&#34;&gt;
 &lt;a href=&#34;history.png&#34;&gt;&lt;img src=&#34;history.png&#34; alt=&#34;&amp;#39;history 0&amp;#39; command example use&#34; width=&#34;500&#34;&gt;&lt;/a&gt;
 &lt;figcaption&gt;

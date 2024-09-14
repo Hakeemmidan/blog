@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="nojs" lang="en" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
@@ -12,23 +12,23 @@
 <meta name="contact" content="hakeemmidan@gmail.com">
 <meta property="og:site_name" content="Hakeem Almidan">
 <meta property="og:title" content="Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix)">
-<meta property="og:url" content="https://hakeem-almidan.com/posts/terminal-search/">
+<meta property="og:url" content="http://localhost:1313/posts/terminal-search/">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://hakeem-almidan.com/static/apple-touch-icon.png">
-<meta name="generator" content="Hugo 0.77.0" />
+<meta property="og:image" content="http://localhost:1313/static/apple-touch-icon.png">
+<meta name="generator" content="Hugo 0.134.2">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 
 
-<link rel="canonical" href="https://hakeem-almidan.com/posts/terminal-search/">
+<link rel="canonical" href="http://localhost:1313/posts/terminal-search/">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
 <link rel="manifest" href="/site.webmanifest">
 
-<link rel="stylesheet" href="/css/styles.d685af851388a16048e71e1e7568fa2eb2974db7d251eb10a9fad95f687b402e.css">
-<link rel="stylesheet" href="/css/print.27fc184f8670f41a2690985390779e7b20335a8fadff8fa015cf9417ffe50c36.css" media="print">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/print.css" media="print">
 
 <script type="application/ld+json">
   {
@@ -37,31 +37,31 @@
     "headline": "Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix)",
     "datePublished": "2020-12-31T19:01:40+03:00",
     "dateModified": "2020-12-31T19:01:40+03:00",
-    "url" : "https://hakeem-almidan.com/posts/terminal-search/",
+    "url" : "http://localhost:1313/posts/terminal-search/",
     "description": "Stop arrowing up in terminal so much. Search instead! (Linux/Unix)",
     "keywords": ["terminal"],
-    "image" : "https://hakeem-almidan.com/static/apple-touch-icon.png",
+    "image" : "http://localhost:1313/static/apple-touch-icon.png",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://hakeem-almidan.com/"
+      "@id": "http://localhost:1313/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Hakeem Almidan",
       "logo" : {
         "@type": "ImageObject",
-        "url": "https://hakeem-almidan.com/static/apple-touch-icon.png"
+        "url": "http://localhost:1313/static/apple-touch-icon.png"
       },
-      "url": "https://hakeem-almidan.com/"
+      "url": "http://localhost:1313/"
     }
   }
 </script>
 
-<script src="/js/script-early.min.a8d899ac88f2a778985767b86ce681945e3fa2069c3c9efd17e5e5b594d3ba1f.js"></script>
+<script src="/js/script-early.min.21220209af63c496c7531316922ef9a4548661be9388bbcd1f9899bb0b842b21.js"></script>
 <script defer src="/js/lib/umbrella.min.b426107371d121c9a56a27aac9e9058ff592a021e2f4c3c94827fe70920d3cbb.js"></script>
-<script defer src="/js/script.min.f7f56769569fdf7a80d073b6775c6cd9ed8ae528864cd3f2aa1c8c3fe73f87ea.js"></script>
+<script defer src="/js/script.min.cd0c39546d1ff0d0749973a5492f915ffb3f79edc89085bd87ef1d0b5b531b5d.js"></script>
 
-<script src="/js/tracking.min.7a09127505302fe5bd974ff3a32e27efa6b7ff33a08c799de424278eb00b0e45.js"></script>
+<script src="/js/tracking.min.2e99db48b6289961237eed95bd58ebc84f7066a8325001e1fda5e44443d863f1.js"></script>
 <script defer src="https://ssl.google-analytics.com/ga.js"></script>
 
 </head>
@@ -118,20 +118,20 @@ you don&rsquo;t want to waste your brainpower on such a task (unless you like do
 <p>It searches through an environment variable called <code>$HISTFILE</code>. The number of commands that
 this file remembers depends on your <code>$HISTSIZE</code>.</p>
 <p>I believe the default <code>$HISTSIZE</code> in Unix/Linux is around 500. You can check yours by running:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ echo $HISTSIZE
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>$ echo $HISTSIZE
+</span></span></code></pre></div><hr>
 <h4 id="alternative-approach">Alternative approach</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ history <span style="color:#ae81ff">0</span>
-  <span style="color:#ae81ff">0</span> echo <span style="color:#e6db74">&#39;example command 0&#39;</span>
-  <span style="color:#ae81ff">1</span> echo <span style="color:#e6db74">&#39;example command 1&#39;</span>
-  <span style="color:#ae81ff">2</span> echo <span style="color:#e6db74">&#39;example command 2&#39;</span>
-  <span style="color:#ae81ff">3</span> echo <span style="color:#e6db74">&#39;example command 3&#39;</span>
-  ...
-</code></pre></div><p>This displays your history from 0 to <code>$HISTSIZE</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>$ history <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">0</span> echo <span style="color:#e6db74">&#39;example command 0&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">1</span> echo <span style="color:#e6db74">&#39;example command 1&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">2</span> echo <span style="color:#e6db74">&#39;example command 2&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">3</span> echo <span style="color:#e6db74">&#39;example command 3&#39;</span>
+</span></span><span style="display:flex;"><span>  ...
+</span></span></code></pre></div><p>This displays your history from 0 to <code>$HISTSIZE</code>.</p>
 <p>You can either scroll or <code>Cmd+f</code> to find your command.
 To execute the command, run:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ !&lt;command-number&gt;
-</code></pre></div><p>&hellip; where <code>command-number</code> is the number displayed leftmost to your selected command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>$ !&lt;command-number&gt;
+</span></span></code></pre></div><p>&hellip; where <code>command-number</code> is the number displayed leftmost to your selected command.</p>
 <figure class="image center">
 <a href="history.png"><img src="history.png" alt="&#39;history 0&#39; command example use" width="500"></a>
 <figcaption>
@@ -169,8 +169,8 @@ To execute the command, run:</p>
   
   <hr>
   <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
+<script>
+    window.disqus_config = function () {
     
     
     
@@ -194,7 +194,8 @@ To execute the command, run:</p>
 
 
 <footer class="footer layout__footer">
-<p><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->
+</p>
 
 
 </footer>

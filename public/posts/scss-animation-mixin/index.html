@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="nojs" lang="en" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
@@ -12,23 +12,23 @@
 <meta name="contact" content="hakeemmidan@gmail.com">
 <meta property="og:site_name" content="Hakeem Almidan">
 <meta property="og:title" content="SCSS Animation Mixin">
-<meta property="og:url" content="https://hakeem-almidan.com/posts/scss-animation-mixin/">
+<meta property="og:url" content="http://localhost:1313/posts/scss-animation-mixin/">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://hakeem-almidan.com/static/apple-touch-icon.png">
-<meta name="generator" content="Hugo 0.77.0" />
+<meta property="og:image" content="http://localhost:1313/static/apple-touch-icon.png">
+<meta name="generator" content="Hugo 0.134.2">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 
 
-<link rel="canonical" href="https://hakeem-almidan.com/posts/scss-animation-mixin/">
+<link rel="canonical" href="http://localhost:1313/posts/scss-animation-mixin/">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
 <link rel="manifest" href="/site.webmanifest">
 
-<link rel="stylesheet" href="/css/styles.d685af851388a16048e71e1e7568fa2eb2974db7d251eb10a9fad95f687b402e.css">
-<link rel="stylesheet" href="/css/print.27fc184f8670f41a2690985390779e7b20335a8fadff8fa015cf9417ffe50c36.css" media="print">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/print.css" media="print">
 
 <script type="application/ld+json">
   {
@@ -37,31 +37,31 @@
     "headline": "SCSS Animation Mixin",
     "datePublished": "2020-05-05T17:15:02-07:00",
     "dateModified": "2020-05-05T17:15:02-07:00",
-    "url" : "https://hakeem-almidan.com/posts/scss-animation-mixin/",
+    "url" : "http://localhost:1313/posts/scss-animation-mixin/",
     "description": "How to create an Scss/Sass animation mixin. We do this to follow DRY software development principle, and make our code more easily readable.",
     "keywords": ["css","scss"],
-    "image" : "https://hakeem-almidan.com/static/apple-touch-icon.png",
+    "image" : "http://localhost:1313/static/apple-touch-icon.png",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://hakeem-almidan.com/"
+      "@id": "http://localhost:1313/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Hakeem Almidan",
       "logo" : {
         "@type": "ImageObject",
-        "url": "https://hakeem-almidan.com/static/apple-touch-icon.png"
+        "url": "http://localhost:1313/static/apple-touch-icon.png"
       },
-      "url": "https://hakeem-almidan.com/"
+      "url": "http://localhost:1313/"
     }
   }
 </script>
 
-<script src="/js/script-early.min.a8d899ac88f2a778985767b86ce681945e3fa2069c3c9efd17e5e5b594d3ba1f.js"></script>
+<script src="/js/script-early.min.21220209af63c496c7531316922ef9a4548661be9388bbcd1f9899bb0b842b21.js"></script>
 <script defer src="/js/lib/umbrella.min.b426107371d121c9a56a27aac9e9058ff592a021e2f4c3c94827fe70920d3cbb.js"></script>
-<script defer src="/js/script.min.f7f56769569fdf7a80d073b6775c6cd9ed8ae528864cd3f2aa1c8c3fe73f87ea.js"></script>
+<script defer src="/js/script.min.cd0c39546d1ff0d0749973a5492f915ffb3f79edc89085bd87ef1d0b5b531b5d.js"></script>
 
-<script src="/js/tracking.min.7a09127505302fe5bd974ff3a32e27efa6b7ff33a08c799de424278eb00b0e45.js"></script>
+<script src="/js/tracking.min.2e99db48b6289961237eed95bd58ebc84f7066a8325001e1fda5e44443d863f1.js"></script>
 <script defer src="https://ssl.google-analytics.com/ga.js"></script>
 
 </head>
@@ -96,36 +96,36 @@
 <h2 id="problem">Problem</h2>
 <p>The slightest change in CSS animations (<code>@keyframes</code>) requires a creation of a new animation.</p>
 <h4 id="problem-example">Problem Example</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SCSS" data-lang="SCSS"><span style="color:#66d9ef">@keyframes</span> <span style="color:#f92672">to-yellow</span> {
-  <span style="color:#f92672">50</span><span style="color:#960050;background-color:#1e0010">%</span> { <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">yellow</span>; }
-}
-
-<span style="color:#66d9ef">@keyframes</span> <span style="color:#f92672">to-skyblue</span> {
-  <span style="color:#f92672">50</span><span style="color:#960050;background-color:#1e0010">%</span> { <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">skyblue</span>; }
-}
-</code></pre></div><p>Both of the animations pretty much do the same thing, but we had to create two of them.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SCSS" data-lang="SCSS"><span style="display:flex;"><span><span style="color:#66d9ef">@keyframes</span> <span style="color:#f92672">to-yellow</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">50</span><span style="color:#960050;background-color:#1e0010">%</span> { <span style="color:#a6e22e">background-color</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">yellow</span>; }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@keyframes</span> <span style="color:#f92672">to-skyblue</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">50</span><span style="color:#960050;background-color:#1e0010">%</span> { <span style="color:#a6e22e">background-color</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">skyblue</span>; }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Both of the animations pretty much do the same thing, but we had to create two of them.
 We had to create two of them because their property (<code>background-color</code>) had different values (i.e. <code>yellow</code> and <code>skyblue</code>).</p>
 <p>This doesn&rsquo;t follow the <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> software development principle.</p>
 <p>To fix this, we&rsquo;re going to use an SCSS <a href="https://sass-lang.com/documentation/at-rules/mixin">mixin</a>.</p>
 <h2 id="solution">Solution</h2>
 <p>Looking at the problem example above, we&rsquo;d replace it with something like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SCSS" data-lang="SCSS"><span style="color:#66d9ef">@mixin</span><span style="color:#a6e22e"> animation-mixin</span>($name<span style="color:#f92672">,</span> $color-var) {
-  <span style="color:#66d9ef">@keyframes</span> #{<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">name</span>} {
-    <span style="color:#f92672">50</span><span style="color:#960050;background-color:#1e0010">%</span> { <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">color-var</span>; }
-  }
-}
-
-<span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> animation-mixin</span>(to-yellow<span style="color:#f92672">,</span> yellow);
-
-<span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> animation-mixin</span>(to-skyblue<span style="color:#f92672">,</span> skyblue);
-</code></pre></div><p>Then you could call the <code>to-yellow</code> and <code>to-skyblue</code> animations in your selectors as needed:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SCSS" data-lang="SCSS"><span style="color:#f92672">div</span> {
-  <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">100px</span>;
-  <span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">100px</span>;
-  <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">whitesmoke</span>;
-  <span style="color:#f92672">animation</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">to-yellow</span> <span style="color:#f92672">4s</span> <span style="color:#f92672">ease</span> <span style="color:#f92672">infinite</span>;
-}
-</code></pre></div><p>Live example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SCSS" data-lang="SCSS"><span style="display:flex;"><span><span style="color:#66d9ef">@mixin</span><span style="color:#a6e22e"> animation-mixin</span>($name<span style="color:#f92672">,</span> $color-var) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">@keyframes</span> <span style="color:#e6db74">#{</span>$name<span style="color:#e6db74">}</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">50</span><span style="color:#960050;background-color:#1e0010">%</span> { <span style="color:#a6e22e">background-color</span><span style="color:#f92672">:</span> $color-var; }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> animation-mixin</span>(to-yellow<span style="color:#f92672">,</span> <span style="color:#66d9ef">yellow</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> animation-mixin</span>(to-skyblue<span style="color:#f92672">,</span> <span style="color:#66d9ef">skyblue</span>);
+</span></span></code></pre></div><p>Then you could call the <code>to-yellow</code> and <code>to-skyblue</code> animations in your selectors as needed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SCSS" data-lang="SCSS"><span style="display:flex;"><span><span style="color:#f92672">div</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">height</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">width</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">background-color</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">whitesmoke</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">animation</span><span style="color:#f92672">:</span> to-yellow <span style="color:#ae81ff">4</span><span style="color:#66d9ef">s</span> ease infinite;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Live example:</p>
 <!-- raw HTML omitted -->
 
 
@@ -165,8 +165,8 @@ We had to create two of them because their property (<code>background-color</cod
   
   <hr>
   <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
+<script>
+    window.disqus_config = function () {
     
     
     
@@ -190,7 +190,8 @@ We had to create two of them because their property (<code>background-color</cod
 
 
 <footer class="footer layout__footer">
-<p><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->
+</p>
 
 
 </footer>

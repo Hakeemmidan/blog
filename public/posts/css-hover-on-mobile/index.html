@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="nojs" lang="en" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
@@ -12,23 +12,23 @@
 <meta name="contact" content="hakeemmidan@gmail.com">
 <meta property="og:site_name" content="Hakeem Almidan">
 <meta property="og:title" content="How to Prevent CSS Hover State From Getting stuck on Mobile Browsers">
-<meta property="og:url" content="https://hakeem-almidan.com/posts/css-hover-on-mobile/">
+<meta property="og:url" content="http://localhost:1313/posts/css-hover-on-mobile/">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://hakeem-almidan.com/static/apple-touch-icon.png">
-<meta name="generator" content="Hugo 0.77.0" />
+<meta property="og:image" content="http://localhost:1313/static/apple-touch-icon.png">
+<meta name="generator" content="Hugo 0.134.2">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 
 
-<link rel="canonical" href="https://hakeem-almidan.com/posts/css-hover-on-mobile/">
+<link rel="canonical" href="http://localhost:1313/posts/css-hover-on-mobile/">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
 <link rel="manifest" href="/site.webmanifest">
 
-<link rel="stylesheet" href="/css/styles.d685af851388a16048e71e1e7568fa2eb2974db7d251eb10a9fad95f687b402e.css">
-<link rel="stylesheet" href="/css/print.27fc184f8670f41a2690985390779e7b20335a8fadff8fa015cf9417ffe50c36.css" media="print">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/print.css" media="print">
 
 <script type="application/ld+json">
   {
@@ -37,31 +37,31 @@
     "headline": "How to Prevent CSS Hover State From Getting stuck on Mobile Browsers",
     "datePublished": "2020-04-16T21:58:27-07:00",
     "dateModified": "2020-04-16T21:58:27-07:00",
-    "url" : "https://hakeem-almidan.com/posts/css-hover-on-mobile/",
+    "url" : "http://localhost:1313/posts/css-hover-on-mobile/",
     "description": "How to make the CSS hover state not get stuck on mobile browsers using CSS or SCSS mixins",
     "keywords": ["css","scss"],
-    "image" : "https://hakeem-almidan.com/static/apple-touch-icon.png",
+    "image" : "http://localhost:1313/static/apple-touch-icon.png",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://hakeem-almidan.com/"
+      "@id": "http://localhost:1313/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Hakeem Almidan",
       "logo" : {
         "@type": "ImageObject",
-        "url": "https://hakeem-almidan.com/static/apple-touch-icon.png"
+        "url": "http://localhost:1313/static/apple-touch-icon.png"
       },
-      "url": "https://hakeem-almidan.com/"
+      "url": "http://localhost:1313/"
     }
   }
 </script>
 
-<script src="/js/script-early.min.a8d899ac88f2a778985767b86ce681945e3fa2069c3c9efd17e5e5b594d3ba1f.js"></script>
+<script src="/js/script-early.min.21220209af63c496c7531316922ef9a4548661be9388bbcd1f9899bb0b842b21.js"></script>
 <script defer src="/js/lib/umbrella.min.b426107371d121c9a56a27aac9e9058ff592a021e2f4c3c94827fe70920d3cbb.js"></script>
-<script defer src="/js/script.min.f7f56769569fdf7a80d073b6775c6cd9ed8ae528864cd3f2aa1c8c3fe73f87ea.js"></script>
+<script defer src="/js/script.min.cd0c39546d1ff0d0749973a5492f915ffb3f79edc89085bd87ef1d0b5b531b5d.js"></script>
 
-<script src="/js/tracking.min.7a09127505302fe5bd974ff3a32e27efa6b7ff33a08c799de424278eb00b0e45.js"></script>
+<script src="/js/tracking.min.2e99db48b6289961237eed95bd58ebc84f7066a8325001e1fda5e44443d863f1.js"></script>
 <script defer src="https://ssl.google-analytics.com/ga.js"></script>
 
 </head>
@@ -107,27 +107,27 @@
 <p>Here is each solution respectively:</p>
 <h3 id="option-1-scss-mixin">Option 1: SCSS Mixin</h3>
 <p>The mixin:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SCSS" data-lang="SCSS"><span style="color:#66d9ef">@mixin</span><span style="color:#a6e22e"> hover-supported</span> {    
-    <span style="color:#66d9ef">@media</span> (hover<span style="color:#f92672">:</span> hover) { 
-      <span style="color:#66d9ef">@content</span>;
-    }
-}
-</code></pre></div><p>Example use:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SCSS" data-lang="SCSS">  <span style="color:#a6e22e">.example</span> {
-    <span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> hover-supported</span>() {
-      <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:hover</span> {
-        <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">black</span>;
-      }
-    }
-  }
-</code></pre></div><h3 id="option-2-css">Option 2: CSS</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SCSS" data-lang="SCSS"><span style="display:flex;"><span><span style="color:#66d9ef">@mixin</span><span style="color:#a6e22e"> hover-supported</span> {    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">@media</span> (hover<span style="color:#f92672">:</span> hover) { 
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">@content</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Example use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SCSS" data-lang="SCSS"><span style="display:flex;"><span>  <span style="color:#a6e22e">.example</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> hover-supported</span>() {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:hover</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">background-color</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">black</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><h3 id="option-2-css">Option 2: CSS</h3>
 <p>Example use:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CSS" data-lang="CSS">  @<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">hover</span><span style="color:#f92672">:</span> <span style="color:#f92672">hover</span><span style="color:#f92672">)</span> {
-    .<span style="color:#a6e22e">example</span>:<span style="color:#a6e22e">hover</span> {
-      <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">black</span>;
-    }
-  }
-</code></pre></div><h3 id="explanation">Explanation</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-CSS" data-lang="CSS"><span style="display:flex;"><span>  @<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">hover</span><span style="color:#f92672">:</span> <span style="color:#f92672">hover</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">example</span>:<span style="color:#a6e22e">hover</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">black</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><h3 id="explanation">Explanation</h3>
 <p>Both examples change the <code>background-color</code> of HTML elements with class <code>example</code>
 only when they&rsquo;re hovered-over on non-touch screen devices (or any <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover">hover</a>
 supported device). In short, <em>this applies hover styling on only non-touch screen devices</em>.</p>
@@ -161,8 +161,8 @@ supported device). In short, <em>this applies hover styling on only non-touch sc
   
   <hr>
   <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
+<script>
+    window.disqus_config = function () {
     
     
     
@@ -186,7 +186,8 @@ supported device). In short, <em>this applies hover styling on only non-touch sc
 
 
 <footer class="footer layout__footer">
-<p><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->
+</p>
 
 
 </footer>

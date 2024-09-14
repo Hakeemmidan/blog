@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="nojs" lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories – Hakeem Almidan</title>
+<meta name="description" content="Create an alias for listing directories only using the unix/linux ls command">
+<meta name="created" content="2024-09-13T01:01:01-0700">
+<meta name="modified" content="2024-09-13T01:01:01-0700">
+
+<meta name="contact" content="hakeemmidan@gmail.com">
+<meta property="og:site_name" content="Hakeem Almidan">
+<meta property="og:title" content="lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories">
+<meta property="og:url" content="http://localhost:1313/posts/lsdir/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="http://localhost:1313/static/apple-touch-icon.png">
+<meta name="generator" content="Hugo 0.134.2">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+
+<link rel="canonical" href="http://localhost:1313/posts/lsdir/">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/print.css" media="print">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "headline": "lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories",
+    "datePublished": "2024-09-13T01:01:01-07:00",
+    "dateModified": "2024-09-13T01:01:01-07:00",
+    "url" : "http://localhost:1313/posts/lsdir/",
+    "description": "Create an alias for listing directories only using the unix/linux ls command",
+    "keywords": ["bash","zsh","ls"],
+    "image" : "http://localhost:1313/static/apple-touch-icon.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://localhost:1313/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hakeem Almidan",
+      "logo" : {
+        "@type": "ImageObject",
+        "url": "http://localhost:1313/static/apple-touch-icon.png"
+      },
+      "url": "http://localhost:1313/"
+    }
+  }
+</script>
+
+<script src="/js/script-early.min.21220209af63c496c7531316922ef9a4548661be9388bbcd1f9899bb0b842b21.js"></script>
+<script defer src="/js/lib/umbrella.min.b426107371d121c9a56a27aac9e9058ff592a021e2f4c3c94827fe70920d3cbb.js"></script>
+<script defer src="/js/script.min.cd0c39546d1ff0d0749973a5492f915ffb3f79edc89085bd87ef1d0b5b531b5d.js"></script>
+
+<script src="/js/tracking.min.2e99db48b6289961237eed95bd58ebc84f7066a8325001e1fda5e44443d863f1.js"></script>
+<script defer src="https://ssl.google-analytics.com/ga.js"></script>
+
+</head>
+
+<body class="single-page">
+<div class="page layout__page">
+<header class="header layout__header">
+<a href="/" title="Home" rel="home" class="header__logo"> <img src="/images/logo.png" alt="Home" class="header__logo-image"></a>
+<h1 class="header__site-name">
+<a href="/" title="Home" class="header__site-link" rel="home"><span>Hakeem Almidan</span></a>
+</h1>
+<div class="region header__region">
+</div>
+</header>
+
+<nav class="main-menu layout__navigation">
+<h2 class="visually-hidden">Main menu</h2>
+<ul class="navbar">
+<li><a href="/">Posts</a></li>
+<li><a href="/about/">About</a></li>
+</ul>
+</nav>
+
+
+<main class="main layout__main">
+<article class="section-posts single-view">
+<header>
+<h1 class="title ">lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories</h1>
+
+</header>
+<div class="content">
+<h2 id="the-problem">The Problem</h2>
+<p>When working in the terminal, you sometimes need to list only the directories in the current location. The standard <code>ls</code> command shows both files and directories, which can be overwhelming in cluttered directories.</p>
+<p>The command for listing only directories in the current location is <code>ls -d */</code> which is not simple to remember, especially if it&rsquo;s not something that you do often.</p>
+<h2 id="the-solution-lsdir">The Solution: lsdir</h2>
+<p><code>lsdir</code>, an alias for only listing directories, which hopefully is easier to remember.</p>
+<h4 id="1-open-your-zshrc-or-bashrc-file">1. Open your <code>.zshrc</code> or <code>.bashrc</code> file:</h4>
+<p>For Zsh:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>vim ~/.zshrc
+</span></span></code></pre></div><p>For Bash:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim ~/.bashrc
+</span></span></code></pre></div><h4 id="2-click-i-on-your-keyboard-to-go-into-editing-mode-in-vim">2. Click <code>i</code> on your keyboard to go into editing mode in <code>vim</code></h4>
+<h4 id="3-add-the-following-line">3. Add the following line:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>alias lsdir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ls -d */&#39;</span>
+</span></span></code></pre></div><h4 id="4-save-the-file-and-reload-your-shell-configuration">4. Save the file and reload your shell configuration:</h4>
+<p>For Zsh:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>source ~/.zshrc
+</span></span></code></pre></div><p>For Bash:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source ~/.bashrc
+</span></span></code></pre></div><h4 id="5-try-it">5. Try it</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>lsdir
+</span></span></code></pre></div><p>You&rsquo;re done; Happy coding! 👾</p>
+
+
+
+  <hr>
+  <p>
+    Like what you're seeing? Subscribe below to recieve notifications of new posts ⬇️
+  </p>
+
+  <p>
+    Promise not to send more than 1 email per month (not counting subscription confirmation email) 👨‍💻
+  </p>
+  
+  <div id="mc_embed_signup">
+    <form action="https://hakeem-almidan.us2.list-manage.com/subscribe/post?u=2a214450dbf0906444fa3503a&amp;id=637c7a92ad"
+      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+      <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+      <div id="mc_embed_signup_scroll">
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+            name="b_2a214450dbf0906444fa3503a_637c7a92ad" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+            class="button"></div>
+      </div>
+    </form>
+  </div>
+  
+  <hr>
+  <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hakeem-almidan" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+</article>
+</main>
+
+
+<footer class="footer layout__footer">
+<p><!-- raw HTML omitted -->
+</p>
+
+
+</footer>
+
+</div>
+</body>
+
+
+<script
+  id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/2a214450dbf0906444fa3503a/eab0ad4e3b281c88a0a7dfc17.js");
+</script>
+</html>

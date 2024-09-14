@@ -1,19 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>programming on Hakeem Almidan</title>
-    <link>https://hakeem-almidan.com/categories/programming/</link>
-    <description>Recent content in programming on Hakeem Almidan</description>
+    <title>Programming on Hakeem Almidan</title>
+    <link>http://localhost:1313/categories/programming/</link>
+    <description>Recent content in Programming on Hakeem Almidan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 31 Dec 2020 19:01:40 +0300</lastBuildDate>
-    <atom:link href="https://hakeem-almidan.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Sep 2024 01:01:01 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories</title>
+      <link>http://localhost:1313/posts/lsdir/</link>
+      <pubDate>Fri, 13 Sep 2024 01:01:01 -0700</pubDate>
+      <guid>http://localhost:1313/posts/lsdir/</guid>
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;When working in the terminal, you sometimes need to list only the directories in the current location. The standard &lt;code&gt;ls&lt;/code&gt; command shows both files and directories, which can be overwhelming in cluttered directories.&lt;/p&gt;
+&lt;p&gt;The command for listing only directories in the current location is &lt;code&gt;ls -d */&lt;/code&gt; which is not simple to remember, especially if it&amp;rsquo;s not something that you do often.&lt;/p&gt;
+&lt;h2 id=&#34;the-solution-lsdir&#34;&gt;The Solution: lsdir&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;lsdir&lt;/code&gt;, an alias for only listing directories, which hopefully is easier to remember.&lt;/p&gt;
+&lt;h4 id=&#34;1-open-your-zshrc-or-bashrc-file&#34;&gt;1. Open your &lt;code&gt;.zshrc&lt;/code&gt; or &lt;code&gt;.bashrc&lt;/code&gt; file:&lt;/h4&gt;
+&lt;p&gt;For Zsh:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;vim ~/.zshrc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For Bash:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;vim ~/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;2-click-i-on-your-keyboard-to-go-into-editing-mode-in-vim&#34;&gt;2. Click &lt;code&gt;i&lt;/code&gt; on your keyboard to go into editing mode in &lt;code&gt;vim&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;3-add-the-following-line&#34;&gt;3. Add the following line:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;alias lsdir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ls -d */&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;4-save-the-file-and-reload-your-shell-configuration&#34;&gt;4. Save the file and reload your shell configuration:&lt;/h4&gt;
+&lt;p&gt;For Zsh:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source ~/.zshrc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For Bash:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source ~/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;5-try-it&#34;&gt;5. Try it&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lsdir
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You&amp;rsquo;re done; Happy coding! 👾&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix)</title>
-      <link>https://hakeem-almidan.com/posts/terminal-search/</link>
+      <link>http://localhost:1313/posts/terminal-search/</link>
       <pubDate>Thu, 31 Dec 2020 19:01:40 +0300</pubDate>
-      <guid>https://hakeem-almidan.com/posts/terminal-search/</guid>
+      <guid>http://localhost:1313/posts/terminal-search/</guid>
       <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Do you ever &lt;em&gt;NOT&lt;/em&gt; feel like re-writing a command that you wrote some N commands ago?
 I do!&lt;/p&gt;
@@ -39,20 +68,20 @@ you don&amp;rsquo;t want to waste your brainpower on such a task (unless you lik
 &lt;p&gt;It searches through an environment variable called &lt;code&gt;$HISTFILE&lt;/code&gt;. The number of commands that
 this file remembers depends on your &lt;code&gt;$HISTSIZE&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;I believe the default &lt;code&gt;$HISTSIZE&lt;/code&gt; in Unix/Linux is around 500. You can check yours by running:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;$ echo $HISTSIZE
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ echo $HISTSIZE
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h4 id=&#34;alternative-approach&#34;&gt;Alternative approach&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;$ history &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
-  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 0&amp;#39;&lt;/span&gt;
-  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 1&amp;#39;&lt;/span&gt;
-  &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 2&amp;#39;&lt;/span&gt;
-  &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 3&amp;#39;&lt;/span&gt;
-  ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This displays your history from 0 to &lt;code&gt;$HISTSIZE&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ history &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 0&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 1&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 2&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;example command 3&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This displays your history from 0 to &lt;code&gt;$HISTSIZE&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You can either scroll or &lt;code&gt;Cmd+f&lt;/code&gt; to find your command.
 To execute the command, run:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;$ !&amp;lt;command-number&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&amp;hellip; where &lt;code&gt;command-number&lt;/code&gt; is the number displayed leftmost to your selected command.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ !&amp;lt;command-number&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&amp;hellip; where &lt;code&gt;command-number&lt;/code&gt; is the number displayed leftmost to your selected command.&lt;/p&gt;
 &lt;figure class=&#34;image center&#34;&gt;
 &lt;a href=&#34;history.png&#34;&gt;&lt;img src=&#34;history.png&#34; alt=&#34;&amp;#39;history 0&amp;#39; command example use&#34; width=&#34;500&#34;&gt;&lt;/a&gt;
 &lt;figcaption&gt;
@@ -66,9 +95,9 @@ To execute the command, run:&lt;/p&gt;
     
     <item>
       <title>Useful Tools that Helped in Building a Custom Promotion-Code CLI (built in Ruby)</title>
-      <link>https://hakeem-almidan.com/posts/custom-promotion-code-cli/</link>
+      <link>http://localhost:1313/posts/custom-promotion-code-cli/</link>
       <pubDate>Tue, 24 Nov 2020 21:13:02 +0300</pubDate>
-      <guid>https://hakeem-almidan.com/posts/custom-promotion-code-cli/</guid>
+      <guid>http://localhost:1313/posts/custom-promotion-code-cli/</guid>
       <description>&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#what&#34;&gt;What&lt;/a&gt;&lt;/li&gt;
@@ -79,11 +108,11 @@ To execute the command, run:&lt;/p&gt;
 &lt;h2 id=&#34;what&#34;&gt;What&lt;/h2&gt;
 &lt;p&gt;This is post is going to be referring to &lt;a href=&#34;https://github.com/Hakeemmidan/custom-promotion-code-cli&#34;&gt;this custom promotion-code generating CLI&lt;/a&gt;&amp;rsquo;s code, and about useful tools that helped in building it. All the tools mentioned are native to Ruby (no external gems were used)&lt;/p&gt;
 &lt;p&gt;The data generated is going to be stored in a JSON object, and has the following format:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-JSON&#34; data-lang=&#34;JSON&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;FirstName LastName&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; {
-  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;code&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;String: Generated code&amp;#34;&lt;/span&gt;,
-  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;activated&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Boolean&amp;#34;&lt;/span&gt;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You may think &amp;ldquo;Wait a minute there, that&amp;rsquo;s not a scalable solution, isn&amp;rsquo;t it?&amp;rdquo;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-JSON&#34; data-lang=&#34;JSON&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;FirstName LastName&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;code&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;String: Generated code&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;activated&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Boolean&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You may think &amp;ldquo;Wait a minute there, that&amp;rsquo;s not a scalable solution, isn&amp;rsquo;t it?&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;Well, yes, ideally, the promotion codes should be directly connected to your database. But if you want a quick solution, this should be fine&lt;/p&gt;
 &lt;p&gt;Also, keep in mind that this is not storing your main data. It&amp;rsquo;s just storing the promotion codes and checking
 whether they&amp;rsquo;re activated or not. It has a constant (O(1)) lookup and write time-complexity, and can hold an awful lot of data. Approximately, a JSON file can hold about &lt;a href=&#34;https://stackoverflow.com/a/60300454/7974948&#34;&gt;18 quintillion characters&lt;/a&gt;. For context: &amp;ldquo;Harry Potter and the Deathly Hallows&amp;rdquo; has &lt;a href=&#34;https://docs.google.com/document/d/1gIMVTGfHAODR_1CUjLpM_4Uzrrs3BLzt9IRq2rLK8-0/edit?usp=sharing&#34;&gt;about 1 million characters&lt;/a&gt;. So, in total, a JSON file would hold about &lt;em&gt;13 trillion&lt;/em&gt; copies of that book. That&amp;rsquo;s a lot!&lt;/p&gt;
@@ -100,32 +129,32 @@ whether they&amp;rsquo;re activated or not. It has a constant (O(1)) lookup and 
 Generally speaking, general promotion codes (ones not mapped to a specific person), don&amp;rsquo;t need to be unique.
 In fact, you want them to be generic to drive as much traffic to your store as possible. They should be easy to guess and could be safely made up by humans&lt;/p&gt;
 &lt;p&gt;Customized promotion codes, on the other hand, though intended to also drive traffic, have another sole purpose. The main purpose of them should be to get specific people onto your platform&lt;/p&gt;
-&lt;p&gt;Understanding that these codes are made for specific people, you want them to be harder to guess. That is because we don&amp;rsquo;t want some imposter claiming our invitees&#39; rewards&lt;/p&gt;
+&lt;p&gt;Understanding that these codes are made for specific people, you want them to be harder to guess. That is because we don&amp;rsquo;t want some imposter claiming our invitees&amp;rsquo; rewards&lt;/p&gt;
 &lt;p&gt;Hope that makes sense. If not, feel free to drop a comment&lt;/p&gt;
 &lt;h2 id=&#34;the-tools&#34;&gt;The Tools&lt;/h2&gt;
 &lt;h3 id=&#34;1-kernelputshttpsruby-docorgcore-270kernelhtmlmethod-i-puts&#34;&gt;1. &lt;a href=&#34;https://ruby-doc.org/core-2.7.0/Kernel.html#method-i-puts&#34;&gt;Kernel#puts&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Prints string on single line (doesn&amp;rsquo;t allow other stuff to get printed on same line)&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hello&amp;#39;&lt;/span&gt;
-puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;world&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;Hello
-World
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-kernelgetshttpsapidockcomrubykernelgets-and-stringchomphttpsruby-docorgcore-250stringhtmlmethod-i-chomp&#34;&gt;2. &lt;a href=&#34;https://apidock.com/ruby/Kernel/gets&#34;&gt;Kernel#gets&lt;/a&gt; and &lt;a href=&#34;https://ruby-doc.org/core-2.5.0/String.html#method-i-chomp&#34;&gt;String#chomp&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hello&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;world&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Hello
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;World
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-kernelgetshttpsapidockcomrubykernelgets-and-stringchomphttpsruby-docorgcore-250stringhtmlmethod-i-chomp&#34;&gt;2. &lt;a href=&#34;https://apidock.com/ruby/Kernel/gets&#34;&gt;Kernel#gets&lt;/a&gt; and &lt;a href=&#34;https://ruby-doc.org/core-2.5.0/String.html#method-i-chomp&#34;&gt;String#chomp&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;gets&lt;/code&gt;: Takes input from shell&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;chomp&lt;/code&gt;: Takes off newline character (&lt;code&gt;&amp;quot;\n&amp;quot;&lt;/code&gt;) off from end of string. This character gets generated when user hits the &lt;code&gt;enter&lt;/code&gt; key&lt;/p&gt;
 &lt;p&gt;Put together because they are often used together. Just having &lt;code&gt;Kernel#gets&lt;/code&gt; will leave you with a string with &lt;code&gt;&amp;quot;\n&amp;quot;&lt;/code&gt; at the end of it&lt;/p&gt;
 &lt;p&gt;The following example uses both to avoid that&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Please say something: &amp;#39;&lt;/span&gt;
-
-answer &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; gets&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;chomp
-
-puts answer
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ Please say something: Hello
-Hello
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Note: The project referred to in this post doesn&amp;rsquo;t use &lt;code&gt;gets.chomp&lt;/code&gt; and uses
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Please say something: &amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;answer &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; gets&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;chomp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts answer
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ Please say something: Hello
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Hello
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Note: The project referred to in this post doesn&amp;rsquo;t use &lt;code&gt;gets.chomp&lt;/code&gt; and uses
 &lt;code&gt;Readline&lt;/code&gt; (&lt;a href=&#34;#3-readlinereadlinefile-name-refer-to-history-boolhttpsruby-docorgstdlib-251libdocreadlinerdocreadlinehtmlmethod-c-readline&#34;&gt;#3&lt;/a&gt;) instead. That is since &lt;code&gt;Readline&lt;/code&gt; provides autocompletion, history reference, and other useful functionalities. But &lt;code&gt;gets.chomp&lt;/code&gt; could be useful for getting simple input in some
 instances. So it&amp;rsquo;s worth the mention&lt;/p&gt;
 &lt;h3 id=&#34;3-readlinereadlinefile-name-refer-to-history-boolhttpsruby-docorgstdlib-251libdocreadlinerdocreadlinehtmlmethod-c-readline&#34;&gt;3. &lt;a href=&#34;https://ruby-doc.org/stdlib-2.5.1/libdoc/readline/rdoc/Readline.html#method-c-readline&#34;&gt;Readline::readline(&amp;lt;file name&amp;gt;, &amp;lt;refer to history bool&amp;gt;)&lt;/a&gt;&lt;/h3&gt;
@@ -133,102 +162,102 @@ instances. So it&amp;rsquo;s worth the mention&lt;/p&gt;
 &lt;p&gt;Second argument takes boolean to flag whether to remember history or not.
 If you set to &lt;code&gt;true&lt;/code&gt;,  it will remember previous answers from same file-run session&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;readline&amp;#39;&lt;/span&gt;
-
-answer &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Readline&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readline(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Please say something: &amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;)
-
-puts answer
-
-answer &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Readline&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readline(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Please say something: &amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;)
-
-puts answer
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ Please say something: Hello
-Hello
-$ Please say something: &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;*click up-arrow*&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
-$ Please say something: Hello
-Hello
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;4-readlinecompletion_proc--prochttpsruby-docorgstdlib-251libdocreadlinerdocreadlinehtmlmethod-c-completion_proc&#34;&gt;4. &lt;a href=&#34;https://ruby-doc.org/stdlib-2.5.1/libdoc/readline/rdoc/Readline.html#method-c-completion_proc&#34;&gt;Readline::completion_proc = &amp;lt;proc&amp;gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;readline&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;answer &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Readline&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readline(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Please say something: &amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts answer
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;answer &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Readline&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readline(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Please say something: &amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts answer
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ Please say something: Hello
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Hello
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ Please say something: &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;*click up-arrow*&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ Please say something: Hello
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Hello
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;4-readlinecompletion_proc--prochttpsruby-docorgstdlib-251libdocreadlinerdocreadlinehtmlmethod-c-completion_proc&#34;&gt;4. &lt;a href=&#34;https://ruby-doc.org/stdlib-2.5.1/libdoc/readline/rdoc/Readline.html#method-c-completion_proc&#34;&gt;Readline::completion_proc = &amp;lt;proc&amp;gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Adds autocompletion functionality based on given proc&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;readline&amp;#39;&lt;/span&gt;
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;LIST&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;action&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;bear&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;computer&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
-
-comp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; proc { &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;LIST&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;grep(&lt;span style=&#34;color:#e6db74&#34;&gt;/^&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;#{&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;Regexp&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;escape(s)&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/&lt;/span&gt;) }
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;Readline&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;completion_proc &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; comp
-&lt;span style=&#34;color:#66d9ef&#34;&gt;Readline&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readline(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ co&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;*click on tab*&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
-$ computer
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;5-stringdowncasehttpsruby-docorgcore-250stringhtmlmethod-i-downcase&#34;&gt;5. &lt;a href=&#34;https://ruby-doc.org/core-2.5.0/String.html#method-i-downcase&#34;&gt;String#downcase&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;readline&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;LIST&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;action&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;bear&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;computer&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;comp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; proc { &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;LIST&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;grep(&lt;span style=&#34;color:#e6db74&#34;&gt;/^&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;#{&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;Regexp&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;escape(s)&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/&lt;/span&gt;) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;Readline&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;completion_proc &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; comp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;Readline&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readline(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ co&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;*click on tab*&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ computer
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;5-stringdowncasehttpsruby-docorgcore-250stringhtmlmethod-i-downcase&#34;&gt;5. &lt;a href=&#34;https://ruby-doc.org/core-2.5.0/String.html#method-i-downcase&#34;&gt;String#downcase&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Lower-cases a string&lt;/p&gt;
 &lt;p&gt;Useful for keeping data format consistent&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;HELLO WORLD&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;downcase
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;hello world
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;6stringstriphttpsruby-docorgcore-250stringhtmlmethod-i-strip&#34;&gt;6.&lt;a href=&#34;https://ruby-doc.org/core-2.5.0/String.html#method-i-strip&#34;&gt;String#strip&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;HELLO WORLD&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;downcase
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hello world
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;6stringstriphttpsruby-docorgcore-250stringhtmlmethod-i-strip&#34;&gt;6.&lt;a href=&#34;https://ruby-doc.org/core-2.5.0/String.html#method-i-strip&#34;&gt;String#strip&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Takes off whitespace from beginning and end of string&lt;/p&gt;
 &lt;p&gt;Useful for keeping data format consistent&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; hi there &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strip
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;hi there
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(I know it doesn&amp;rsquo;t show up there, but there should be no white spaces at the ends of the string)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; hi there &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strip
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hi there
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(I know it doesn&amp;rsquo;t show up there, but there should be no white spaces at the ends of the string)&lt;/p&gt;
 &lt;h3 id=&#34;7-ioreadfile-namehttpsruby-docorgcore-251iohtmlmethod-c-read&#34;&gt;7. &lt;a href=&#34;https://ruby-doc.org/core-2.5.1/IO.html#method-c-read&#34;&gt;IO.read(&amp;lt;file name&amp;gt;)&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Reads file content and returns it as string&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;file_content &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;IO&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;data.json&amp;#39;&lt;/span&gt;)
-
-puts file_content
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{\&amp;#34;some key\&amp;#34;: \&amp;#34;some value\&amp;#34;}&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;8-jsonparsejson-stringhttpsruby-docorgstdlib-272libdocjsonrdocjsonhtmlmethod-i-parse&#34;&gt;8. &lt;a href=&#34;https://ruby-doc.org/stdlib-2.7.2/libdoc/json/rdoc/JSON.html#method-i-parse&#34;&gt;JSON#parse(&amp;lt;json string&amp;gt;)&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;file_content &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;IO&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;data.json&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts file_content
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{\&amp;#34;some key\&amp;#34;: \&amp;#34;some value\&amp;#34;}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;8-jsonparsejson-stringhttpsruby-docorgstdlib-272libdocjsonrdocjsonhtmlmethod-i-parse&#34;&gt;8. &lt;a href=&#34;https://ruby-doc.org/stdlib-2.7.2/libdoc/json/rdoc/JSON.html#method-i-parse&#34;&gt;JSON#parse(&amp;lt;json string&amp;gt;)&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Converts JSON string to JSON object&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;json&amp;#39;&lt;/span&gt;
-
-puts &lt;span style=&#34;color:#66d9ef&#34;&gt;JSON&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;parse(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;some key&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;: &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;some value&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&amp;#34;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some value&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;9-jsondumpjson-stringhttpsruby-docorgstdlib-272libdocjsonrdocjsonhtmlmethod-i-dump&#34;&gt;9. &lt;a href=&#34;https://ruby-doc.org/stdlib-2.7.2/libdoc/json/rdoc/JSON.html#method-i-dump&#34;&gt;JSON#dump(&amp;lt;json string&amp;gt;)&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;json&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts &lt;span style=&#34;color:#66d9ef&#34;&gt;JSON&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;parse(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;some key&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;: &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;some value&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some value&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;9-jsondumpjson-stringhttpsruby-docorgstdlib-272libdocjsonrdocjsonhtmlmethod-i-dump&#34;&gt;9. &lt;a href=&#34;https://ruby-doc.org/stdlib-2.7.2/libdoc/json/rdoc/JSON.html#method-i-dump&#34;&gt;JSON#dump(&amp;lt;json string&amp;gt;)&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Converts JSON object to JSON string&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;json&amp;#39;&lt;/span&gt;
-
-puts &lt;span style=&#34;color:#66d9ef&#34;&gt;JSON&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dump({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some value&amp;#34;&lt;/span&gt;})
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{\&amp;#34;some key\&amp;#34;: \&amp;#34;some value\&amp;#34;}&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;10-fileopenfile-name-w-file-changes-to-file-httpsruby-docorgstdlib-272libdocjsonrdocjsonhtmlmethod-i-dump&#34;&gt;10. &lt;a href=&#34;https://ruby-doc.org/stdlib-2.7.2/libdoc/json/rdoc/JSON.html#method-i-dump&#34;&gt;File::Open(&amp;lt;file name&amp;gt;, &amp;lsquo;w&amp;rsquo;) {|file| &amp;lt;changes to file&amp;gt;} &lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;json&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts &lt;span style=&#34;color:#66d9ef&#34;&gt;JSON&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dump({&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some value&amp;#34;&lt;/span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{\&amp;#34;some key\&amp;#34;: \&amp;#34;some value\&amp;#34;}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;10-fileopenfile-name-w-file-changes-to-file-httpsruby-docorgstdlib-272libdocjsonrdocjsonhtmlmethod-i-dump&#34;&gt;10. &lt;a href=&#34;https://ruby-doc.org/stdlib-2.7.2/libdoc/json/rdoc/JSON.html#method-i-dump&#34;&gt;File::Open(&amp;lt;file name&amp;gt;, &amp;lsquo;w&amp;rsquo;) {|file| &amp;lt;changes to file&amp;gt;} &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Opens and writes data to file (writing automatically gets it saved)&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;json&amp;#39;&lt;/span&gt;
-
-file_name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;data.json&amp;#39;&lt;/span&gt;
-new_data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some new key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some new value&amp;#34;&lt;/span&gt;}
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;File&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;open(file_name,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;w&amp;#39;&lt;/span&gt;){ &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;JSON&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dump(new_data, file) }
-json &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;JSON&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;parse(&lt;span style=&#34;color:#66d9ef&#34;&gt;IO&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read(file_name))
-
-puts json
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some value&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some new key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some new value&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;bonus&#34;&gt;Bonus:&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;require &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;json&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;file_name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;data.json&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;new_data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some new key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some new value&amp;#34;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;File&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;open(file_name,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;w&amp;#39;&lt;/span&gt;){ &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;JSON&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dump(new_data, file) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;json &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;JSON&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;parse(&lt;span style=&#34;color:#66d9ef&#34;&gt;IO&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read(file_name))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts json
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some value&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some new key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some new value&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;bonus&#34;&gt;Bonus:&lt;/h3&gt;
 &lt;h3 id=&#34;11-ecolor-numbermsome-stringe0mhttpsenwikipediaorgwikiansi_escape_codecolors&#34;&gt;11. &lt;a href=&#34;https://en.wikipedia.org/wiki/ANSI_escape_code#Colors&#34;&gt;&amp;quot;\e[#{&amp;lt;color number&amp;gt;}m#{&amp;lt;some string&amp;gt;}\e[0m&amp;quot;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Changes color of string in shell based on &lt;a href=&#34;https://en.wikipedia.org/wiki/ANSI_escape_code#Colors&#34;&gt;ANSI escape code&lt;/a&gt; FG Code number&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;str &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hello world&amp;#39;&lt;/span&gt;
-color_num &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;36&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# cyan&lt;/span&gt;
-
-puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;#{&lt;/span&gt;color_num&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;m&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;#{&lt;/span&gt;str&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;[0m&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Shell&#34; data-lang=&#34;Shell&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Ruby&#34; data-lang=&#34;Ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;str &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hello world&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;color_num &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;36&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# cyan&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;#{&lt;/span&gt;color_num&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;m&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;#{&lt;/span&gt;str&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;[0m&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Shell&#34; data-lang=&#34;Shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 
 &lt;span style=&#34;color:#00aaaa&#34;&gt;Hello world&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;show-me-the-code&#34;&gt;Show me the code&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;show-me-the-code&#34;&gt;Show me the code&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s &lt;a href=&#34;https://github.com/Hakeemmidan/custom-promotion-code-cli&#34;&gt;the link&lt;/a&gt; to the repo&lt;/p&gt;
 &lt;p&gt;If you plan to create a similar tool, I suggest scanning around the &lt;a href=&#34;https://github.com/Hakeemmidan/custom-promotion-code-cli&#34;&gt;repo&lt;/a&gt; (same link). It&amp;rsquo;s basically 4 files of Ruby code, and none of them exceed 100 lines. Hope that helps&lt;/p&gt;
 &lt;p&gt;Happy coding!&lt;/p&gt;
@@ -237,42 +266,42 @@ puts &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span st
     
     <item>
       <title>SCSS Animation Mixin</title>
-      <link>https://hakeem-almidan.com/posts/scss-animation-mixin/</link>
+      <link>http://localhost:1313/posts/scss-animation-mixin/</link>
       <pubDate>Tue, 05 May 2020 17:15:02 -0700</pubDate>
-      <guid>https://hakeem-almidan.com/posts/scss-animation-mixin/</guid>
+      <guid>http://localhost:1313/posts/scss-animation-mixin/</guid>
       <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;The slightest change in CSS animations (&lt;code&gt;@keyframes&lt;/code&gt;) requires a creation of a new animation.&lt;/p&gt;
 &lt;h4 id=&#34;problem-example&#34;&gt;Problem Example&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-SCSS&#34; data-lang=&#34;SCSS&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;@keyframes&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;to-yellow&lt;/span&gt; {
-  &lt;span style=&#34;color:#f92672&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;%&lt;/span&gt; { &lt;span style=&#34;color:#f92672&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;yellow&lt;/span&gt;; }
-}
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;@keyframes&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;to-skyblue&lt;/span&gt; {
-  &lt;span style=&#34;color:#f92672&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;%&lt;/span&gt; { &lt;span style=&#34;color:#f92672&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;skyblue&lt;/span&gt;; }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Both of the animations pretty much do the same thing, but we had to create two of them.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SCSS&#34; data-lang=&#34;SCSS&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;@keyframes&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;to-yellow&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;%&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;yellow&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;@keyframes&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;to-skyblue&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;%&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;skyblue&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Both of the animations pretty much do the same thing, but we had to create two of them.
 We had to create two of them because their property (&lt;code&gt;background-color&lt;/code&gt;) had different values (i.e. &lt;code&gt;yellow&lt;/code&gt; and &lt;code&gt;skyblue&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;This doesn&amp;rsquo;t follow the &lt;a href=&#34;https://en.wikipedia.org/wiki/Don%27t_repeat_yourself&#34;&gt;DRY&lt;/a&gt; software development principle.&lt;/p&gt;
 &lt;p&gt;To fix this, we&amp;rsquo;re going to use an SCSS &lt;a href=&#34;https://sass-lang.com/documentation/at-rules/mixin&#34;&gt;mixin&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
 &lt;p&gt;Looking at the problem example above, we&amp;rsquo;d replace it with something like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-SCSS&#34; data-lang=&#34;SCSS&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;@mixin&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt; animation-mixin&lt;/span&gt;($name&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; $color-var) {
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;@keyframes&lt;/span&gt; #{&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;} {
-    &lt;span style=&#34;color:#f92672&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;%&lt;/span&gt; { &lt;span style=&#34;color:#f92672&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;color-var&lt;/span&gt;; }
-  }
-}
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;@include&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt; animation-mixin&lt;/span&gt;(to-yellow&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; yellow);
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;@include&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt; animation-mixin&lt;/span&gt;(to-skyblue&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; skyblue);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then you could call the &lt;code&gt;to-yellow&lt;/code&gt; and &lt;code&gt;to-skyblue&lt;/code&gt; animations in your selectors as needed:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-SCSS&#34; data-lang=&#34;SCSS&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; {
-  &lt;span style=&#34;color:#f92672&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;100px&lt;/span&gt;;
-  &lt;span style=&#34;color:#f92672&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;100px&lt;/span&gt;;
-  &lt;span style=&#34;color:#f92672&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;whitesmoke&lt;/span&gt;;
-  &lt;span style=&#34;color:#f92672&#34;&gt;animation&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;to-yellow&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;4s&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;ease&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;infinite&lt;/span&gt;;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Live example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SCSS&#34; data-lang=&#34;SCSS&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;@mixin&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt; animation-mixin&lt;/span&gt;($name&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; $color-var) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;@keyframes&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;#{&lt;/span&gt;$name&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;%&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; $color-var; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;@include&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt; animation-mixin&lt;/span&gt;(to-yellow&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;yellow&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;@include&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt; animation-mixin&lt;/span&gt;(to-skyblue&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;skyblue&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then you could call the &lt;code&gt;to-yellow&lt;/code&gt; and &lt;code&gt;to-skyblue&lt;/code&gt; animations in your selectors as needed:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SCSS&#34; data-lang=&#34;SCSS&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;whitesmoke&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;animation&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; to-yellow &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;s&lt;/span&gt; ease infinite;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Live example:&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 
 
@@ -288,9 +317,9 @@ We had to create two of them because their property (&lt;code&gt;background-colo
     
     <item>
       <title>How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</title>
-      <link>https://hakeem-almidan.com/posts/css-hover-on-mobile/</link>
+      <link>http://localhost:1313/posts/css-hover-on-mobile/</link>
       <pubDate>Thu, 16 Apr 2020 21:58:27 -0700</pubDate>
-      <guid>https://hakeem-almidan.com/posts/css-hover-on-mobile/</guid>
+      <guid>http://localhost:1313/posts/css-hover-on-mobile/</guid>
       <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:&lt;/p&gt;
 &lt;figure class=&#34;image center&#34;&gt;
@@ -305,27 +334,27 @@ We had to create two of them because their property (&lt;code&gt;background-colo
 &lt;p&gt;Here is each solution respectively:&lt;/p&gt;
 &lt;h3 id=&#34;option-1-scss-mixin&#34;&gt;Option 1: SCSS Mixin&lt;/h3&gt;
 &lt;p&gt;The mixin:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-SCSS&#34; data-lang=&#34;SCSS&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;@mixin&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt; hover-supported&lt;/span&gt; {    
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;@media&lt;/span&gt; (hover&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; hover) { 
-      &lt;span style=&#34;color:#66d9ef&#34;&gt;@content&lt;/span&gt;;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Example use:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-SCSS&#34; data-lang=&#34;SCSS&#34;&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;.example&lt;/span&gt; {
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;@include&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt; hover-supported&lt;/span&gt;() {
-      &lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;:hover&lt;/span&gt; {
-        &lt;span style=&#34;color:#f92672&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;black&lt;/span&gt;;
-      }
-    }
-  }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;option-2-css&#34;&gt;Option 2: CSS&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SCSS&#34; data-lang=&#34;SCSS&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;@mixin&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt; hover-supported&lt;/span&gt; {    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;@media&lt;/span&gt; (hover&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; hover) { 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;@content&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Example use:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-SCSS&#34; data-lang=&#34;SCSS&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;.example&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;@include&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt; hover-supported&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;:hover&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;black&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;option-2-css&#34;&gt;Option 2: CSS&lt;/h3&gt;
 &lt;p&gt;Example use:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-CSS&#34; data-lang=&#34;CSS&#34;&gt;  @&lt;span style=&#34;color:#66d9ef&#34;&gt;media&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;hover&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;hover&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; {
-    .&lt;span style=&#34;color:#a6e22e&#34;&gt;example&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;hover&lt;/span&gt; {
-      &lt;span style=&#34;color:#66d9ef&#34;&gt;background-color&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;black&lt;/span&gt;;
-    }
-  }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;explanation&#34;&gt;Explanation&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-CSS&#34; data-lang=&#34;CSS&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  @&lt;span style=&#34;color:#66d9ef&#34;&gt;media&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;hover&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;hover&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    .&lt;span style=&#34;color:#a6e22e&#34;&gt;example&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;hover&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;background-color&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;black&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;explanation&#34;&gt;Explanation&lt;/h3&gt;
 &lt;p&gt;Both examples change the &lt;code&gt;background-color&lt;/code&gt; of HTML elements with class &lt;code&gt;example&lt;/code&gt;
 only when they&amp;rsquo;re hovered-over on non-touch screen devices (or any &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover&#34;&gt;hover&lt;/a&gt;
 supported device). In short, &lt;em&gt;this applies hover styling on only non-touch screen devices&lt;/em&gt;.&lt;/p&gt;
@@ -335,9 +364,9 @@ supported device). In short, &lt;em&gt;this applies hover styling on only non-to
     
     <item>
       <title>Choosing a Static Website Generator: Hugo vs. Jekyll</title>
-      <link>https://hakeem-almidan.com/posts/hugo-vs-jekyll/</link>
+      <link>http://localhost:1313/posts/hugo-vs-jekyll/</link>
       <pubDate>Mon, 23 Mar 2020 23:37:28 -0700</pubDate>
-      <guid>https://hakeem-almidan.com/posts/hugo-vs-jekyll/</guid>
+      <guid>http://localhost:1313/posts/hugo-vs-jekyll/</guid>
       <description>&lt;h2 id=&#34;what-are-static-websites&#34;&gt;What are static websites?&lt;/h2&gt;
 &lt;p&gt;In simple terms, static websites are a collection of webpages that have fixed content. They are the most basic type of website and are typically considered the easiest to create.&lt;/p&gt;
 &lt;p&gt;These websites are considered the easiest to create because they have a low barrier of entry. They usually are not connected to a &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_access_layer&#34;&gt;backend&lt;/a&gt; or a &lt;a href=&#34;https://en.wikipedia.org/wiki/Database&#34;&gt;database&lt;/a&gt;, so the only thing that you need to manage is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Presentation_layer&#34;&gt;frontend&lt;/a&gt;.&lt;/p&gt;
