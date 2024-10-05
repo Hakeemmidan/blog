@@ -10,7 +10,7 @@
     <atom:link href="http://localhost:1313/tags/ls/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories</title>
+      <title>lsdir - A Shell Alias for Only Listing Directories</title>
       <link>http://localhost:1313/posts/lsdir/</link>
       <pubDate>Fri, 13 Sep 2024 01:01:01 -0700</pubDate>
       <guid>http://localhost:1313/posts/lsdir/</guid>

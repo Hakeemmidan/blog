@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
-<title>lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories – Hakeem Almidan</title>
+<title>lsdir - A Shell Alias for Only Listing Directories – Hakeem Almidan</title>
 <meta name="description" content="Create an alias for listing directories only using the unix/linux ls command">
 <meta name="created" content="2024-09-13T01:01:01-0700">
 <meta name="modified" content="2024-09-13T01:01:01-0700">
 
 <meta name="contact" content="hakeemmidan@gmail.com">
 <meta property="og:site_name" content="Hakeem Almidan">
-<meta property="og:title" content="lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories">
+<meta property="og:title" content="lsdir - A Shell Alias for Only Listing Directories">
 <meta property="og:url" content="http://localhost:1313/posts/lsdir/">
 <meta property="og:type" content="article">
 <meta property="og:image" content="http://localhost:1313/static/apple-touch-icon.png">
@@ -34,7 +34,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories",
+    "headline": "lsdir - A Shell Alias for Only Listing Directories",
     "datePublished": "2024-09-13T01:01:01-07:00",
     "dateModified": "2024-09-13T01:01:01-07:00",
     "url" : "http://localhost:1313/posts/lsdir/",
@@ -89,7 +89,7 @@
 <main class="main layout__main">
 <article class="section-posts single-view">
 <header>
-<h1 class="title ">lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories</h1>
+<h1 class="title ">lsdir - A Shell Alias for Only Listing Directories</h1>
 
 </header>
 <div class="content">
@@ -98,20 +98,20 @@
 <p>The command for listing only directories in the current location is <code>ls -d */</code> which is not simple to remember, especially if it&rsquo;s not something that you do often.</p>
 <h2 id="the-solution-lsdir">The Solution: lsdir</h2>
 <p><code>lsdir</code>, an alias for only listing directories, which hopefully is easier to remember.</p>
-<h4 id="1-open-your-zshrc-or-bashrc-file">1. Open your <code>.zshrc</code> or <code>.bashrc</code> file:</h4>
+<h3 id="1-open-your-zshrc-or-bashrc-file">1. Open your <code>.zshrc</code> or <code>.bashrc</code> file:</h3>
 <p>For Zsh:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>vim ~/.zshrc
 </span></span></code></pre></div><p>For Bash:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim ~/.bashrc
-</span></span></code></pre></div><h4 id="2-click-i-on-your-keyboard-to-go-into-editing-mode-in-vim">2. Click <code>i</code> on your keyboard to go into editing mode in <code>vim</code></h4>
-<h4 id="3-add-the-following-line">3. Add the following line:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>vim ~/.bashrc
+</span></span></code></pre></div><h3 id="2-click-i-on-your-keyboard-to-go-into-editing-mode-in-vim">2. Click <code>i</code> on your keyboard to go into editing mode in <code>vim</code></h3>
+<h3 id="3-add-the-following-line">3. Add the following line:</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>alias lsdir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ls -d */&#39;</span>
-</span></span></code></pre></div><h4 id="4-save-the-file-and-reload-your-shell-configuration">4. Save the file and reload your shell configuration:</h4>
+</span></span></code></pre></div><h3 id="4-save-the-file-and-reload-your-shell-configuration">4. Save the file and reload your shell configuration:</h3>
 <p>For Zsh:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>source ~/.zshrc
 </span></span></code></pre></div><p>For Bash:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source ~/.bashrc
-</span></span></code></pre></div><h4 id="5-try-it">5. Try it</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>source ~/.bashrc
+</span></span></code></pre></div><h3 id="5-try-it">5. Try it</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>lsdir
 </span></span></code></pre></div><p>You&rsquo;re done; Happy coding! 👾</p>
 

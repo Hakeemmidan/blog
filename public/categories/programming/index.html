@@ -86,11 +86,84 @@
 
 <main class="main layout__main">
 <h1 class="title">Programming</h1>
+<article class="section-posts list-view">
+<header>
+<h2 class="title "><a href="/posts/lsdir/">lsdir - A Shell Alias for Only Listing Directories</a></h2>
 
+</header>
+<div class="content">
+The Problem When working in the terminal, you sometimes need to list only the directories in the current location. The standard ls command shows both files and directories, which can be overwhelming in cluttered directories.
+The command for listing only directories in the current location is ls -d */ which is not simple to remember, especially if it&rsquo;s not something that you do often.
+The Solution: lsdir lsdir, an alias for only listing directories, which hopefully is easier to remember.
 
+</div>
+</article>
 
+<article class="section-posts list-view">
+<header>
+<h2 class="title "><a href="/posts/terminal-search/">Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix)</a></h2>
 
+</header>
+<div class="content">
+Problem Do you ever NOT feel like re-writing a command that you wrote some N commands ago? I do!
+Arrowing up and focusing until you reach what you want can be annoying for an efficient programmer. Although it usually only takes a couple of seconds, it still adds up. Plus, you don&rsquo;t want to waste your brainpower on such a task (unless you like doing it).
+One of the best pieces of advice I heard when I first started programming is:
 
+</div>
+</article>
+
+<article class="section-posts list-view">
+<header>
+<h2 class="title "><a href="/posts/custom-promotion-code-cli/">Useful Tools that Helped in Building a Custom Promotion-Code CLI (built in Ruby)</a></h2>
+
+</header>
+<div class="content">
+Table of contents What Why The Tools Show me the code What This is post is going to be referring to this custom promotion-code generating CLI&rsquo;s code, and about useful tools that helped in building it. All the tools mentioned are native to Ruby (no external gems were used)
+The data generated is going to be stored in a JSON object, and has the following format:
+&#34;&lt;FirstName LastName&gt;&#34;: { &#34;code&#34;: &#34;String: Generated code&#34;, &#34;activated&#34;: &#34;Boolean&#34; } You may think &ldquo;Wait a minute there, that&rsquo;s not a scalable solution, isn&rsquo;t it?&rdquo;
+
+</div>
+</article>
+
+<article class="section-posts list-view">
+<header>
+<h2 class="title "><a href="/posts/scss-animation-mixin/">SCSS Animation Mixin</a></h2>
+
+</header>
+<div class="content">
+Problem The slightest change in CSS animations (@keyframes) requires a creation of a new animation.
+Problem Example @keyframes to-yellow { 50% { background-color: yellow; } } @keyframes to-skyblue { 50% { background-color: skyblue; } } Both of the animations pretty much do the same thing, but we had to create two of them. We had to create two of them because their property (background-color) had different values (i.e. yellow and skyblue).
+This doesn&rsquo;t follow the DRY software development principle.
+
+</div>
+</article>
+
+<article class="section-posts list-view">
+<header>
+<h2 class="title "><a href="/posts/css-hover-on-mobile/">How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</a></h2>
+
+</header>
+<div class="content">
+Problem The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:
+Hover state getting stuck on-click on mobile
+Solution Using the &lsquo;hover&rsquo; CSS media query, which could be applied either through SCSS or CSS. In the case of SCSS, we&rsquo;re going to use a mixin.
+Here is each solution respectively:
+Option 1: SCSS Mixin The mixin:
+
+</div>
+</article>
+
+<article class="section-posts list-view">
+<header>
+<h2 class="title "><a href="/posts/hugo-vs-jekyll/">Choosing a Static Website Generator: Hugo vs. Jekyll</a></h2>
+
+</header>
+<div class="content">
+What are static websites? In simple terms, static websites are a collection of webpages that have fixed content. They are the most basic type of website and are typically considered the easiest to create.
+These websites are considered the easiest to create because they have a low barrier of entry. They usually are not connected to a backend or a database, so the only thing that you need to manage is the frontend.
+
+</div>
+</article>
 
 
 </main>
@@ -100,7 +173,7 @@
 <section>
 <h4 class="menu">Posts by title</h4>
 <ul class="menu">
-<li><a href="/posts/lsdir/">lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories</a></li>
+<li><a href="/posts/lsdir/">lsdir - A Shell Alias for Only Listing Directories</a></li>
 <li><a href="/posts/terminal-search/">Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix)</a></li>
 <li><a href="/posts/custom-promotion-code-cli/">Useful Tools that Helped in Building a Custom Promotion-Code CLI (built in Ruby)</a></li>
 <li><a href="/posts/puffin-multiple-fish-in-beak-wonder/">Why do puffins often have mutliple fish in their beaks at once?</a></li>

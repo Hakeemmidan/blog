@@ -8,7 +8,7 @@
     "favicon" : "http://localhost:1313/static/apple-touch-icon.png",
     "items" : [
     {
-        "title" : "lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories",
+        "title" : "lsdir - A Shell Alias for Only Listing Directories",
         "date_published" : "2024-09-13T01:01:01-07:00",
         "date_modified" : "2024-09-13T01:01:01-07:00",
         "id" : "http://localhost:1313/posts/lsdir/",

@@ -86,7 +86,33 @@
 
 <main class="main layout__main">
 <h1 class="title">Css</h1>
+<article class="section-posts list-view">
+<header>
+<h2 class="title "><a href="/posts/scss-animation-mixin/">SCSS Animation Mixin</a></h2>
 
+</header>
+<div class="content">
+Problem The slightest change in CSS animations (@keyframes) requires a creation of a new animation.
+Problem Example @keyframes to-yellow { 50% { background-color: yellow; } } @keyframes to-skyblue { 50% { background-color: skyblue; } } Both of the animations pretty much do the same thing, but we had to create two of them. We had to create two of them because their property (background-color) had different values (i.e. yellow and skyblue).
+This doesn&rsquo;t follow the DRY software development principle.
+
+</div>
+</article>
+
+<article class="section-posts list-view">
+<header>
+<h2 class="title "><a href="/posts/css-hover-on-mobile/">How to Prevent CSS Hover State From Getting stuck on Mobile Browsers</a></h2>
+
+</header>
+<div class="content">
+Problem The CSS hover state often gets stuck on mobile (touch screen) browsers. It would be something like this:
+Hover state getting stuck on-click on mobile
+Solution Using the &lsquo;hover&rsquo; CSS media query, which could be applied either through SCSS or CSS. In the case of SCSS, we&rsquo;re going to use a mixin.
+Here is each solution respectively:
+Option 1: SCSS Mixin The mixin:
+
+</div>
+</article>
 
 
 </main>
@@ -96,7 +122,7 @@
 <section>
 <h4 class="menu">Posts by title</h4>
 <ul class="menu">
-<li><a href="/posts/lsdir/">lsdir - A Linux/Unix/MacOS `ls` Alias for Only Listing Directories</a></li>
+<li><a href="/posts/lsdir/">lsdir - A Shell Alias for Only Listing Directories</a></li>
 <li><a href="/posts/terminal-search/">Stop Arrowing Up So Much In Terminal; Search Instead! (Linux/Unix)</a></li>
 <li><a href="/posts/custom-promotion-code-cli/">Useful Tools that Helped in Building a Custom Promotion-Code CLI (built in Ruby)</a></li>
 <li><a href="/posts/puffin-multiple-fish-in-beak-wonder/">Why do puffins often have mutliple fish in their beaks at once?</a></li>
