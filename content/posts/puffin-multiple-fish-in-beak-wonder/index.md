@@ -13,8 +13,6 @@ references: [
   '“Atlantic Puffin.” Wikipedia, Wikimedia Foundation, 30 June 2020, en.wikipedia.org/wiki/Atlantic_puffin#Reproduction.',
   '“Auks, Auklets, Guillemots, Murrelets, Murres, Puffins and Razorbill.” Family Alcidae - Auks, Auklets, Guillemots, Murrelets, Murres, Puffins and Razorbill, www.oiseaux-birds.com/page-family-alcidae.html.',
   'Kress, Stephen. Watching for Fish in the Puffin`s Beak, 9 May 2018, ocean.si.edu/ocean-life/seabirds/watching-fish-puffins-beak.',
-
-
 ]
 ---
 
@@ -32,11 +30,13 @@ class="center u-filter-almost-black-and-white"
 I thought this was interesting, and I had so many questions, including:
 - [Do they catch them all in one scoop?](#do-they-catch-them-all-in-one-scoop)
 - [How come the fish are so organized?](#how-come-the-fish-are-so-organized)
-- [Do they hide their food while catching other fish? Why do other birds not steal them?](#do-they-hide-their-food-while-catching-other-fish-why-do-other-birds-not-steal-them)
+- [Do they hide their food while catching other fish?](#do-they-hide-their-food-while-catching-other-fish-why-do-other-birds-not-steal-them)
 - [Is this a 'flex'?](#is-this-a-flex)
 - [What type of fish do they mostly catch?](#what-type-of-fish-do-they-mostly-catch)
+- [The why](#the-why)
+- [Conclusion](#conclusion)
 
-Below, I attempt to answer each question.
+Below, I attempt to answer each question (for Atlantic Puffins specifically).
 ___
 
 ### Do they catch them all in one scoop?
@@ -51,8 +51,8 @@ Their beaks contain 'tentacles', which are like small teeth that keep the fish i
 
 ___
 
-### Do they hide their food while catching other fish? Why do other birds not steal them?
-Once puffins catch a fish they keep it in their mouth. So this shouldn't be a problem, unless other birds literally steal the food off their mouths. And according to [this article](https://portlandpress.com/biochemist/article/32/6/54/810/Catching-nature-What-s-on?searchresult=1), that actually has happened before, where seagulls (of course it's damn seagulls) were witnessed trying to steal food of a puffin's mouth.
+### Do they hide their food while catching other fish?
+No, they mostly just keep it in their beaks.
 
 ___
 
@@ -63,6 +63,25 @@ ___
 
 ### What type of fish do they mostly catch?
 According to this [Oxford University study](https://www.int-res.com/abstracts/meps/v520/p257-267/), they mostly feed on [sand eel](https://en.wikipedia.org/wiki/Sand_eel).
+
+___
+
+### The why
+
+According to [this study in Iceland](https://brill.com/view/journals/beh/40/3-4/article-p263_4.xml) and to [this BBC article](https://www.bbc.co.uk/programmes/articles/3DlgWjmWQg2qBYLY1J0vFgN/thirteen-proper-puffin-facts), other birds, such as [Skuas](https://en.wikipedia.org/wiki/Skua) and [Gulls (aka Seagulls)](https://en.wikipedia.org/wiki/Gull) would literally try to steal the fish off the Puffins' mouths. And if some fish fall, these two birds, or other birds, would get it.
+
+So the short answer is: **They keep it in their mouths to keep it safe.**
+
+Interestingly, Puffins [only lay one egg a year](https://www.worldwildlife.org/blogs/good-nature-travel/posts/ten-high-flying-facts-about-puffins#:~:text=Puffins%20lay%20just%20one%20egg,and%20caring%20for%20the%20chick.). So they have to be extra careful with that food. 
+
+It's kind of heroic, they're fighting for their baby's (singular) life. Puffins are tiny, they're smaller than a Subway sandwich ([11 inches tall](https://www.birders-store.co.uk/the-north-american-bird-guide-2nd-edition.html)), and weigh less than a soda can ([380 g](https://www.birders-store.co.uk/the-north-american-bird-guide-2nd-edition.html)). So [other birds can really mess them up](https://www.youtube.com/watch?v=r777dlf7wRM).
+
+___
+
+### Conclusion
+Puffins feed on Sea Eels (fish) and carry a bunch of them around either for themselves or for their chick (they lay one egg a year). Because it would too dangerous to leave it on the ground otherwise.
+
+They sound like great parents and deserve around of [Ululation](https://en.wikipedia.org/wiki/Ululation). Kolololoooosh 
 
 ___
 
