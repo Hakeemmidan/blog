@@ -856,9 +856,6 @@ figure.podcast audio {
 html {
   font-family: sans-serif; }
 
-body {
-  background-color: black; }
-
 .header__logo-image {
   width: 9rem;
   height: 9rem; }
