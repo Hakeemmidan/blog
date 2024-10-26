@@ -8,6 +8,8 @@ categories: ['programming']
 references: []
 ---
 
+[Command source](https://stackoverflow.com/a/29264762/7974948). This post is about how to take that command and use it as an alias.
+
 ## The Problem
 
 When working in the terminal, you sometimes need to list only the directories in the current location. The standard `ls` command shows both files and directories, which can be overwhelming in cluttered directories.
