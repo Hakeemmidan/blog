@@ -14,10 +14,9 @@
       <link>http://localhost:1313/posts/lsdir/</link>
       <pubDate>Fri, 13 Sep 2024 01:01:01 -0700</pubDate>
       <guid>http://localhost:1313/posts/lsdir/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/a/29264762/7974948&#34;&gt;Command source&lt;/a&gt;. This post is about how to take that command and use it as an alias.&lt;/p&gt;
-&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
 &lt;p&gt;When working in the terminal, you sometimes need to list only the directories in the current location. The standard &lt;code&gt;ls&lt;/code&gt; command shows both files and directories, which can be overwhelming in cluttered directories.&lt;/p&gt;
-&lt;p&gt;The command for listing only directories in the current location is &lt;code&gt;ls -d */&lt;/code&gt; which is not simple to remember, especially if it&amp;rsquo;s not something that you do often.&lt;/p&gt;
+&lt;p&gt;The command for listing only directories in the current location is &lt;code&gt;ls -d */&lt;/code&gt; (&lt;a href=&#34;https://stackoverflow.com/a/29264762/7974948&#34;&gt;source&lt;/a&gt;) which is not simple to remember, especially if it&amp;rsquo;s not something that you do often.&lt;/p&gt;
 &lt;h2 id=&#34;the-solution-lsdir&#34;&gt;The Solution: lsdir&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;lsdir&lt;/code&gt;, an alias for only listing directories, which hopefully is easier to remember.&lt;/p&gt;
 &lt;h3 id=&#34;1-open-your-zshrc-or-bashrc-file&#34;&gt;1. Open your &lt;code&gt;.zshrc&lt;/code&gt; or &lt;code&gt;.bashrc&lt;/code&gt; file:&lt;/h3&gt;
