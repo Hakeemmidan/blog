@@ -51,12 +51,6 @@ The command for listing only directories in the current location is `ls -d */` w
 
 ### 5. Try it
 
-   ```zsh
-   lsdir
-   ```
-
---
-
 {{< figure
 src="lsdir_cmnd.png" 
 link="lsdir_cmnd.png" 
@@ -65,6 +59,5 @@ attr="Directories listed using ls and lsdir commands"
 class="center"
 >}}
 
---
 
 You're done; Happy coding! 👾
