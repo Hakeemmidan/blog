@@ -35,7 +35,16 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source ~/.bashrc
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;5-try-it&#34;&gt;5. Try it&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lsdir
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You&amp;rsquo;re done; Happy coding! 👾&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;figure class=&#34;image center&#34;&gt;
+&lt;a href=&#34;lsdir_cmnd.png&#34;&gt;&lt;img src=&#34;lsdir_cmnd.png&#34; alt=&#34;Directories listed using ls and lsdir commands&#34;&gt;&lt;/a&gt;
+&lt;figcaption&gt;
+&lt;p&gt;Directories listed using ls and lsdir commands&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re done; Happy coding! 👾&lt;/p&gt;
 </description>
     </item>
     
